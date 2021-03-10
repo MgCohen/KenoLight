@@ -342,7 +342,11 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8545288663652956266, guid: b118cd5b0d7114340b69027263c80937, type: 3}
+    - {fileID: 8545288663029929384, guid: b118cd5b0d7114340b69027263c80937, type: 3}
+    - {fileID: 8545288664242827561, guid: b118cd5b0d7114340b69027263c80937, type: 3}
+    - {fileID: 8545288662831249877, guid: b118cd5b0d7114340b69027263c80937, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: b118cd5b0d7114340b69027263c80937, type: 3}
 --- !u!224 &269573928 stripped
 RectTransform:
@@ -4206,7 +4210,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mixerGroup: {fileID: 24300002, guid: e37380257ac23024ca972c5a90dd0d70, type: 2}
   data: {fileID: 11400000, guid: 56d99c910bb87204892ccae8b1dcc6ac, type: 2}
-  gameManager: {fileID: 1854368198}
 --- !u!1001 &1873875744
 PrefabInstance:
   m_ObjectHideFlags: 0
