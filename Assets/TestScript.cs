@@ -4,12 +4,13 @@ using UnityEngine;
 
 public class TestScript : MonoBehaviour
 {
-    public CustomAnim anim;
-
-    private void Update()
+    private void Start()
     {
-        if (Input.GetKeyDown(KeyCode.A))
-        {
-        }
+        Invoke("Next", 5f);
+    }
+
+    public void Next()
+    {
+        UnityEngine.SceneManagement.SceneManager.LoadScene(0);
     }
 }

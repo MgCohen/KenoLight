@@ -219,7 +219,8 @@ MonoBehaviour:
     - {fileID: 8300000, guid: 2aa0e93b03915ce4bb7fb63707806438, type: 3}
     - {fileID: 8300000, guid: b7d7700e7b957c14ea698e769fb6e9f6, type: 3}
   sfxSaidaKeno:
-    sounds: []
+    sounds:
+    - {fileID: 8300000, guid: b56a63ffd8b3a174fae74e5f519d4733, type: 3}
   sfxBola:
     sounds:
     - {fileID: 8300000, guid: 485dab062f164c64c893fd257f2e6cf3, type: 3}
