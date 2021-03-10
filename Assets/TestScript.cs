@@ -10,7 +10,6 @@ public class TestScript : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.A))
         {
-            anim.Play("Out Vermelho");
         }
     }
 }

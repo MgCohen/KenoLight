@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a8d597dcb4fbcf94dad622d8cea4e244, type: 3}
   m_Name: Globo Saida Vermelho
   m_EditorClassIdentifier: 
-  animationName: Out Vermelho
+  animationName: Vermelho
   frames:
   - {fileID: 21300000, guid: 81c5a38bd23cd4042a4230e63e3b456d, type: 3}
   - {fileID: 21300000, guid: ee8829e4092cec040ab62bdb2da24699, type: 3}
@@ -30,6 +30,6 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 2c78ba5025347494ebcb1756d4a4447a, type: 3}
   - {fileID: 21300000, guid: 462d79478f754754ebd6fc41aa9f5e4f, type: 3}
   - {fileID: 21300000, guid: 48aba7f4d80693045b4825afcabf7469, type: 3}
-  sequence: {fileID: 11400000, guid: a246fc43d012aee4abc73e8aaa86bfbf, type: 2}
-  sequenceType: 3
+  sequence: {fileID: 0}
+  sequenceType: 1
   waitForEnd: 1
