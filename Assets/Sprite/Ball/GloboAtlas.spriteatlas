@@ -1,0 +1,173 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: GloboAtlas
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 1
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings:
+    - serializedVersion: 3
+      m_BuildTarget: DefaultTexturePlatform
+      m_MaxTextureSize: 512
+      m_ResizeAlgorithm: 0
+      m_TextureFormat: -1
+      m_TextureCompression: 2
+      m_CompressionQuality: 100
+      m_CrunchedCompression: 1
+      m_AllowsAlphaSplitting: 0
+      m_Overridden: 0
+      m_AndroidETC2FallbackOverride: 0
+      m_ForceMaximumCompressionQuality_BC6H_BC7: 0
+    packingSettings:
+      serializedVersion: 2
+      padding: 4
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 1
+      enableTightPacking: 1
+    variantMultiplier: 1
+    packables:
+    - {fileID: 2800000, guid: c06232f008089974eb2a63877641a180, type: 3}
+    - {fileID: 2800000, guid: 44c14ba03ae19b340a64a7f0b44d1604, type: 3}
+    - {fileID: 2800000, guid: 5cee9b3f7848ab34da34fb04352868a4, type: 3}
+    - {fileID: 2800000, guid: 290205bad77f49e4eadecedadfcb9928, type: 3}
+    - {fileID: 2800000, guid: ffa699616a657584f8d42d339d5feb36, type: 3}
+    - {fileID: 21300000, guid: ffa699616a657584f8d42d339d5feb36, type: 3}
+    - {fileID: 2800000, guid: c1203cb9b07afc543a6fe002e4c35caf, type: 3}
+    - {fileID: 2800000, guid: 6c6bea20bd74da44ca541c5fea03b0cc, type: 3}
+    - {fileID: 2800000, guid: 81961706251af73488e151705fe1ffa9, type: 3}
+    - {fileID: 2800000, guid: 00e75de63dda8bd4689553e87425fe9e, type: 3}
+    - {fileID: 2800000, guid: 8fc71f8d8edd8174d878c940b66c2c2d, type: 3}
+    - {fileID: 2800000, guid: 483002df24f377749ab74fd60a43c4ea, type: 3}
+    - {fileID: 2800000, guid: 0f461d28208cb944c94c014b582dff53, type: 3}
+    - {fileID: 2800000, guid: e7c53f692fb726d45af3a44fa30ab389, type: 3}
+    - {fileID: 2800000, guid: bc7bb57a10b5e3648b638bab1b80202d, type: 3}
+    - {fileID: 2800000, guid: 13b0590f675128c419a1ac194be50c44, type: 3}
+    - {fileID: 2800000, guid: 59b4d6128f4d67c479fa65e024b3cefc, type: 3}
+    - {fileID: 2800000, guid: 3529292f5d91f6143baa3aeb64f97ce1, type: 3}
+    - {fileID: 2800000, guid: c826325128f897b4f8fcc515a779987a, type: 3}
+    - {fileID: 2800000, guid: 12bb9cd151a9b1749931c7bf303ad859, type: 3}
+    - {fileID: 2800000, guid: a6605e6622cffe04f982e223f7b9d0bb, type: 3}
+    - {fileID: 2800000, guid: 2f357ae01dea6314a85bc678f712439f, type: 3}
+    - {fileID: 2800000, guid: 5db303d6dd58e06449c5a12e332fef3a, type: 3}
+    - {fileID: 2800000, guid: d137c8e52ceea51479ee2b2a836eddee, type: 3}
+    - {fileID: 2800000, guid: 3b1884e09060b9743a5e6eeb18911edb, type: 3}
+    - {fileID: 2800000, guid: 19144443db2ccc54b87619989b620fd1, type: 3}
+    - {fileID: 2800000, guid: 90d9bf94496f48c4bad34499ab2c8fcf, type: 3}
+    - {fileID: 2800000, guid: 0bc0c926adfdaa84eae3238b491989b1, type: 3}
+    - {fileID: 2800000, guid: 3479e1c871c372c44b5ac409c6ef84cc, type: 3}
+    - {fileID: 2800000, guid: 4c60a04c67f641a44a1222c8cce75c7a, type: 3}
+    - {fileID: 2800000, guid: 81c97750e2d7f6e49acc8180c1c0b7fb, type: 3}
+    - {fileID: 2800000, guid: ddc467f436ea2bf40a9d0e03e4ce9193, type: 3}
+    - {fileID: 2800000, guid: 6f02e9876093d654d812cd3fed47f322, type: 3}
+    - {fileID: 2800000, guid: 6701262cbd2fca24fa0a3fc8f1f907ed, type: 3}
+    - {fileID: 2800000, guid: 4afa78f08ab9caa47b58cd7d9b42f1f3, type: 3}
+    - {fileID: 2800000, guid: 2138554104f02ca44b83a9fe10b35972, type: 3}
+    - {fileID: 2800000, guid: 75b1f8fd589e6114c9d96a3244336e0e, type: 3}
+    - {fileID: 2800000, guid: ace250dc8cb11df4f958f13852117261, type: 3}
+    - {fileID: 2800000, guid: 8cc5981dc375f7049b6fe9330b621d5f, type: 3}
+    - {fileID: 2800000, guid: 661be8075074fcd4cb27be87386ad953, type: 3}
+    - {fileID: 2800000, guid: bf6f7d4ba3247d94e8cc4e5f3e610b6c, type: 3}
+    bindAsDefault: 1
+    isAtlasV2: 0
+    cachedData: {fileID: 0}
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: 21300000, guid: 6c6bea20bd74da44ca541c5fea03b0cc, type: 3}
+  - {fileID: 21300000, guid: 81c97750e2d7f6e49acc8180c1c0b7fb, type: 3}
+  - {fileID: 21300000, guid: 44c14ba03ae19b340a64a7f0b44d1604, type: 3}
+  - {fileID: 21300000, guid: 3b1884e09060b9743a5e6eeb18911edb, type: 3}
+  - {fileID: 21300000, guid: 2f357ae01dea6314a85bc678f712439f, type: 3}
+  - {fileID: 21300000, guid: c06232f008089974eb2a63877641a180, type: 3}
+  - {fileID: 21300000, guid: 4afa78f08ab9caa47b58cd7d9b42f1f3, type: 3}
+  - {fileID: 21300000, guid: 2138554104f02ca44b83a9fe10b35972, type: 3}
+  - {fileID: 21300000, guid: c826325128f897b4f8fcc515a779987a, type: 3}
+  - {fileID: 21300000, guid: ffa699616a657584f8d42d339d5feb36, type: 3}
+  - {fileID: 21300000, guid: 12bb9cd151a9b1749931c7bf303ad859, type: 3}
+  - {fileID: 21300000, guid: 59b4d6128f4d67c479fa65e024b3cefc, type: 3}
+  - {fileID: 21300000, guid: 19144443db2ccc54b87619989b620fd1, type: 3}
+  - {fileID: 21300000, guid: 90d9bf94496f48c4bad34499ab2c8fcf, type: 3}
+  - {fileID: 21300000, guid: ddc467f436ea2bf40a9d0e03e4ce9193, type: 3}
+  - {fileID: 21300000, guid: d137c8e52ceea51479ee2b2a836eddee, type: 3}
+  - {fileID: 21300000, guid: 81961706251af73488e151705fe1ffa9, type: 3}
+  - {fileID: 21300000, guid: 0bc0c926adfdaa84eae3238b491989b1, type: 3}
+  - {fileID: 21300000, guid: a6605e6622cffe04f982e223f7b9d0bb, type: 3}
+  - {fileID: 21300000, guid: 5db303d6dd58e06449c5a12e332fef3a, type: 3}
+  - {fileID: 21300000, guid: 00e75de63dda8bd4689553e87425fe9e, type: 3}
+  - {fileID: 21300000, guid: 661be8075074fcd4cb27be87386ad953, type: 3}
+  - {fileID: 21300000, guid: 6f02e9876093d654d812cd3fed47f322, type: 3}
+  - {fileID: 21300000, guid: 0f461d28208cb944c94c014b582dff53, type: 3}
+  - {fileID: 21300000, guid: 3479e1c871c372c44b5ac409c6ef84cc, type: 3}
+  - {fileID: 21300000, guid: e7c53f692fb726d45af3a44fa30ab389, type: 3}
+  - {fileID: 21300000, guid: c1203cb9b07afc543a6fe002e4c35caf, type: 3}
+  - {fileID: 21300000, guid: bc7bb57a10b5e3648b638bab1b80202d, type: 3}
+  - {fileID: 21300000, guid: 290205bad77f49e4eadecedadfcb9928, type: 3}
+  - {fileID: 21300000, guid: bf6f7d4ba3247d94e8cc4e5f3e610b6c, type: 3}
+  - {fileID: 21300000, guid: 6701262cbd2fca24fa0a3fc8f1f907ed, type: 3}
+  - {fileID: 21300000, guid: 4c60a04c67f641a44a1222c8cce75c7a, type: 3}
+  - {fileID: 21300000, guid: ace250dc8cb11df4f958f13852117261, type: 3}
+  - {fileID: 21300000, guid: 8cc5981dc375f7049b6fe9330b621d5f, type: 3}
+  - {fileID: 21300000, guid: 8fc71f8d8edd8174d878c940b66c2c2d, type: 3}
+  - {fileID: 21300000, guid: 75b1f8fd589e6114c9d96a3244336e0e, type: 3}
+  - {fileID: 21300000, guid: 13b0590f675128c419a1ac194be50c44, type: 3}
+  - {fileID: 21300000, guid: 3529292f5d91f6143baa3aeb64f97ce1, type: 3}
+  - {fileID: 21300000, guid: 5cee9b3f7848ab34da34fb04352868a4, type: 3}
+  - {fileID: 21300000, guid: 483002df24f377749ab74fd60a43c4ea, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - "Anima\xE7\xE3o - Globo - Bolas Coloridas0006"
+  - "Anima\xE7\xE3o - Globo - Bolas Coloridas0029"
+  - "Anima\xE7\xE3o - Globo - Bolas Coloridas0001"
+  - "Anima\xE7\xE3o - Globo - Bolas Coloridas0023"
+  - "Anima\xE7\xE3o - Globo - Bolas Coloridas0020"
+  - "Anima\xE7\xE3o - Globo - Bolas Coloridas0000"
+  - "Anima\xE7\xE3o - Globo - Bolas Coloridas0033"
+  - "Anima\xE7\xE3o - Globo - Bolas Coloridas0034"
+  - "Anima\xE7\xE3o - Globo - Bolas Coloridas0017"
+  - "Anima\xE7\xE3o - Globo - Bolas Coloridas0004"
+  - "Anima\xE7\xE3o - Globo - Bolas Coloridas0018"
+  - "Anima\xE7\xE3o - Globo - Bolas Coloridas0015"
+  - "Anima\xE7\xE3o - Globo - Bolas Coloridas0024"
+  - "Anima\xE7\xE3o - Globo - Bolas Coloridas0025"
+  - "Anima\xE7\xE3o - Globo - Bolas Coloridas0030"
+  - "Anima\xE7\xE3o - Globo - Bolas Coloridas0022"
+  - "Anima\xE7\xE3o - Globo - Bolas Coloridas0007"
+  - "Anima\xE7\xE3o - Globo - Bolas Coloridas0026"
+  - "Anima\xE7\xE3o - Globo - Bolas Coloridas0019"
+  - "Anima\xE7\xE3o - Globo - Bolas Coloridas0021"
+  - "Anima\xE7\xE3o - Globo - Bolas Coloridas0008"
+  - "Anima\xE7\xE3o - Globo - Bolas Coloridas0038"
+  - "Anima\xE7\xE3o - Globo - Bolas Coloridas0031"
+  - "Anima\xE7\xE3o - Globo - Bolas Coloridas0011"
+  - "Anima\xE7\xE3o - Globo - Bolas Coloridas0027"
+  - "Anima\xE7\xE3o - Globo - Bolas Coloridas0012"
+  - "Anima\xE7\xE3o - Globo - Bolas Coloridas0005"
+  - "Anima\xE7\xE3o - Globo - Bolas Coloridas0013"
+  - "Anima\xE7\xE3o - Globo - Bolas Coloridas0003"
+  - "Anima\xE7\xE3o - Globo - Bolas Coloridas0039"
+  - "Anima\xE7\xE3o - Globo - Bolas Coloridas0032"
+  - "Anima\xE7\xE3o - Globo - Bolas Coloridas0028"
+  - "Anima\xE7\xE3o - Globo - Bolas Coloridas0036"
+  - "Anima\xE7\xE3o - Globo - Bolas Coloridas0037"
+  - "Anima\xE7\xE3o - Globo - Bolas Coloridas0009"
+  - "Anima\xE7\xE3o - Globo - Bolas Coloridas0035"
+  - "Anima\xE7\xE3o - Globo - Bolas Coloridas0014"
+  - "Anima\xE7\xE3o - Globo - Bolas Coloridas0016"
+  - "Anima\xE7\xE3o - Globo - Bolas Coloridas0002"
+  - "Anima\xE7\xE3o - Globo - Bolas Coloridas0010"
+  m_Tag: GloboAtlas
+  m_IsVariant: 0
