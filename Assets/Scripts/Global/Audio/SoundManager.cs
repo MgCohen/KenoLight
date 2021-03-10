@@ -16,7 +16,7 @@ public class SoundManager : MonoBehaviour
 
     public AudioMixerGroup mixerGroup;
     public AudioData data;
-    public Game gameManager;
+
 
 
     public static void PlayNumberVoice(int number)
