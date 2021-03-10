@@ -30,6 +30,6 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 734083779044b0e4388cf69ef5f434b7, type: 3}
   - {fileID: 21300000, guid: e7e89a8b01ef90c458887401ab82864c, type: 3}
   - {fileID: 21300000, guid: 8687bb46babb45146a56102b378d1020, type: 3}
-  sequence: {fileID: 11400000, guid: eeed9644b29d445468081f21e2362fd6, type: 2}
-  sequenceType: 3
+  sequence: {fileID: 0}
+  sequenceType: 2
   waitForEnd: 1

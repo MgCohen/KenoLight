@@ -51,8 +51,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed51aa8ffde42284eb0485927839e7cb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cardId: {fileID: 0}
-  cardSource: {fileID: 0}
+  cardId: {fileID: 1482908639158549166}
+  cardSource: {fileID: 7948098304910788144}
   numbers:
   - {fileID: 4383404333459877014}
   - {fileID: 5020602372473137882}

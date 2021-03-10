@@ -6,34 +6,50 @@ using System.Linq;
 
 public class Game : MonoBehaviour
 {
-    [Header("Confi Data")] 
-    public string  sorteioId;
-    public                        bool offlineMode = true;
-    
+    [Header("Confi Data")]
+    public string sorteioId;
+    public bool offlineMode = true;
+
     [NonSerialized] public Sorteio sorteio;
 
     public List<int> usedBalls = new List<int>();
     public CardView[] cards = new CardView[4];
 
     public CustomAnim globo;
-
     public BallController control;
 
     [Header("Timer")]
     public float drawTime;
-    [Header("Components")] 
+
+    [Header("Components")]
     [SerializeField] private WinnerPanel winnerPanel = default;
 
-    private void Start()
+
+    private void Update()
     {
-        NetworkInterface.Instance.RequestSorteio(sorteioId,offlineMode,Setup);
-        // winnerPanel.ShowWinners(new List<Card>(), 6);
+        if (Input.GetKeyDown(KeyCode.A)) Request();
+    }
+
+    public void Request()
+    {
+        NetworkInterface.Instance.RequestSorteio(sorteioId, offlineMode, Setup);
+
     }
 
     public void Setup(Sorteio novoSorteio)
     {
         sorteio = novoSorteio;
+        Debug.Log(sorteio.cards.Count);
+        Debug.Log(sorteio.cards[0].numbers[2]);
+        for (int i = 0; i < cards.Length; i++)
+        {
+            cards[i].Setup(sorteio.cards[i]);
+        }
         StartDraw();
+    }
+
+    public void Jeitinho()
+    {
     }
 
     public void StartDraw()
@@ -60,11 +76,11 @@ public class Game : MonoBehaviour
         //Verifica ganhador
         if (sorteio.winnerBalls.Contains(number))
         {
-            var index     = Array.IndexOf(sorteio.winnerBalls,number);
+            var index = Array.IndexOf(sorteio.winnerBalls, number);
             var winnersId = sorteio.winners[index];
-            var winners   = sorteio.cards.Where(card => winnersId.Exists(x => x == card.id)).ToArray();
-            
-            if(index == 2 && usedBalls.Count <= sorteio.acumuladoBallCount)
+            var winners = sorteio.cards.Where(card => winnersId.Exists(x => x == card.id)).ToArray();
+
+            if (index == 2 && usedBalls.Count <= sorteio.acumuladoBallCount)
             {
                 index = 3;
             }
@@ -78,12 +94,18 @@ public class Game : MonoBehaviour
 
     public void Sort(int round)
     {
+        Debug.Log(1);
+        Debug.Log(sorteio.topPlayers.Count);
         var topPlayers = sorteio.topPlayers[round];
+        Debug.Log(2);
         for (int i = 0; i < cards.Length; i++)
         {
+            Debug.Log(3);
             var card = sorteio.cards.Find(x => x.id == topPlayers[i].id);
+            Debug.Log(4);
             if (cards[i].Setup(card)) cards[i].CatchUp(usedBalls);
-            else cards[i].Mark(usedBalls[usedBalls.Count - 1]);
+            else cards[i].Mark(usedBalls[round - 1]);
+            Debug.Log(5);
         }
     }
 
