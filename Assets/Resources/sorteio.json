@@ -1,160 +1,7506 @@
 {
-    "codigo": 15,
-    "data_partida": "2021-03-09T14:24:41.133646-03:00",
-    "bolas_sorteadas": "8,43,26,6,21,55,59,2,77,5,27,63,56,79,75,19,70,90,48,50,57,83,32,51,4,38,80,42,67,30,72,31,52,41,76,49,7,47,33,34,1,18,81,68,13,40,87,44,58,24,46,65,28,20,12,53,39,17,29,54,82,36,78,66,71,84,86,35,9,15,10,60,37,22,88,11,85,16,69,89,45",
-    "bola_kuadra": "33",
-    "bola_kina": "1",
-    "bola_keno": "45",
-    "valor_kuadra": "20.00",
-    "valor_kina": "20.00",
-    "valor_keno": "100.00",
-    "valor_acumulado": "0.00",
-    "valor_cartela": "1.00",
-    "cartelas_vencedoras": [
-        [
-            {
-                "codigo": 9652,
-                "estabelecimento": "Bar do Batata"
-            }
-        ],
-        [
-            {
-                "codigo": 9652,
-                "estabelecimento": "Bar do Batata"
-            }
-        ],
-        [
-            {
-                "codigo": 9650,
-                "estabelecimento": "Bar do Batata"
-            }
-        ]
+  "bola_kuadra": 37,
+  "bola_kina": 40,
+  "bola_keno": 50,
+  "data_partida": "2021-03-10T14:24:41.133646-03:00",
+  "valor_kuadra": 20,
+  "valor_kina": 20,
+  "valor_keno": 100,
+  "valor_acumulado": 0,
+  "valor_cartela": 1,
+  "bolas_sorteadas": "36,22,44,37,40,25,1,2,11,45,33,75,64,9,78,67,85,27,56,51,76,3,49,47,54,65,18,5,77,71,62,26,60,57,74,16,52,72,50",
+  "cartelas": [
+    {
+      "codigo": 5424,
+      "estabelecimento": "bar do batata",
+      "linha1_lista": [
+        62,
+        78,
+        56,
+        50,
+        67
+      ],
+      "linha2_lista": [
+        26,
+        1,
+        52,
+        75,
+        16
+      ],
+      "linha3_lista": [
+        49,
+        76,
+        54,
+        64,
+        36
+      ]
+    },
+    {
+      "codigo": 52296,
+      "estabelecimento": "bar do batata",
+      "linha1_lista": [
+        60,
+        37,
+        16,
+        43,
+        27
+      ],
+      "linha2_lista": [
+        74,
+        52,
+        1,
+        67,
+        5
+      ],
+      "linha3_lista": [
+        18,
+        9,
+        62,
+        2,
+        36
+      ]
+    },
+    {
+      "codigo": 76524,
+      "estabelecimento": "bar do batata",
+      "linha1_lista": [
+        9,
+        60,
+        56,
+        5,
+        25
+      ],
+      "linha2_lista": [
+        36,
+        16,
+        55,
+        18,
+        74
+      ],
+      "linha3_lista": [
+        77,
+        64,
+        49,
+        72,
+        22
+      ]
+    },
+    {
+      "codigo": 58220,
+      "estabelecimento": "bar do batata",
+      "linha1_lista": [
+        74,
+        49,
+        54,
+        71,
+        60
+      ],
+      "linha2_lista": [
+        86,
+        65,
+        57,
+        47,
+        33
+      ],
+      "linha3_lista": [
+        27,
+        3,
+        76,
+        53,
+        67
+      ]
+    },
+    {
+      "codigo": 92957,
+      "estabelecimento": "bar do batata",
+      "linha1_lista": [
+        60,
+        61,
+        49,
+        78,
+        27
+      ],
+      "linha2_lista": [
+        18,
+        77,
+        22,
+        83,
+        3
+      ],
+      "linha3_lista": [
+        16,
+        25,
+        75,
+        54,
+        36
+      ]
+    },
+    {
+      "codigo": 33457,
+      "estabelecimento": "bar do batata",
+      "linha1_lista": [
+        27,
+        18,
+        33,
+        64,
+        60
+      ],
+      "linha2_lista": [
+        22,
+        16,
+        5,
+        61,
+        54
+      ],
+      "linha3_lista": [
+        51,
+        88,
+        49,
+        74,
+        78
+      ]
+    },
+    {
+      "codigo": 94108,
+      "estabelecimento": "bar do batata",
+      "linha1_lista": [
+        77,
+        25,
+        45,
+        40,
+        44
+      ],
+      "linha2_lista": [
+        47,
+        53,
+        80,
+        33,
+        75
+      ],
+      "linha3_lista": [
+        85,
+        36,
+        37,
+        52,
+        26
+      ]
+    },
+    {
+      "codigo": 19840,
+      "estabelecimento": "bar do batata",
+      "linha1_lista": [
+        32,
+        54,
+        11,
+        71,
+        33
+      ],
+      "linha2_lista": [
+        53,
+        74,
+        3,
+        65,
+        52
+      ],
+      "linha3_lista": [
+        16,
+        25,
+        62,
+        78,
+        18
+      ]
+    },
+    {
+      "codigo": 65346,
+      "estabelecimento": "bar do batata",
+      "linha1_lista": [
+        45,
+        63,
+        71,
+        27,
+        18
+      ],
+      "linha2_lista": [
+        47,
+        54,
+        25,
+        44,
+        40
+      ],
+      "linha3_lista": [
+        37,
+        56,
+        51,
+        72,
+        35
+      ]
+    },
+    {
+      "codigo": 71412,
+      "estabelecimento": "bar do batata",
+      "linha1_lista": [
+        62,
+        67,
+        46,
+        72,
+        80
+      ],
+      "linha2_lista": [
+        16,
+        65,
+        5,
+        33,
+        71
+      ],
+      "linha3_lista": [
+        85,
+        37,
+        25,
+        44,
+        64
+      ]
+    },
+    {
+      "codigo": 12907,
+      "estabelecimento": "bar do batata",
+      "linha1_lista": [
+        76,
+        65,
+        81,
+        56,
+        75
+      ],
+      "linha2_lista": [
+        47,
+        72,
+        77,
+        53,
+        51
+      ],
+      "linha3_lista": [
+        25,
+        60,
+        16,
+        54,
+        9
+      ]
+    },
+    {
+      "codigo": 49299,
+      "estabelecimento": "bar do batata",
+      "linha1_lista": [
+        51,
+        49,
+        67,
+        33,
+        22
+      ],
+      "linha2_lista": [
+        76,
+        43,
+        80,
+        62,
+        36
+      ],
+      "linha3_lista": [
+        16,
+        72,
+        18,
+        60,
+        2
+      ]
+    },
+    {
+      "codigo": 94481,
+      "estabelecimento": "bar do batata",
+      "linha1_lista": [
+        21,
+        1,
+        16,
+        72,
+        64
+      ],
+      "linha2_lista": [
+        36,
+        71,
+        33,
+        44,
+        60
+      ],
+      "linha3_lista": [
+        2,
+        18,
+        62,
+        56,
+        68
+      ]
+    },
+    {
+      "codigo": 33000,
+      "estabelecimento": "bar do batata",
+      "linha1_lista": [
+        55,
+        71,
+        72,
+        75,
+        52
+      ],
+      "linha2_lista": [
+        49,
+        78,
+        76,
+        74,
+        26
+      ],
+      "linha3_lista": [
+        1,
+        42,
+        65,
+        11,
+        33
+      ]
+    },
+    {
+      "codigo": 89278,
+      "estabelecimento": "bar do batata",
+      "linha1_lista": [
+        3,
+        31,
+        26,
+        2,
+        25
+      ],
+      "linha2_lista": [
+        11,
+        1,
+        23,
+        5,
+        33
+      ],
+      "linha3_lista": [
+        18,
+        44,
+        67,
+        50,
+        22
+      ]
+    },
+    {
+      "codigo": 34679,
+      "estabelecimento": "bar do batata",
+      "linha1_lista": [
+        77,
+        75,
+        26,
+        33,
+        37
+      ],
+      "linha2_lista": [
+        45,
+        42,
+        3,
+        11,
+        85
+      ],
+      "linha3_lista": [
+        50,
+        49,
+        2,
+        13,
+        18
+      ]
+    },
+    {
+      "codigo": 46057,
+      "estabelecimento": "bar do batata",
+      "linha1_lista": [
+        71,
+        19,
+        44,
+        16,
+        36
+      ],
+      "linha2_lista": [
+        50,
+        62,
+        25,
+        75,
+        40
+      ],
+      "linha3_lista": [
+        21,
+        52,
+        1,
+        2,
+        37
+      ]
+    },
+    {
+      "codigo": 69213,
+      "estabelecimento": "bar do batata",
+      "linha1_lista": [
+        76,
+        35,
+        47,
+        72,
+        20
+      ],
+      "linha2_lista": [
+        75,
+        5,
+        71,
+        1,
+        27
+      ],
+      "linha3_lista": [
+        16,
+        77,
+        50,
+        33,
+        49
+      ]
+    },
+    {
+      "codigo": 78698,
+      "estabelecimento": "bar do batata",
+      "linha1_lista": [
+        11,
+        51,
+        85,
+        36,
+        45
+      ],
+      "linha2_lista": [
+        18,
+        49,
+        76,
+        69,
+        3
+      ],
+      "linha3_lista": [
+        80,
+        46,
+        22,
+        1,
+        75
+      ]
+    },
+    {
+      "codigo": 45010,
+      "estabelecimento": "bar do batata",
+      "linha1_lista": [
+        75,
+        1,
+        25,
+        2,
+        6
+      ],
+      "linha2_lista": [
+        36,
+        5,
+        18,
+        27,
+        9
+      ],
+      "linha3_lista": [
+        37,
+        11,
+        53,
+        44,
+        48
+      ]
+    },
+    {
+      "codigo": 32915,
+      "estabelecimento": "bar do batata",
+      "linha1_lista": [
+        55,
+        1,
+        18,
+        45,
+        40
+      ],
+      "linha2_lista": [
+        49,
+        89,
+        2,
+        62,
+        71
+      ],
+      "linha3_lista": [
+        19,
+        11,
+        33,
+        27,
+        85
+      ]
+    },
+    {
+      "codigo": 66228,
+      "estabelecimento": "bar do batata",
+      "linha1_lista": [
+        44,
+        2,
+        1,
+        47,
+        45
+      ],
+      "linha2_lista": [
+        5,
+        3,
+        24,
+        20,
+        9
+      ],
+      "linha3_lista": [
+        11,
+        25,
+        43,
+        18,
+        26
+      ]
+    },
+    {
+      "codigo": 47776,
+      "estabelecimento": "bar do batata",
+      "linha1_lista": [
+        90,
+        18,
+        26,
+        5,
+        33
+      ],
+      "linha2_lista": [
+        23,
+        27,
+        64,
+        40,
+        25
+      ],
+      "linha3_lista": [
+        66,
+        3,
+        44,
+        47,
+        85
+      ]
+    },
+    {
+      "codigo": 35678,
+      "estabelecimento": "bar do batata",
+      "linha1_lista": [
+        26,
+        3,
+        75,
+        40,
+        37
+      ],
+      "linha2_lista": [
+        48,
+        77,
+        9,
+        88,
+        85
+      ],
+      "linha3_lista": [
+        22,
+        47,
+        18,
+        66,
+        64
+      ]
+    },
+    {
+      "codigo": 54285,
+      "estabelecimento": "bar do batata",
+      "linha1_lista": [
+        30,
+        27,
+        65,
+        3,
+        47
+      ],
+      "linha2_lista": [
+        45,
+        64,
+        49,
+        75,
+        26
+      ],
+      "linha3_lista": [
+        28,
+        78,
+        2,
+        71,
+        12
+      ]
+    },
+    {
+      "codigo": 74146,
+      "estabelecimento": "bar do batata",
+      "linha1_lista": [
+        56,
+        64,
+        78,
+        85,
+        1
+      ],
+      "linha2_lista": [
+        26,
+        71,
+        25,
+        89,
+        36
+      ],
+      "linha3_lista": [
+        29,
+        59,
+        11,
+        75,
+        18
+      ]
+    },
+    {
+      "codigo": 41112,
+      "estabelecimento": "bar do batata",
+      "linha1_lista": [
+        18,
+        40,
+        84,
+        66,
+        71
+      ],
+      "linha2_lista": [
+        61,
+        49,
+        47,
+        62,
+        26
+      ],
+      "linha3_lista": [
+        1,
+        67,
+        51,
+        9,
+        45
+      ]
+    },
+    {
+      "codigo": 97307,
+      "estabelecimento": "bar do batata",
+      "linha1_lista": [
+        33,
+        56,
+        14,
+        47,
+        78
+      ],
+      "linha2_lista": [
+        67,
+        88,
+        2,
+        44,
+        60
+      ],
+      "linha3_lista": [
+        76,
+        38,
+        40,
+        49,
+        45
+      ]
+    },
+    {
+      "codigo": 12873,
+      "estabelecimento": "bar do batata",
+      "linha1_lista": [
+        20,
+        3,
+        75,
+        40,
+        36
+      ],
+      "linha2_lista": [
+        2,
+        37,
+        32,
+        26,
+        33
+      ],
+      "linha3_lista": [
+        25,
+        71,
+        60,
+        85,
+        41
+      ]
+    },
+    {
+      "codigo": 15431,
+      "estabelecimento": "bar do batata",
+      "linha1_lista": [
+        22,
+        17,
+        26,
+        62,
+        37
+      ],
+      "linha2_lista": [
+        65,
+        28,
+        36,
+        60,
+        33
+      ],
+      "linha3_lista": [
+        40,
+        1,
+        85,
+        7,
+        78
+      ]
+    },
+    {
+      "codigo": 98952,
+      "estabelecimento": "bar do batata",
+      "linha1_lista": [
+        3,
+        2,
+        11,
+        12,
+        71
+      ],
+      "linha2_lista": [
+        26,
+        62,
+        78,
+        44,
+        40
+      ],
+      "linha3_lista": [
+        59,
+        1,
+        82,
+        65,
+        60
+      ]
+    },
+    {
+      "codigo": 27552,
+      "estabelecimento": "bar do batata",
+      "linha1_lista": [
+        1,
+        22,
+        13,
+        2,
+        7
+      ],
+      "linha2_lista": [
+        30,
+        57,
+        33,
+        37,
+        47
+      ],
+      "linha3_lista": [
+        45,
+        76,
+        18,
+        36,
+        64
+      ]
+    },
+    {
+      "codigo": 77490,
+      "estabelecimento": "bar do batata",
+      "linha1_lista": [
+        57,
+        33,
+        1,
+        2,
+        21
+      ],
+      "linha2_lista": [
+        7,
+        9,
+        5,
+        18,
+        40
+      ],
+      "linha3_lista": [
+        10,
+        45,
+        37,
+        22,
+        25
+      ]
+    },
+    {
+      "codigo": 28039,
+      "estabelecimento": "bar do batata",
+      "linha1_lista": [
+        27,
+        22,
+        1,
+        64,
+        39
+      ],
+      "linha2_lista": [
+        35,
+        25,
+        36,
+        45,
+        4
+      ],
+      "linha3_lista": [
+        11,
+        9,
+        33,
+        16,
+        2
+      ]
+    },
+    {
+      "codigo": 63340,
+      "estabelecimento": "bar do batata",
+      "linha1_lista": [
+        48,
+        1,
+        40,
+        16,
+        7
+      ],
+      "linha2_lista": [
+        26,
+        36,
+        11,
+        33,
+        5
+      ],
+      "linha3_lista": [
+        27,
+        25,
+        2,
+        17,
+        37
+      ]
+    },
+    {
+      "codigo": 16503,
+      "estabelecimento": "bar do batata",
+      "linha1_lista": [
+        60,
+        31,
+        44,
+        16,
+        36
+      ],
+      "linha2_lista": [
+        1,
+        40,
+        27,
+        13,
+        2
+      ],
+      "linha3_lista": [
+        37,
+        33,
+        22,
+        5,
+        8
+      ]
+    },
+    {
+      "codigo": 59384,
+      "estabelecimento": "bar do batata",
+      "linha1_lista": [
+        61,
+        3,
+        46,
+        27,
+        1
+      ],
+      "linha2_lista": [
+        56,
+        76,
+        47,
+        52,
+        75
+      ],
+      "linha3_lista": [
+        78,
+        54,
+        40,
+        19,
+        65
+      ]
+    },
+    {
+      "codigo": 14964,
+      "estabelecimento": "bar do batata",
+      "linha1_lista": [
+        51,
+        17,
+        2,
+        36,
+        49
+      ],
+      "linha2_lista": [
+        27,
+        18,
+        56,
+        44,
+        59
+      ],
+      "linha3_lista": [
+        52,
+        33,
+        67,
+        12,
+        47
+      ]
+    },
+    {
+      "codigo": 39766,
+      "estabelecimento": "bar do batata",
+      "linha1_lista": [
+        33,
+        8,
+        22,
+        37,
+        2
+      ],
+      "linha2_lista": [
+        45,
+        25,
+        52,
+        67,
+        24
+      ],
+      "linha3_lista": [
+        75,
+        62,
+        9,
+        36,
+        20
+      ]
+    },
+    {
+      "codigo": 14700,
+      "estabelecimento": "bar do batata",
+      "linha1_lista": [
+        71,
+        5,
+        28,
+        51,
+        68
+      ],
+      "linha2_lista": [
+        18,
+        11,
+        26,
+        3,
+        30
+      ],
+      "linha3_lista": [
+        22,
+        37,
+        52,
+        44,
+        40
+      ]
+    },
+    {
+      "codigo": 56062,
+      "estabelecimento": "bar do batata",
+      "linha1_lista": [
+        36,
+        29,
+        3,
+        22,
+        44
+      ],
+      "linha2_lista": [
+        11,
+        52,
+        30,
+        6,
+        72
+      ],
+      "linha3_lista": [
+        85,
+        62,
+        78,
+        71,
+        76
+      ]
+    },
+    {
+      "codigo": 87413,
+      "estabelecimento": "bar do batata",
+      "linha1_lista": [
+        67,
+        85,
+        37,
+        64,
+        44
+      ],
+      "linha2_lista": [
+        32,
+        76,
+        11,
+        17,
+        49
+      ],
+      "linha3_lista": [
+        3,
+        51,
+        28,
+        18,
+        50
+      ]
+    },
+    {
+      "codigo": 57214,
+      "estabelecimento": "bar do batata",
+      "linha1_lista": [
+        50,
+        85,
+        67,
+        69,
+        76
+      ],
+      "linha2_lista": [
+        75,
+        83,
+        63,
+        9,
+        64
+      ],
+      "linha3_lista": [
+        44,
+        3,
+        11,
+        5,
+        22
+      ]
+    },
+    {
+      "codigo": 62781,
+      "estabelecimento": "bar do batata",
+      "linha1_lista": [
+        78,
+        27,
+        3,
+        1,
+        22
+      ],
+      "linha2_lista": [
+        15,
+        45,
+        31,
+        37,
+        7
+      ],
+      "linha3_lista": [
+        46,
+        11,
+        36,
+        85,
+        49
+      ]
+    },
+    {
+      "codigo": 96198,
+      "estabelecimento": "bar do batata",
+      "linha1_lista": [
+        61,
+        44,
+        9,
+        3,
+        2
+      ],
+      "linha2_lista": [
+        19,
+        1,
+        7,
+        25,
+        48
+      ],
+      "linha3_lista": [
+        27,
+        40,
+        67,
+        47,
+        22
+      ]
+    },
+    {
+      "codigo": 20293,
+      "estabelecimento": "bar do batata",
+      "linha1_lista": [
+        58,
+        73,
+        1,
+        51,
+        49
+      ],
+      "linha2_lista": [
+        29,
+        36,
+        48,
+        37,
+        78
+      ],
+      "linha3_lista": [
+        2,
+        3,
+        85,
+        67,
+        47
+      ]
+    },
+    {
+      "codigo": 21464,
+      "estabelecimento": "bar do batata",
+      "linha1_lista": [
+        67,
+        46,
+        76,
+        11,
+        54
+      ],
+      "linha2_lista": [
+        12,
+        56,
+        1,
+        64,
+        25
+      ],
+      "linha3_lista": [
+        63,
+        2,
+        79,
+        75,
+        45
+      ]
+    },
+    {
+      "codigo": 53228,
+      "estabelecimento": "bar do batata",
+      "linha1_lista": [
+        29,
+        25,
+        9,
+        75,
+        49
+      ],
+      "linha2_lista": [
+        76,
+        27,
+        42,
+        85,
+        59
+      ],
+      "linha3_lista": [
+        67,
+        56,
+        58,
+        65,
+        2
+      ]
+    },
+    {
+      "codigo": 32139,
+      "estabelecimento": "bar do batata",
+      "linha1_lista": [
+        3,
+        2,
+        56,
+        54,
+        49
+      ],
+      "linha2_lista": [
+        17,
+        65,
+        40,
+        33,
+        81
+      ],
+      "linha3_lista": [
+        47,
+        85,
+        69,
+        43,
+        67
+      ]
+    },
+    {
+      "codigo": 75511,
+      "estabelecimento": "bar do batata",
+      "linha1_lista": [
+        67,
+        33,
+        12,
+        28,
+        2
+      ],
+      "linha2_lista": [
+        21,
+        11,
+        18,
+        9,
+        3
+      ],
+      "linha3_lista": [
+        1,
+        22,
+        40,
+        25,
+        43
+      ]
+    },
+    {
+      "codigo": 64652,
+      "estabelecimento": "bar do batata",
+      "linha1_lista": [
+        40,
+        58,
+        56,
+        51,
+        78
+      ],
+      "linha2_lista": [
+        49,
+        9,
+        76,
+        18,
+        1
+      ],
+      "linha3_lista": [
+        63,
+        75,
+        23,
+        39,
+        11
+      ]
+    },
+    {
+      "codigo": 58405,
+      "estabelecimento": "bar do batata",
+      "linha1_lista": [
+        36,
+        1,
+        22,
+        33,
+        12
+      ],
+      "linha2_lista": [
+        25,
+        3,
+        54,
+        9,
+        8
+      ],
+      "linha3_lista": [
+        68,
+        44,
+        64,
+        18,
+        39
+      ]
+    },
+    {
+      "codigo": 552,
+      "estabelecimento": "bar do batata",
+      "linha1_lista": [
+        30,
+        75,
+        54,
+        24,
+        36
+      ],
+      "linha2_lista": [
+        33,
+        76,
+        64,
+        7,
+        49
+      ],
+      "linha3_lista": [
+        40,
+        78,
+        82,
+        27,
+        18
+      ]
+    },
+    {
+      "codigo": 60957,
+      "estabelecimento": "bar do batata",
+      "linha1_lista": [
+        54,
+        14,
+        27,
+        25,
+        18
+      ],
+      "linha2_lista": [
+        31,
+        35,
+        56,
+        47,
+        45
+      ],
+      "linha3_lista": [
+        11,
+        67,
+        9,
+        64,
+        59
+      ]
+    },
+    {
+      "codigo": 11930,
+      "estabelecimento": "bar do batata",
+      "linha1_lista": [
+        25,
+        6,
+        1,
+        9,
+        28
+      ],
+      "linha2_lista": [
+        44,
+        2,
+        5,
+        67,
+        90
+      ],
+      "linha3_lista": [
+        39,
+        40,
+        22,
+        75,
+        45
+      ]
+    },
+    {
+      "codigo": 28132,
+      "estabelecimento": "bar do batata",
+      "linha1_lista": [
+        4,
+        45,
+        3,
+        29,
+        44
+      ],
+      "linha2_lista": [
+        30,
+        22,
+        21,
+        5,
+        40
+      ],
+      "linha3_lista": [
+        25,
+        36,
+        37,
+        2,
+        9
+      ]
+    },
+    {
+      "codigo": 11987,
+      "estabelecimento": "bar do batata",
+      "linha1_lista": [
+        31,
+        22,
+        44,
+        14,
+        23
+      ],
+      "linha2_lista": [
+        76,
+        26,
+        36,
+        40,
+        1
+      ],
+      "linha3_lista": [
+        33,
+        75,
+        86,
+        64,
+        27
+      ]
+    },
+    {
+      "codigo": 68200,
+      "estabelecimento": "bar do batata",
+      "linha1_lista": [
+        75,
+        77,
+        6,
+        22,
+        37
+      ],
+      "linha2_lista": [
+        1,
+        24,
+        14,
+        30,
+        36
+      ],
+      "linha3_lista": [
+        44,
+        40,
+        45,
+        2,
+        26
+      ]
+    },
+    {
+      "codigo": 96460,
+      "estabelecimento": "bar do batata",
+      "linha1_lista": [
+        1,
+        85,
+        45,
+        11,
+        24
+      ],
+      "linha2_lista": [
+        56,
+        39,
+        44,
+        22,
+        37
+      ],
+      "linha3_lista": [
+        9,
+        16,
+        38,
+        76,
+        31
+      ]
+    },
+    {
+      "codigo": 90325,
+      "estabelecimento": "bar do batata",
+      "linha1_lista": [
+        83,
+        9,
+        44,
+        3,
+        33
+      ],
+      "linha2_lista": [
+        40,
+        2,
+        16,
+        11,
+        24
+      ],
+      "linha3_lista": [
+        37,
+        22,
+        6,
+        8,
+        1
+      ]
+    },
+    {
+      "codigo": 45742,
+      "estabelecimento": "bar do batata",
+      "linha1_lista": [
+        90,
+        37,
+        75,
+        22,
+        1
+      ],
+      "linha2_lista": [
+        52,
+        85,
+        28,
+        56,
+        44
+      ],
+      "linha3_lista": [
+        36,
+        7,
+        31,
+        64,
+        2
+      ]
+    },
+    {
+      "codigo": 38220,
+      "estabelecimento": "bar do batata",
+      "linha1_lista": [
+        72,
+        12,
+        25,
+        40,
+        33
+      ],
+      "linha2_lista": [
+        1,
+        36,
+        34,
+        22,
+        2
+      ],
+      "linha3_lista": [
+        11,
+        16,
+        26,
+        21,
+        30
+      ]
+    },
+    {
+      "codigo": 88517,
+      "estabelecimento": "bar do batata",
+      "linha1_lista": [
+        37,
+        52,
+        44,
+        41,
+        11
+      ],
+      "linha2_lista": [
+        40,
+        2,
+        36,
+        1,
+        12
+      ],
+      "linha3_lista": [
+        26,
+        32,
+        14,
+        22,
+        72
+      ]
+    },
+    {
+      "codigo": 25045,
+      "estabelecimento": "bar do batata",
+      "linha1_lista": [
+        27,
+        64,
+        78,
+        43,
+        45
+      ],
+      "linha2_lista": [
+        9,
+        42,
+        1,
+        76,
+        90
+      ],
+      "linha3_lista": [
+        85,
+        22,
+        51,
+        4,
+        31
+      ]
+    },
+    {
+      "codigo": 61827,
+      "estabelecimento": "bar do batata",
+      "linha1_lista": [
+        28,
+        66,
+        56,
+        67,
+        64
+      ],
+      "linha2_lista": [
+        11,
+        46,
+        25,
+        82,
+        45
+      ],
+      "linha3_lista": [
+        37,
+        10,
+        44,
+        51,
+        76
+      ]
+    },
+    {
+      "codigo": 20506,
+      "estabelecimento": "bar do batata",
+      "linha1_lista": [
+        79,
+        22,
+        1,
+        4,
+        17
+      ],
+      "linha2_lista": [
+        40,
+        35,
+        44,
+        2,
+        36
+      ],
+      "linha3_lista": [
+        37,
+        11,
+        9,
+        39,
+        3
+      ]
+    },
+    {
+      "codigo": 57108,
+      "estabelecimento": "bar do batata",
+      "linha1_lista": [
+        9,
+        75,
+        3,
+        35,
+        22
+      ],
+      "linha2_lista": [
+        32,
+        11,
+        36,
+        40,
+        31
+      ],
+      "linha3_lista": [
+        27,
+        67,
+        46,
+        1,
+        79
+      ]
+    },
+    {
+      "codigo": 30277,
+      "estabelecimento": "bar do batata",
+      "linha1_lista": [
+        19,
+        40,
+        1,
+        9,
+        37
+      ],
+      "linha2_lista": [
+        2,
+        6,
+        22,
+        27,
+        14
+      ],
+      "linha3_lista": [
+        32,
+        3,
+        36,
+        24,
+        51
+      ]
+    },
+    {
+      "codigo": 78111,
+      "estabelecimento": "bar do batata",
+      "linha1_lista": [
+        25,
+        75,
+        61,
+        68,
+        85
+      ],
+      "linha2_lista": [
+        36,
+        44,
+        2,
+        32,
+        40
+      ],
+      "linha3_lista": [
+        37,
+        20,
+        18,
+        6,
+        1
+      ]
+    },
+    {
+      "codigo": 14887,
+      "estabelecimento": "bar do batata",
+      "linha1_lista": [
+        5,
+        84,
+        22,
+        33,
+        37
+      ],
+      "linha2_lista": [
+        41,
+        1,
+        25,
+        30,
+        11
+      ],
+      "linha3_lista": [
+        6,
+        42,
+        40,
+        44,
+        85
+      ]
+    },
+    {
+      "codigo": 95924,
+      "estabelecimento": "bar do batata",
+      "linha1_lista": [
+        86,
+        25,
+        11,
+        37,
+        45
+      ],
+      "linha2_lista": [
+        10,
+        40,
+        38,
+        20,
+        36
+      ],
+      "linha3_lista": [
+        18,
+        44,
+        5,
+        23,
+        1
+      ]
+    },
+    {
+      "codigo": 19265,
+      "estabelecimento": "bar do batata",
+      "linha1_lista": [
+        11,
+        15,
+        43,
+        22,
+        6
+      ],
+      "linha2_lista": [
+        1,
+        25,
+        2,
+        37,
+        45
+      ],
+      "linha3_lista": [
+        5,
+        18,
+        36,
+        17,
+        28
+      ]
+    },
+    {
+      "codigo": 58587,
+      "estabelecimento": "bar do batata",
+      "linha1_lista": [
+        61,
+        40,
+        62,
+        48,
+        11
+      ],
+      "linha2_lista": [
+        75,
+        25,
+        78,
+        64,
+        45
+      ],
+      "linha3_lista": [
+        42,
+        2,
+        63,
+        1,
+        69
+      ]
+    },
+    {
+      "codigo": 74805,
+      "estabelecimento": "bar do batata",
+      "linha1_lista": [
+        44,
+        41,
+        11,
+        18,
+        8
+      ],
+      "linha2_lista": [
+        36,
+        38,
+        40,
+        24,
+        1
+      ],
+      "linha3_lista": [
+        2,
+        37,
+        25,
+        39,
+        26
+      ]
+    },
+    {
+      "codigo": 57,
+      "estabelecimento": "bar do batata",
+      "linha1_lista": [
+        69,
+        54,
+        76,
+        11,
+        36
+      ],
+      "linha2_lista": [
+        59,
+        77,
+        65,
+        90,
+        26
+      ],
+      "linha3_lista": [
+        22,
+        3,
+        34,
+        15,
+        78
+      ]
+    },
+    {
+      "codigo": 39135,
+      "estabelecimento": "bar do batata",
+      "linha1_lista": [
+        1,
+        3,
+        2,
+        40,
+        6
+      ],
+      "linha2_lista": [
+        20,
+        17,
+        30,
+        33,
+        36
+      ],
+      "linha3_lista": [
+        25,
+        11,
+        57,
+        23,
+        22
+      ]
+    },
+    {
+      "codigo": 39503,
+      "estabelecimento": "bar do batata",
+      "linha1_lista": [
+        64,
+        2,
+        11,
+        1,
+        40
+      ],
+      "linha2_lista": [
+        17,
+        25,
+        16,
+        6,
+        22
+      ],
+      "linha3_lista": [
+        36,
+        19,
+        33,
+        41,
+        20
+      ]
+    },
+    {
+      "codigo": 76097,
+      "estabelecimento": "bar do batata",
+      "linha1_lista": [
+        2,
+        23,
+        16,
+        9,
+        36
+      ],
+      "linha2_lista": [
+        12,
+        24,
+        42,
+        17,
+        1
+      ],
+      "linha3_lista": [
+        40,
+        45,
+        25,
+        33,
+        44
+      ]
+    },
+    {
+      "codigo": 4464,
+      "estabelecimento": "bar do batata",
+      "linha1_lista": [
+        11,
+        25,
+        9,
+        22,
+        42
+      ],
+      "linha2_lista": [
+        45,
+        20,
+        31,
+        37,
+        33
+      ],
+      "linha3_lista": [
+        40,
+        16,
+        24,
+        43,
+        36
+      ]
+    },
+    {
+      "codigo": 15412,
+      "estabelecimento": "bar do batata",
+      "linha1_lista": [
+        75,
+        1,
+        2,
+        20,
+        9
+      ],
+      "linha2_lista": [
+        19,
+        16,
+        44,
+        43,
+        40
+      ],
+      "linha3_lista": [
+        25,
+        11,
+        37,
+        12,
+        13
+      ]
+    },
+    {
+      "codigo": 37502,
+      "estabelecimento": "bar do batata",
+      "linha1_lista": [
+        31,
+        1,
+        13,
+        40,
+        20
+      ],
+      "linha2_lista": [
+        35,
+        56,
+        16,
+        22,
+        2
+      ],
+      "linha3_lista": [
+        36,
+        44,
+        33,
+        11,
+        32
+      ]
+    },
+    {
+      "codigo": 24618,
+      "estabelecimento": "bar do batata",
+      "linha1_lista": [
+        25,
+        14,
+        21,
+        27,
+        30
+      ],
+      "linha2_lista": [
+        29,
+        3,
+        40,
+        31,
+        1
+      ],
+      "linha3_lista": [
+        44,
+        16,
+        22,
+        9,
+        37
+      ]
+    },
+    {
+      "codigo": 10135,
+      "estabelecimento": "bar do batata",
+      "linha1_lista": [
+        4,
+        36,
+        40,
+        59,
+        16
+      ],
+      "linha2_lista": [
+        85,
+        37,
+        44,
+        34,
+        22
+      ],
+      "linha3_lista": [
+        3,
+        88,
+        54,
+        15,
+        67
+      ]
+    },
+    {
+      "codigo": 22770,
+      "estabelecimento": "bar do batata",
+      "linha1_lista": [
+        83,
+        42,
+        16,
+        18,
+        20
+      ],
+      "linha2_lista": [
+        1,
+        2,
+        23,
+        36,
+        35
+      ],
+      "linha3_lista": [
+        22,
+        54,
+        44,
+        37,
+        25
+      ]
+    },
+    {
+      "codigo": 1373,
+      "estabelecimento": "bar do batata",
+      "linha1_lista": [
+        25,
+        27,
+        21,
+        16,
+        40
+      ],
+      "linha2_lista": [
+        41,
+        6,
+        5,
+        11,
+        9
+      ],
+      "linha3_lista": [
+        10,
+        13,
+        26,
+        36,
+        22
+      ]
+    },
+    {
+      "codigo": 1332,
+      "estabelecimento": "bar do batata",
+      "linha1_lista": [
+        24,
+        5,
+        36,
+        22,
+        71
+      ],
+      "linha2_lista": [
+        1,
+        9,
+        85,
+        37,
+        83
+      ],
+      "linha3_lista": [
+        57,
+        4,
+        7,
+        50,
+        68
+      ]
+    },
+    {
+      "codigo": 58933,
+      "estabelecimento": "bar do batata",
+      "linha1_lista": [
+        52,
+        25,
+        31,
+        22,
+        1
+      ],
+      "linha2_lista": [
+        37,
+        29,
+        33,
+        40,
+        35
+      ],
+      "linha3_lista": [
+        4,
+        36,
+        50,
+        79,
+        2
+      ]
+    },
+    {
+      "codigo": 1809,
+      "estabelecimento": "bar do batata",
+      "linha1_lista": [
+        40,
+        67,
+        75,
+        41,
+        85
+      ],
+      "linha2_lista": [
+        36,
+        72,
+        83,
+        86,
+        22
+      ],
+      "linha3_lista": [
+        20,
+        82,
+        51,
+        50,
+        65
+      ]
+    },
+    {
+      "codigo": 33552,
+      "estabelecimento": "bar do batata",
+      "linha1_lista": [
+        8,
+        1,
+        29,
+        23,
+        22
+      ],
+      "linha2_lista": [
+        11,
+        24,
+        44,
+        90,
+        2
+      ],
+      "linha3_lista": [
+        9,
+        37,
+        66,
+        25,
+        36
+      ]
+    },
+    {
+      "codigo": 35789,
+      "estabelecimento": "bar do batata",
+      "linha1_lista": [
+        40,
+        38,
+        45,
+        25,
+        11
+      ],
+      "linha2_lista": [
+        31,
+        43,
+        36,
+        44,
+        9
+      ],
+      "linha3_lista": [
+        6,
+        37,
+        1,
+        19,
+        23
+      ]
+    },
+    {
+      "codigo": 53874,
+      "estabelecimento": "bar do batata",
+      "linha1_lista": [
+        87,
+        27,
+        7,
+        8,
+        23
+      ],
+      "linha2_lista": [
+        40,
+        6,
+        1,
+        2,
+        35
+      ],
+      "linha3_lista": [
+        44,
+        22,
+        37,
+        11,
+        33
+      ]
+    },
+    {
+      "codigo": 33143,
+      "estabelecimento": "bar do batata",
+      "linha1_lista": [
+        1,
+        27,
+        40,
+        2,
+        32
+      ],
+      "linha2_lista": [
+        37,
+        6,
+        36,
+        44,
+        39
+      ],
+      "linha3_lista": [
+        38,
+        9,
+        17,
+        34,
+        22
+      ]
+    },
+    {
+      "codigo": 492,
+      "estabelecimento": "bar do batata",
+      "linha1_lista": [
+        13,
+        32,
+        75,
+        53,
+        67
+      ],
+      "linha2_lista": [
+        78,
+        51,
+        36,
+        81,
+        22
+      ],
+      "linha3_lista": [
+        41,
+        76,
+        1,
+        6,
+        25
+      ]
+    },
+    {
+      "codigo": 15106,
+      "estabelecimento": "bar do batata",
+      "linha1_lista": [
+        44,
+        87,
+        22,
+        12,
+        40
+      ],
+      "linha2_lista": [
+        32,
+        37,
+        9,
+        25,
+        36
+      ],
+      "linha3_lista": [
+        49,
+        24,
+        69,
+        29,
+        33
+      ]
+    },
+    {
+      "codigo": 61215,
+      "estabelecimento": "bar do batata",
+      "linha1_lista": [
+        1,
+        25,
+        11,
+        8,
+        9
+      ],
+      "linha2_lista": [
+        18,
+        22,
+        32,
+        36,
+        44
+      ],
+      "linha3_lista": [
+        34,
+        23,
+        33,
+        10,
+        41
+      ]
+    },
+    {
+      "codigo": 10350,
+      "estabelecimento": "bar do batata",
+      "linha1_lista": [
+        69,
+        9,
+        15,
+        24,
+        37
+      ],
+      "linha2_lista": [
+        33,
+        21,
+        36,
+        22,
+        44
+      ],
+      "linha3_lista": [
+        6,
+        3,
+        2,
+        17,
+        18
+      ]
+    },
+    {
+      "codigo": 44620,
+      "estabelecimento": "bar do batata",
+      "linha1_lista": [
+        56,
+        8,
+        18,
+        25,
+        15
+      ],
+      "linha2_lista": [
+        44,
+        37,
+        22,
+        46,
+        41
+      ],
+      "linha3_lista": [
+        1,
+        63,
+        59,
+        36,
+        47
+      ]
+    },
+    {
+      "codigo": 62,
+      "estabelecimento": "bar do batata",
+      "linha1_lista": [
+        1,
+        42,
+        2,
+        45,
+        54
+      ],
+      "linha2_lista": [
+        40,
+        27,
+        36,
+        17,
+        53
+      ],
+      "linha3_lista": [
+        89,
+        85,
+        29,
+        6,
+        71
+      ]
+    },
+    {
+      "codigo": 55023,
+      "estabelecimento": "bar do batata",
+      "linha1_lista": [
+        61,
+        36,
+        18,
+        44,
+        37
+      ],
+      "linha2_lista": [
+        22,
+        62,
+        53,
+        63,
+        38
+      ],
+      "linha3_lista": [
+        5,
+        25,
+        21,
+        64,
+        14
+      ]
+    },
+    {
+      "codigo": 49993,
+      "estabelecimento": "bar do batata",
+      "linha1_lista": [
+        11,
+        1,
+        39,
+        37,
+        35
+      ],
+      "linha2_lista": [
+        31,
+        32,
+        2,
+        38,
+        8
+      ],
+      "linha3_lista": [
+        40,
+        26,
+        45,
+        22,
+        36
+      ]
+    },
+    {
+      "codigo": 85,
+      "estabelecimento": "bar do batata",
+      "linha1_lista": [
+        66,
+        1,
+        26,
+        75,
+        47
+      ],
+      "linha2_lista": [
+        45,
+        29,
+        36,
+        46,
+        10
+      ],
+      "linha3_lista": [
+        64,
+        65,
+        68,
+        44,
+        84
+      ]
+    },
+    {
+      "codigo": 65358,
+      "estabelecimento": "bar do batata",
+      "linha1_lista": [
+        26,
+        37,
+        7,
+        40,
+        31
+      ],
+      "linha2_lista": [
+        28,
+        1,
+        36,
+        18,
+        2
+      ],
+      "linha3_lista": [
+        44,
+        25,
+        13,
+        10,
+        14
+      ]
+    },
+    {
+      "codigo": 1477,
+      "estabelecimento": "bar do batata",
+      "linha1_lista": [
+        40,
+        48,
+        83,
+        87,
+        65
+      ],
+      "linha2_lista": [
+        10,
+        64,
+        61,
+        21,
+        62
+      ],
+      "linha3_lista": [
+        75,
+        22,
+        36,
+        26,
+        33
+      ]
+    },
+    {
+      "codigo": 28343,
+      "estabelecimento": "bar do batata",
+      "linha1_lista": [
+        27,
+        3,
+        57,
+        31,
+        14
+      ],
+      "linha2_lista": [
+        36,
+        22,
+        1,
+        44,
+        38
+      ],
+      "linha3_lista": [
+        48,
+        47,
+        60,
+        8,
+        53
+      ]
+    },
+    {
+      "codigo": 67057,
+      "estabelecimento": "bar do batata",
+      "linha1_lista": [
+        25,
+        70,
+        16,
+        55,
+        79
+      ],
+      "linha2_lista": [
+        2,
+        37,
+        36,
+        22,
+        9
+      ],
+      "linha3_lista": [
+        51,
+        10,
+        14,
+        44,
+        53
+      ]
+    },
+    {
+      "codigo": 3910,
+      "estabelecimento": "bar do batata",
+      "linha1_lista": [
+        18,
+        1,
+        40,
+        28,
+        2
+      ],
+      "linha2_lista": [
+        24,
+        36,
+        16,
+        22,
+        39
+      ],
+      "linha3_lista": [
+        17,
+        35,
+        12,
+        25,
+        37
+      ]
+    },
+    {
+      "codigo": 21126,
+      "estabelecimento": "bar do batata",
+      "linha1_lista": [
+        30,
+        33,
+        28,
+        31,
+        41
+      ],
+      "linha2_lista": [
+        22,
+        16,
+        18,
+        9,
+        14
+      ],
+      "linha3_lista": [
+        37,
+        36,
+        44,
+        25,
+        15
+      ]
+    },
+    {
+      "codigo": 47,
+      "estabelecimento": "bar do batata",
+      "linha1_lista": [
+        7,
+        76,
+        15,
+        39,
+        31
+      ],
+      "linha2_lista": [
+        37,
+        25,
+        51,
+        72,
+        65
+      ],
+      "linha3_lista": [
+        90,
+        68,
+        3,
+        11,
+        36
+      ]
+    },
+    {
+      "codigo": 5,
+      "estabelecimento": "bar do batata",
+      "linha1_lista": [
+        52,
+        54,
+        74,
+        36,
+        20
+      ],
+      "linha2_lista": [
+        57,
+        3,
+        27,
+        8,
+        63
+      ],
+      "linha3_lista": [
+        86,
+        46,
+        15,
+        72,
+        62
+      ]
+    },
+    {
+      "codigo": 41058,
+      "estabelecimento": "bar do batata",
+      "linha1_lista": [
+        22,
+        50,
+        36,
+        44,
+        1
+      ],
+      "linha2_lista": [
+        38,
+        58,
+        79,
+        49,
+        57
+      ],
+      "linha3_lista": [
+        8,
+        74,
+        21,
+        48,
+        77
+      ]
+    },
+    {
+      "codigo": 52282,
+      "estabelecimento": "bar do batata",
+      "linha1_lista": [
+        68,
+        6,
+        28,
+        9,
+        36
+      ],
+      "linha2_lista": [
+        1,
+        25,
+        4,
+        40,
+        44
+      ],
+      "linha3_lista": [
+        2,
+        34,
+        42,
+        22,
+        20
+      ]
+    },
+    {
+      "codigo": 52699,
+      "estabelecimento": "bar do batata",
+      "linha1_lista": [
+        27,
+        70,
+        22,
+        2,
+        25
+      ],
+      "linha2_lista": [
+        28,
+        40,
+        43,
+        31,
+        8
+      ],
+      "linha3_lista": [
+        23,
+        44,
+        34,
+        37,
+        1
+      ]
+    },
+    {
+      "codigo": 11951,
+      "estabelecimento": "bar do batata",
+      "linha1_lista": [
+        70,
+        28,
+        32,
+        44,
+        36
+      ],
+      "linha2_lista": [
+        37,
+        7,
+        24,
+        1,
+        11
+      ],
+      "linha3_lista": [
+        27,
+        22,
+        25,
+        34,
+        8
+      ]
+    },
+    {
+      "codigo": 14030,
+      "estabelecimento": "bar do batata",
+      "linha1_lista": [
+        37,
+        14,
+        35,
+        28,
+        36
+      ],
+      "linha2_lista": [
+        22,
+        40,
+        3,
+        4,
+        39
+      ],
+      "linha3_lista": [
+        44,
+        25,
+        23,
+        33,
+        6
+      ]
+    },
+    {
+      "codigo": 70589,
+      "estabelecimento": "bar do batata",
+      "linha1_lista": [
+        20,
+        31,
+        4,
+        37,
+        3
+      ],
+      "linha2_lista": [
+        44,
+        25,
+        36,
+        42,
+        40
+      ],
+      "linha3_lista": [
+        58,
+        22,
+        69,
+        17,
+        64
+      ]
+    },
+    {
+      "codigo": 30698,
+      "estabelecimento": "bar do batata",
+      "linha1_lista": [
+        8,
+        73,
+        27,
+        39,
+        3
+      ],
+      "linha2_lista": [
+        20,
+        44,
+        36,
+        22,
+        38
+      ],
+      "linha3_lista": [
+        2,
+        23,
+        1,
+        6,
+        25
+      ]
+    },
+    {
+      "codigo": 32113,
+      "estabelecimento": "bar do batata",
+      "linha1_lista": [
+        6,
+        7,
+        18,
+        42,
+        22
+      ],
+      "linha2_lista": [
+        32,
+        36,
+        44,
+        4,
+        40
+      ],
+      "linha3_lista": [
+        23,
+        37,
+        2,
+        25,
+        34
+      ]
+    },
+    {
+      "codigo": 21806,
+      "estabelecimento": "bar do batata",
+      "linha1_lista": [
+        61,
+        3,
+        1,
+        41,
+        27
+      ],
+      "linha2_lista": [
+        22,
+        4,
+        36,
+        34,
+        44
+      ],
+      "linha3_lista": [
+        30,
+        6,
+        23,
+        18,
+        9
+      ]
+    },
+    {
+      "codigo": 26439,
+      "estabelecimento": "bar do batata",
+      "linha1_lista": [
+        2,
+        34,
+        39,
+        38,
+        13
+      ],
+      "linha2_lista": [
+        5,
+        17,
+        12,
+        11,
+        18
+      ],
+      "linha3_lista": [
+        36,
+        44,
+        1,
+        22,
+        31
+      ]
+    },
+    {
+      "codigo": 35053,
+      "estabelecimento": "bar do batata",
+      "linha1_lista": [
+        44,
+        25,
+        8,
+        17,
+        24
+      ],
+      "linha2_lista": [
+        45,
+        37,
+        1,
+        36,
+        22
+      ],
+      "linha3_lista": [
+        30,
+        26,
+        32,
+        38,
+        20
+      ]
+    },
+    {
+      "codigo": 1536,
+      "estabelecimento": "bar do batata",
+      "linha1_lista": [
+        61,
+        30,
+        13,
+        45,
+        3
+      ],
+      "linha2_lista": [
+        31,
+        4,
+        37,
+        9,
+        23
+      ],
+      "linha3_lista": [
+        22,
+        26,
+        33,
+        36,
+        32
+      ]
+    },
+    {
+      "codigo": 265,
+      "estabelecimento": "bar do batata",
+      "linha1_lista": [
+        23,
+        22,
+        41,
+        36,
+        21
+      ],
+      "linha2_lista": [
+        4,
+        1,
+        68,
+        49,
+        82
+      ],
+      "linha3_lista": [
+        76,
+        12,
+        26,
+        11,
+        75
+      ]
+    },
+    {
+      "codigo": 1491,
+      "estabelecimento": "bar do batata",
+      "linha1_lista": [
+        47,
+        4,
+        14,
+        7,
+        3
+      ],
+      "linha2_lista": [
+        11,
+        10,
+        13,
+        26,
+        37
+      ],
+      "linha3_lista": [
+        18,
+        36,
+        20,
+        8,
+        22
+      ]
+    },
+    {
+      "codigo": 94,
+      "estabelecimento": "bar do batata",
+      "linha1_lista": [
+        56,
+        34,
+        3,
+        26,
+        36
+      ],
+      "linha2_lista": [
+        13,
+        66,
+        10,
+        76,
+        88
+      ],
+      "linha3_lista": [
+        77,
+        5,
+        8,
+        2,
+        53
+      ]
+    },
+    {
+      "codigo": 12052,
+      "estabelecimento": "bar do batata",
+      "linha1_lista": [
+        60,
+        11,
+        41,
+        44,
+        1
+      ],
+      "linha2_lista": [
+        38,
+        25,
+        22,
+        36,
+        20
+      ],
+      "linha3_lista": [
+        15,
+        43,
+        13,
+        63,
+        40
+      ]
+    },
+    {
+      "codigo": 298,
+      "estabelecimento": "bar do batata",
+      "linha1_lista": [
+        86,
+        45,
+        44,
+        4,
+        6
+      ],
+      "linha2_lista": [
+        36,
+        22,
+        37,
+        12,
+        30
+      ],
+      "linha3_lista": [
+        74,
+        31,
+        27,
+        7,
+        2
+      ]
+    },
+    {
+      "codigo": 21484,
+      "estabelecimento": "bar do batata",
+      "linha1_lista": [
+        5,
+        25,
+        4,
+        22,
+        6
+      ],
+      "linha2_lista": [
+        41,
+        59,
+        74,
+        21,
+        30
+      ],
+      "linha3_lista": [
+        44,
+        20,
+        36,
+        37,
+        49
+      ]
+    },
+    {
+      "codigo": 81063,
+      "estabelecimento": "bar do batata",
+      "linha1_lista": [
+        46,
+        74,
+        61,
+        31,
+        12
+      ],
+      "linha2_lista": [
+        67,
+        34,
+        29,
+        60,
+        62
+      ],
+      "linha3_lista": [
+        22,
+        37,
+        36,
+        63,
+        40
+      ]
+    },
+    {
+      "codigo": 70,
+      "estabelecimento": "bar do batata",
+      "linha1_lista": [
+        1,
+        54,
+        25,
+        39,
+        28
+      ],
+      "linha2_lista": [
+        35,
+        44,
+        31,
+        6,
+        3
+      ],
+      "linha3_lista": [
+        74,
+        90,
+        36,
+        57,
+        34
+      ]
+    },
+    {
+      "codigo": 7363,
+      "estabelecimento": "bar do batata",
+      "linha1_lista": [
+        22,
+        29,
+        2,
+        1,
+        12
+      ],
+      "linha2_lista": [
+        25,
+        37,
+        16,
+        23,
+        10
+      ],
+      "linha3_lista": [
+        17,
+        36,
+        6,
+        44,
+        4
+      ]
+    },
+    {
+      "codigo": 29,
+      "estabelecimento": "bar do batata",
+      "linha1_lista": [
+        1,
+        13,
+        27,
+        6,
+        25
+      ],
+      "linha2_lista": [
+        36,
+        29,
+        32,
+        22,
+        14
+      ],
+      "linha3_lista": [
+        16,
+        51,
+        55,
+        2,
+        43
+      ]
+    },
+    {
+      "codigo": 58725,
+      "estabelecimento": "bar do batata",
+      "linha1_lista": [
+        44,
+        3,
+        36,
+        4,
+        22
+      ],
+      "linha2_lista": [
+        8,
+        9,
+        32,
+        1,
+        16
+      ],
+      "linha3_lista": [
+        13,
+        43,
+        69,
+        20,
+        77
+      ]
+    },
+    {
+      "codigo": 51683,
+      "estabelecimento": "bar do batata",
+      "linha1_lista": [
+        25,
+        46,
+        16,
+        26,
+        12
+      ],
+      "linha2_lista": [
+        37,
+        22,
+        44,
+        29,
+        36
+      ],
+      "linha3_lista": [
+        18,
+        38,
+        4,
+        43,
+        21
+      ]
+    },
+    {
+      "codigo": 96135,
+      "estabelecimento": "bar do batata",
+      "linha1_lista": [
+        32,
+        13,
+        16,
+        26,
+        30
+      ],
+      "linha2_lista": [
+        18,
+        22,
+        40,
+        37,
+        44
+      ],
+      "linha3_lista": [
+        17,
+        39,
+        27,
+        55,
+        20
+      ]
+    },
+    {
+      "codigo": 8908,
+      "estabelecimento": "bar do batata",
+      "linha1_lista": [
+        89,
+        1,
+        57,
+        7,
+        34
+      ],
+      "linha2_lista": [
+        49,
+        13,
+        16,
+        25,
+        87
+      ],
+      "linha3_lista": [
+        22,
+        36,
+        48,
+        32,
+        44
+      ]
+    },
+    {
+      "codigo": 1440,
+      "estabelecimento": "bar do batata",
+      "linha1_lista": [
+        22,
+        36,
+        40,
+        59,
+        11
+      ],
+      "linha2_lista": [
+        44,
+        61,
+        46,
+        16,
+        17
+      ],
+      "linha3_lista": [
+        8,
+        74,
+        73,
+        67,
+        63
+      ]
+    },
+    {
+      "codigo": 36,
+      "estabelecimento": "bar do batata",
+      "linha1_lista": [
+        6,
+        74,
+        13,
+        3,
+        33
+      ],
+      "linha2_lista": [
+        64,
+        49,
+        39,
+        69,
+        45
+      ],
+      "linha3_lista": [
+        66,
+        34,
+        35,
+        36,
+        52
+      ]
+    },
+    {
+      "codigo": 112,
+      "estabelecimento": "bar do batata",
+      "linha1_lista": [
+        25,
+        48,
+        71,
+        47,
+        13
+      ],
+      "linha2_lista": [
+        42,
+        52,
+        56,
+        61,
+        80
+      ],
+      "linha3_lista": [
+        81,
+        36,
+        29,
+        16,
+        2
+      ]
+    },
+    {
+      "codigo": 286,
+      "estabelecimento": "bar do batata",
+      "linha1_lista": [
+        27,
+        22,
+        36,
+        46,
+        26
+      ],
+      "linha2_lista": [
+        54,
+        1,
+        14,
+        90,
+        2
+      ],
+      "linha3_lista": [
+        19,
+        53,
+        72,
+        6,
+        86
+      ]
+    },
+    {
+      "codigo": 65213,
+      "estabelecimento": "bar do batata",
+      "linha1_lista": [
+        19,
+        11,
+        25,
+        40,
+        39
+      ],
+      "linha2_lista": [
+        44,
+        41,
+        36,
+        4,
+        21
+      ],
+      "linha3_lista": [
+        30,
+        37,
+        22,
+        24,
+        20
+      ]
+    },
+    {
+      "codigo": 59029,
+      "estabelecimento": "bar do batata",
+      "linha1_lista": [
+        3,
+        51,
+        30,
+        45,
+        8
+      ],
+      "linha2_lista": [
+        28,
+        19,
+        35,
+        43,
+        2
+      ],
+      "linha3_lista": [
+        4,
+        13,
+        44,
+        36,
+        22
+      ]
+    },
+    {
+      "codigo": 51173,
+      "estabelecimento": "bar do batata",
+      "linha1_lista": [
+        18,
+        4,
+        29,
+        22,
+        36
+      ],
+      "linha2_lista": [
+        37,
+        35,
+        1,
+        14,
+        15
+      ],
+      "linha3_lista": [
+        44,
+        40,
+        34,
+        32,
+        43
+      ]
+    },
+    {
+      "codigo": 3560,
+      "estabelecimento": "bar do batata",
+      "linha1_lista": [
+        86,
+        17,
+        9,
+        39,
+        44
+      ],
+      "linha2_lista": [
+        15,
+        18,
+        23,
+        40,
+        38
+      ],
+      "linha3_lista": [
+        36,
+        37,
+        8,
+        22,
+        13
+      ]
+    },
+    {
+      "codigo": 76,
+      "estabelecimento": "bar do batata",
+      "linha1_lista": [
+        8,
+        9,
+        22,
+        71,
+        17
+      ],
+      "linha2_lista": [
+        2,
+        82,
+        36,
+        46,
+        3
+      ],
+      "linha3_lista": [
+        40,
+        6,
+        4,
+        38,
+        34
+      ]
+    },
+    {
+      "codigo": 597,
+      "estabelecimento": "bar do batata",
+      "linha1_lista": [
+        32,
+        62,
+        90,
+        73,
+        54
+      ],
+      "linha2_lista": [
+        12,
+        1,
+        36,
+        78,
+        22
+      ],
+      "linha3_lista": [
+        67,
+        86,
+        31,
+        24,
+        53
+      ]
+    },
+    {
+      "codigo": 30295,
+      "estabelecimento": "bar do batata",
+      "linha1_lista": [
+        15,
+        12,
+        37,
+        29,
+        26
+      ],
+      "linha2_lista": [
+        42,
+        43,
+        22,
+        39,
+        35
+      ],
+      "linha3_lista": [
+        40,
+        25,
+        36,
+        44,
+        81
+      ]
+    },
+    {
+      "codigo": 104,
+      "estabelecimento": "bar do batata",
+      "linha1_lista": [
+        13,
+        6,
+        87,
+        9,
+        33
+      ],
+      "linha2_lista": [
+        75,
+        20,
+        25,
+        70,
+        26
+      ],
+      "linha3_lista": [
+        12,
+        44,
+        36,
+        86,
+        46
+      ]
+    },
+    {
+      "codigo": 73078,
+      "estabelecimento": "bar do batata",
+      "linha1_lista": [
+        43,
+        28,
+        16,
+        41,
+        14
+      ],
+      "linha2_lista": [
+        40,
+        37,
+        36,
+        44,
+        22
+      ],
+      "linha3_lista": [
+        30,
+        2,
+        80,
+        58,
+        6
+      ]
+    },
+    {
+      "codigo": 120,
+      "estabelecimento": "bar do batata",
+      "linha1_lista": [
+        26,
+        66,
+        11,
+        30,
+        1
+      ],
+      "linha2_lista": [
+        16,
+        24,
+        36,
+        21,
+        40
+      ],
+      "linha3_lista": [
+        18,
+        7,
+        31,
+        34,
+        32
+      ]
+    },
+    {
+      "codigo": 2120,
+      "estabelecimento": "bar do batata",
+      "linha1_lista": [
+        6,
+        61,
+        37,
+        11,
+        55
+      ],
+      "linha2_lista": [
+        30,
+        36,
+        71,
+        81,
+        22
+      ],
+      "linha3_lista": [
+        31,
+        12,
+        72,
+        35,
+        25
+      ]
+    },
+    {
+      "codigo": 52,
+      "estabelecimento": "bar do batata",
+      "linha1_lista": [
+        48,
+        13,
+        36,
+        4,
+        89
+      ],
+      "linha2_lista": [
+        47,
+        27,
+        72,
+        26,
+        55
+      ],
+      "linha3_lista": [
+        21,
+        44,
+        34,
+        85,
+        90
+      ]
+    },
+    {
+      "codigo": 34234,
+      "estabelecimento": "bar do batata",
+      "linha1_lista": [
+        7,
+        78,
+        87,
+        28,
+        50
+      ],
+      "linha2_lista": [
+        27,
+        38,
+        79,
+        1,
+        61
+      ],
+      "linha3_lista": [
+        36,
+        4,
+        22,
+        44,
+        90
+      ]
+    },
+    {
+      "codigo": 47030,
+      "estabelecimento": "bar do batata",
+      "linha1_lista": [
+        31,
+        8,
+        20,
+        42,
+        12
+      ],
+      "linha2_lista": [
+        22,
+        36,
+        26,
+        44,
+        2
+      ],
+      "linha3_lista": [
+        50,
+        72,
+        34,
+        19,
+        14
+      ]
+    },
+    {
+      "codigo": 52188,
+      "estabelecimento": "bar do batata",
+      "linha1_lista": [
+        2,
+        30,
+        44,
+        36,
+        22
+      ],
+      "linha2_lista": [
+        48,
+        34,
+        13,
+        37,
+        82
+      ],
+      "linha3_lista": [
+        87,
+        90,
+        59,
+        45,
+        73
+      ]
+    },
+    {
+      "codigo": 723,
+      "estabelecimento": "bar do batata",
+      "linha1_lista": [
+        7,
+        35,
+        22,
+        36,
+        32
+      ],
+      "linha2_lista": [
+        1,
+        2,
+        3,
+        41,
+        20
+      ],
+      "linha3_lista": [
+        38,
+        40,
+        6,
+        31,
+        8
+      ]
+    },
+    {
+      "codigo": 744,
+      "estabelecimento": "bar do batata",
+      "linha1_lista": [
+        43,
+        3,
+        10,
+        29,
+        24
+      ],
+      "linha2_lista": [
+        32,
+        28,
+        17,
+        33,
+        8
+      ],
+      "linha3_lista": [
+        2,
+        22,
+        1,
+        36,
+        35
+      ]
+    },
+    {
+      "codigo": 54,
+      "estabelecimento": "bar do batata",
+      "linha1_lista": [
+        40,
+        14,
+        13,
+        58,
+        11
+      ],
+      "linha2_lista": [
+        82,
+        64,
+        47,
+        48,
+        7
+      ],
+      "linha3_lista": [
+        38,
+        56,
+        36,
+        55,
+        30
+      ]
+    },
+    {
+      "codigo": 35146,
+      "estabelecimento": "bar do batata",
+      "linha1_lista": [
+        6,
+        13,
+        24,
+        86,
+        76
+      ],
+      "linha2_lista": [
+        49,
+        47,
+        63,
+        31,
+        80
+      ],
+      "linha3_lista": [
+        36,
+        61,
+        55,
+        22,
+        44
+      ]
+    },
+    {
+      "codigo": 71789,
+      "estabelecimento": "bar do batata",
+      "linha1_lista": [
+        46,
+        24,
+        15,
+        7,
+        42
+      ],
+      "linha2_lista": [
+        39,
+        21,
+        11,
+        41,
+        18
+      ],
+      "linha3_lista": [
+        22,
+        40,
+        20,
+        37,
+        44
+      ]
+    },
+    {
+      "codigo": 38919,
+      "estabelecimento": "bar do batata",
+      "linha1_lista": [
+        22,
+        83,
+        30,
+        44,
+        36
+      ],
+      "linha2_lista": [
+        25,
+        19,
+        4,
+        20,
+        43
+      ],
+      "linha3_lista": [
+        29,
+        67,
+        79,
+        18,
+        42
+      ]
+    },
+    {
+      "codigo": 36035,
+      "estabelecimento": "bar do batata",
+      "linha1_lista": [
+        21,
+        70,
+        27,
+        35,
+        16
+      ],
+      "linha2_lista": [
+        36,
+        44,
+        29,
+        41,
+        22
+      ],
+      "linha3_lista": [
+        12,
+        15,
+        13,
+        32,
+        1
+      ]
+    },
+    {
+      "codigo": 50,
+      "estabelecimento": "bar do batata",
+      "linha1_lista": [
+        12,
+        5,
+        47,
+        13,
+        37
+      ],
+      "linha2_lista": [
+        39,
+        42,
+        4,
+        24,
+        33
+      ],
+      "linha3_lista": [
+        34,
+        16,
+        41,
+        38,
+        36
+      ]
+    },
+    {
+      "codigo": 1653,
+      "estabelecimento": "bar do batata",
+      "linha1_lista": [
+        38,
+        7,
+        6,
+        21,
+        42
+      ],
+      "linha2_lista": [
+        39,
+        34,
+        48,
+        65,
+        52
+      ],
+      "linha3_lista": [
+        36,
+        22,
+        47,
+        66,
+        64
+      ]
+    },
+    {
+      "codigo": 58,
+      "estabelecimento": "bar do batata",
+      "linha1_lista": [
+        55,
+        20,
+        14,
+        38,
+        81
+      ],
+      "linha2_lista": [
+        83,
+        35,
+        72,
+        57,
+        36
+      ],
+      "linha3_lista": [
+        33,
+        68,
+        61,
+        51,
+        22
+      ]
+    },
+    {
+      "codigo": 28,
+      "estabelecimento": "bar do batata",
+      "linha1_lista": [
+        17,
+        49,
+        61,
+        30,
+        86
+      ],
+      "linha2_lista": [
+        68,
+        67,
+        6,
+        85,
+        36
+      ],
+      "linha3_lista": [
+        66,
+        4,
+        73,
+        11,
+        14
+      ]
+    },
+    {
+      "codigo": 15051,
+      "estabelecimento": "bar do batata",
+      "linha1_lista": [
+        22,
+        44,
+        36,
+        14,
+        10
+      ],
+      "linha2_lista": [
+        12,
+        27,
+        18,
+        17,
+        7
+      ],
+      "linha3_lista": [
+        13,
+        42,
+        4,
+        29,
+        23
+      ]
+    },
+    {
+      "codigo": 1179,
+      "estabelecimento": "bar do batata",
+      "linha1_lista": [
+        39,
+        43,
+        28,
+        3,
+        38
+      ],
+      "linha2_lista": [
+        36,
+        21,
+        2,
+        22,
+        14
+      ],
+      "linha3_lista": [
+        30,
+        12,
+        5,
+        29,
+        8
+      ]
+    },
+    {
+      "codigo": 78,
+      "estabelecimento": "bar do batata",
+      "linha1_lista": [
+        13,
+        46,
+        27,
+        28,
+        20
+      ],
+      "linha2_lista": [
+        15,
+        35,
+        17,
+        6,
+        69
+      ],
+      "linha3_lista": [
+        71,
+        84,
+        36,
+        45,
+        22
+      ]
+    },
+    {
+      "codigo": 54685,
+      "estabelecimento": "bar do batata",
+      "linha1_lista": [
+        46,
+        22,
+        44,
+        36,
+        43
+      ],
+      "linha2_lista": [
+        39,
+        29,
+        89,
+        14,
+        10
+      ],
+      "linha3_lista": [
+        47,
+        79,
+        74,
+        80,
+        66
+      ]
+    },
+    {
+      "codigo": 4,
+      "estabelecimento": "bar do batata",
+      "linha1_lista": [
+        59,
+        73,
+        1,
+        32,
+        68
+      ],
+      "linha2_lista": [
+        36,
+        13,
+        30,
+        43,
+        54
+      ],
+      "linha3_lista": [
+        24,
+        31,
+        79,
+        16,
+        14
+      ]
+    },
+    {
+      "codigo": 1872,
+      "estabelecimento": "bar do batata",
+      "linha1_lista": [
+        35,
+        29,
+        41,
+        23,
+        28
+      ],
+      "linha2_lista": [
+        22,
+        43,
+        31,
+        36,
+        16
+      ],
+      "linha3_lista": [
+        42,
+        13,
+        30,
+        32,
+        20
+      ]
+    }
+  ],
+  "turnos": [
+    [
+      {
+        "codigo": 4,
+        "posicao": 1
+      },
+      {
+        "codigo": 5,
+        "posicao": 2
+      },
+      {
+        "codigo": 28,
+        "posicao": 1
+      },
+      {
+        "codigo": 29,
+        "posicao": 1
+      },
+      {
+        "codigo": 36,
+        "posicao": 0
+      },
+      {
+        "codigo": 47,
+        "posicao": 0
+      },
+      {
+        "codigo": 50,
+        "posicao": 0
+      },
+      {
+        "codigo": 52,
+        "posicao": 2
+      },
+      {
+        "codigo": 54,
+        "posicao": 0
+      },
+      {
+        "codigo": 57,
+        "posicao": 2
+      },
+      {
+        "codigo": 58,
+        "posicao": 1
+      },
+      {
+        "codigo": 62,
+        "posicao": 1
+      },
+      {
+        "codigo": 70,
+        "posicao": 0
+      },
+      {
+        "codigo": 76,
+        "posicao": 1
+      },
+      {
+        "codigo": 78,
+        "posicao": 0
+      },
+      {
+        "codigo": 85,
+        "posicao": 1
+      },
+      {
+        "codigo": 94,
+        "posicao": 2
+      },
+      {
+        "codigo": 104,
+        "posicao": 0
+      },
+      {
+        "codigo": 112,
+        "posicao": 0
+      },
+      {
+        "codigo": 120,
+        "posicao": 1
+      }
     ],
-    "cartelas": [
-        {
-            "codigo": 9650,
-            "estabelecimento": "Bar do Batata",
-            "linha1_lista": [
-                "5",
-                "24",
-                "39",
-                "60",
-                "75"
-            ],
-            "linha2_lista": [
-                "16",
-                "33",
-                "42",
-                "68",
-                "79"
-            ],
-            "linha3_lista": [
-                "17",
-                "35",
-                "45",
-                "71",
-                "83"
-            ]
-        },
-        {
-            "codigo": 9651,
-            "estabelecimento": "Bar do Batata",
-            "linha1_lista": [
-                "5",
-                "23",
-                "43",
-                "58",
-                "73"
-            ],
-            "linha2_lista": [
-                "13",
-                "29",
-                "46",
-                "63",
-                "83"
-            ],
-            "linha3_lista": [
-                "17",
-                "36",
-                "51",
-                "72",
-                "88"
-            ]
-        },
-        {
-            "codigo": 9652,
-            "estabelecimento": "Bar do Batata",
-            "linha1_lista": [
-                "1",
-                "33",
-                "38",
-                "56",
-                "77"
-            ],
-            "linha2_lista": [
-                "3",
-                "35",
-                "46",
-                "58",
-                "82"
-            ],
-            "linha3_lista": [
-                "13",
-                "36",
-                "50",
-                "66",
-                "85"
-            ]
-        },
-        {
-            "codigo": 9653,
-            "estabelecimento": "Bar do Batata",
-            "linha1_lista": [
-                "6",
-                "23",
-                "39",
-                "55",
-                "74"
-            ],
-            "linha2_lista": [
-                "10",
-                "29",
-                "41",
-                "59",
-                "82"
-            ],
-            "linha3_lista": [
-                "11",
-                "32",
-                "47",
-                "66",
-                "86"
-            ]
-        },
-        {
-            "codigo": 9654,
-            "estabelecimento": "Bar do Batata",
-            "linha1_lista": [
-                "5",
-                "28",
-                "37",
-                "57",
-                "77"
-            ],
-            "linha2_lista": [
-                "11",
-                "31",
-                "50",
-                "60",
-                "78"
-            ],
-            "linha3_lista": [
-                "14",
-                "32",
-                "52",
-                "68",
-                "86"
-            ]
-        }
+    [
+      {
+        "codigo": 29,
+        "posicao": 1
+      },
+      {
+        "codigo": 78,
+        "posicao": 0
+      },
+      {
+        "codigo": 265,
+        "posicao": 2
+      },
+      {
+        "codigo": 286,
+        "posicao": 2
+      },
+      {
+        "codigo": 298,
+        "posicao": 1
+      },
+      {
+        "codigo": 492,
+        "posicao": 1
+      },
+      {
+        "codigo": 597,
+        "posicao": 1
+      },
+      {
+        "codigo": 723,
+        "posicao": 2
+      },
+      {
+        "codigo": 744,
+        "posicao": 0
+      },
+      {
+        "codigo": 1179,
+        "posicao": 1
+      },
+      {
+        "codigo": 1332,
+        "posicao": 2
+      },
+      {
+        "codigo": 1373,
+        "posicao": 0
+      },
+      {
+        "codigo": 1440,
+        "posicao": 2
+      },
+      {
+        "codigo": 1477,
+        "posicao": 0
+      },
+      {
+        "codigo": 1491,
+        "posicao": 0
+      },
+      {
+        "codigo": 1536,
+        "posicao": 0
+      },
+      {
+        "codigo": 1653,
+        "posicao": 0
+      },
+      {
+        "codigo": 1809,
+        "posicao": 1
+      },
+      {
+        "codigo": 1872,
+        "posicao": 1
+      },
+      {
+        "codigo": 2120,
+        "posicao": 1
+      }
+    ],
+    [
+      {
+        "codigo": 8908,
+        "posicao": 0
+      },
+      {
+        "codigo": 10350,
+        "posicao": 1
+      },
+      {
+        "codigo": 15051,
+        "posicao": 2
+      },
+      {
+        "codigo": 21806,
+        "posicao": 1
+      },
+      {
+        "codigo": 26439,
+        "posicao": 0
+      },
+      {
+        "codigo": 28343,
+        "posicao": 1
+      },
+      {
+        "codigo": 30698,
+        "posicao": 1
+      },
+      {
+        "codigo": 34234,
+        "posicao": 0
+      },
+      {
+        "codigo": 35146,
+        "posicao": 0
+      },
+      {
+        "codigo": 36035,
+        "posicao": 1
+      },
+      {
+        "codigo": 38919,
+        "posicao": 2
+      },
+      {
+        "codigo": 41058,
+        "posicao": 2
+      },
+      {
+        "codigo": 47030,
+        "posicao": 1
+      },
+      {
+        "codigo": 51683,
+        "posicao": 1
+      },
+      {
+        "codigo": 52188,
+        "posicao": 2
+      },
+      {
+        "codigo": 54685,
+        "posicao": 2
+      },
+      {
+        "codigo": 56062,
+        "posicao": 2
+      },
+      {
+        "codigo": 58725,
+        "posicao": 2
+      },
+      {
+        "codigo": 59029,
+        "posicao": 0
+      },
+      {
+        "codigo": 61215,
+        "posicao": 1
+      }
+    ],
+    [
+      {
+        "codigo": 51683,
+        "posicao": 1
+      },
+      {
+        "codigo": 73078,
+        "posicao": 1
+      },
+      {
+        "codigo": 8908,
+        "posicao": 0
+      },
+      {
+        "codigo": 10350,
+        "posicao": 1
+      },
+      {
+        "codigo": 15051,
+        "posicao": 2
+      },
+      {
+        "codigo": 21806,
+        "posicao": 1
+      },
+      {
+        "codigo": 26439,
+        "posicao": 0
+      },
+      {
+        "codigo": 28343,
+        "posicao": 1
+      },
+      {
+        "codigo": 30698,
+        "posicao": 1
+      },
+      {
+        "codigo": 34234,
+        "posicao": 0
+      },
+      {
+        "codigo": 35146,
+        "posicao": 0
+      },
+      {
+        "codigo": 36035,
+        "posicao": 1
+      },
+      {
+        "codigo": 38919,
+        "posicao": 2
+      },
+      {
+        "codigo": 41058,
+        "posicao": 2
+      },
+      {
+        "codigo": 47030,
+        "posicao": 1
+      },
+      {
+        "codigo": 52188,
+        "posicao": 2
+      },
+      {
+        "codigo": 54685,
+        "posicao": 2
+      },
+      {
+        "codigo": 56062,
+        "posicao": 2
+      },
+      {
+        "codigo": 58725,
+        "posicao": 2
+      },
+      {
+        "codigo": 59029,
+        "posicao": 0
+      }
+    ],
+    [
+      {
+        "codigo": 73078,
+        "posicao": 1
+      },
+      {
+        "codigo": 51683,
+        "posicao": 1
+      },
+      {
+        "codigo": 81063,
+        "posicao": 0
+      },
+      {
+        "codigo": 14700,
+        "posicao": 0
+      },
+      {
+        "codigo": 71789,
+        "posicao": 0
+      },
+      {
+        "codigo": 96135,
+        "posicao": 1
+      },
+      {
+        "codigo": 8908,
+        "posicao": 0
+      },
+      {
+        "codigo": 10350,
+        "posicao": 1
+      },
+      {
+        "codigo": 15051,
+        "posicao": 2
+      },
+      {
+        "codigo": 21806,
+        "posicao": 1
+      },
+      {
+        "codigo": 26439,
+        "posicao": 0
+      },
+      {
+        "codigo": 28343,
+        "posicao": 1
+      },
+      {
+        "codigo": 30698,
+        "posicao": 1
+      },
+      {
+        "codigo": 34234,
+        "posicao": 0
+      },
+      {
+        "codigo": 35146,
+        "posicao": 0
+      },
+      {
+        "codigo": 36035,
+        "posicao": 1
+      },
+      {
+        "codigo": 38919,
+        "posicao": 2
+      },
+      {
+        "codigo": 41058,
+        "posicao": 2
+      },
+      {
+        "codigo": 47030,
+        "posicao": 1
+      },
+      {
+        "codigo": 52188,
+        "posicao": 2
+      }
+    ],
+    [
+      {
+        "codigo": 15106,
+        "posicao": 3
+      },
+      {
+        "codigo": 30295,
+        "posicao": 3
+      },
+      {
+        "codigo": 32113,
+        "posicao": 3
+      },
+      {
+        "codigo": 70589,
+        "posicao": 3
+      },
+      {
+        "codigo": 65213,
+        "posicao": 3
+      },
+      {
+        "codigo": 14030,
+        "posicao": 3
+      },
+      {
+        "codigo": 28132,
+        "posicao": 3
+      },
+      {
+        "codigo": 73078,
+        "posicao": 3
+      },
+      {
+        "codigo": 51683,
+        "posicao": 3
+      },
+      {
+        "codigo": 3560,
+        "posicao": 3
+      },
+      {
+        "codigo": 35053,
+        "posicao": 3
+      },
+      {
+        "codigo": 67057,
+        "posicao": 3
+      },
+      {
+        "codigo": 10135,
+        "posicao": 3
+      },
+      {
+        "codigo": 21126,
+        "posicao": 3
+      },
+      {
+        "codigo": 21484,
+        "posicao": 3
+      },
+      {
+        "codigo": 22770,
+        "posicao": 3
+      },
+      {
+        "codigo": 33143,
+        "posicao": 3
+      },
+      {
+        "codigo": 44620,
+        "posicao": 3
+      },
+      {
+        "codigo": 55023,
+        "posicao": 3
+      },
+      {
+        "codigo": 24618,
+        "posicao": 3
+      }
+    ],
+    [
+      {
+        "codigo": 15106,
+        "posicao": 3
+      },
+      {
+        "codigo": 30295,
+        "posicao": 3
+      },
+      {
+        "codigo": 32113,
+        "posicao": 3
+      },
+      {
+        "codigo": 70589,
+        "posicao": 3
+      },
+      {
+        "codigo": 65213,
+        "posicao": 3
+      },
+      {
+        "codigo": 14030,
+        "posicao": 3
+      },
+      {
+        "codigo": 28132,
+        "posicao": 3
+      },
+      {
+        "codigo": 35053,
+        "posicao": 3
+      },
+      {
+        "codigo": 22770,
+        "posicao": 3
+      },
+      {
+        "codigo": 33143,
+        "posicao": 3
+      },
+      {
+        "codigo": 44620,
+        "posicao": 3
+      },
+      {
+        "codigo": 24618,
+        "posicao": 3
+      },
+      {
+        "codigo": 20506,
+        "posicao": 3
+      },
+      {
+        "codigo": 78111,
+        "posicao": 3
+      },
+      {
+        "codigo": 3910,
+        "posicao": 3
+      },
+      {
+        "codigo": 12052,
+        "posicao": 3
+      },
+      {
+        "codigo": 51173,
+        "posicao": 3
+      },
+      {
+        "codigo": 7363,
+        "posicao": 3
+      },
+      {
+        "codigo": 11951,
+        "posicao": 3
+      },
+      {
+        "codigo": 16503,
+        "posicao": 3
+      }
+    ],
+    [
+      {
+        "codigo": 32113,
+        "posicao": 3
+      },
+      {
+        "codigo": 28132,
+        "posicao": 3
+      },
+      {
+        "codigo": 22770,
+        "posicao": 3
+      },
+      {
+        "codigo": 33143,
+        "posicao": 3
+      },
+      {
+        "codigo": 20506,
+        "posicao": 3
+      },
+      {
+        "codigo": 78111,
+        "posicao": 3
+      },
+      {
+        "codigo": 3910,
+        "posicao": 3
+      },
+      {
+        "codigo": 7363,
+        "posicao": 3
+      },
+      {
+        "codigo": 16503,
+        "posicao": 3
+      },
+      {
+        "codigo": 46057,
+        "posicao": 3
+      },
+      {
+        "codigo": 33552,
+        "posicao": 3
+      },
+      {
+        "codigo": 68200,
+        "posicao": 3
+      },
+      {
+        "codigo": 88517,
+        "posicao": 3
+      },
+      {
+        "codigo": 52699,
+        "posicao": 3
+      },
+      {
+        "codigo": 52282,
+        "posicao": 3
+      },
+      {
+        "codigo": 58933,
+        "posicao": 3
+      },
+      {
+        "codigo": 65358,
+        "posicao": 3
+      },
+      {
+        "codigo": 74805,
+        "posicao": 3
+      },
+      {
+        "codigo": 15106,
+        "posicao": 3
+      },
+      {
+        "codigo": 30295,
+        "posicao": 3
+      }
+    ],
+    [
+      {
+        "codigo": 20506,
+        "posicao": 3
+      },
+      {
+        "codigo": 33552,
+        "posicao": 3
+      },
+      {
+        "codigo": 88517,
+        "posicao": 3
+      },
+      {
+        "codigo": 74805,
+        "posicao": 3
+      },
+      {
+        "codigo": 32113,
+        "posicao": 3
+      },
+      {
+        "codigo": 28132,
+        "posicao": 3
+      },
+      {
+        "codigo": 22770,
+        "posicao": 3
+      },
+      {
+        "codigo": 33143,
+        "posicao": 3
+      },
+      {
+        "codigo": 78111,
+        "posicao": 3
+      },
+      {
+        "codigo": 3910,
+        "posicao": 3
+      },
+      {
+        "codigo": 7363,
+        "posicao": 3
+      },
+      {
+        "codigo": 16503,
+        "posicao": 3
+      },
+      {
+        "codigo": 46057,
+        "posicao": 3
+      },
+      {
+        "codigo": 68200,
+        "posicao": 3
+      },
+      {
+        "codigo": 52699,
+        "posicao": 3
+      },
+      {
+        "codigo": 52282,
+        "posicao": 3
+      },
+      {
+        "codigo": 58933,
+        "posicao": 3
+      },
+      {
+        "codigo": 65358,
+        "posicao": 3
+      },
+      {
+        "codigo": 65213,
+        "posicao": 3
+      },
+      {
+        "codigo": 12052,
+        "posicao": 3
+      }
+    ],
+    [
+      {
+        "codigo": 20506,
+        "posicao": 3
+      },
+      {
+        "codigo": 33552,
+        "posicao": 3
+      },
+      {
+        "codigo": 88517,
+        "posicao": 3
+      },
+      {
+        "codigo": 74805,
+        "posicao": 3
+      },
+      {
+        "codigo": 28132,
+        "posicao": 3
+      },
+      {
+        "codigo": 68200,
+        "posicao": 3
+      },
+      {
+        "codigo": 35789,
+        "posicao": 3
+      },
+      {
+        "codigo": 95924,
+        "posicao": 3
+      },
+      {
+        "codigo": 49993,
+        "posicao": 3
+      },
+      {
+        "codigo": 19265,
+        "posicao": 3
+      },
+      {
+        "codigo": 32113,
+        "posicao": 3
+      },
+      {
+        "codigo": 22770,
+        "posicao": 3
+      },
+      {
+        "codigo": 33143,
+        "posicao": 3
+      },
+      {
+        "codigo": 78111,
+        "posicao": 3
+      },
+      {
+        "codigo": 3910,
+        "posicao": 3
+      },
+      {
+        "codigo": 7363,
+        "posicao": 3
+      },
+      {
+        "codigo": 16503,
+        "posicao": 3
+      },
+      {
+        "codigo": 46057,
+        "posicao": 3
+      },
+      {
+        "codigo": 52699,
+        "posicao": 3
+      },
+      {
+        "codigo": 52282,
+        "posicao": 3
+      }
+    ],
+    [
+      {
+        "codigo": 20506,
+        "posicao": 3
+      },
+      {
+        "codigo": 33552,
+        "posicao": 3
+      },
+      {
+        "codigo": 88517,
+        "posicao": 3
+      },
+      {
+        "codigo": 74805,
+        "posicao": 3
+      },
+      {
+        "codigo": 28132,
+        "posicao": 3
+      },
+      {
+        "codigo": 68200,
+        "posicao": 3
+      },
+      {
+        "codigo": 35789,
+        "posicao": 3
+      },
+      {
+        "codigo": 95924,
+        "posicao": 3
+      },
+      {
+        "codigo": 49993,
+        "posicao": 3
+      },
+      {
+        "codigo": 19265,
+        "posicao": 3
+      },
+      {
+        "codigo": 16503,
+        "posicao": 3
+      },
+      {
+        "codigo": 58933,
+        "posicao": 3
+      },
+      {
+        "codigo": 14887,
+        "posicao": 3
+      },
+      {
+        "codigo": 53874,
+        "posicao": 3
+      },
+      {
+        "codigo": 38220,
+        "posicao": 3
+      },
+      {
+        "codigo": 37502,
+        "posicao": 3
+      },
+      {
+        "codigo": 90325,
+        "posicao": 3
+      },
+      {
+        "codigo": 39135,
+        "posicao": 3
+      },
+      {
+        "codigo": 39503,
+        "posicao": 3
+      },
+      {
+        "codigo": 63340,
+        "posicao": 3
+      }
+    ],
+    [
+      {
+        "codigo": 68200,
+        "posicao": 3
+      },
+      {
+        "codigo": 20506,
+        "posicao": 3
+      },
+      {
+        "codigo": 33552,
+        "posicao": 3
+      },
+      {
+        "codigo": 88517,
+        "posicao": 3
+      },
+      {
+        "codigo": 74805,
+        "posicao": 3
+      },
+      {
+        "codigo": 28132,
+        "posicao": 3
+      },
+      {
+        "codigo": 35789,
+        "posicao": 3
+      },
+      {
+        "codigo": 95924,
+        "posicao": 3
+      },
+      {
+        "codigo": 49993,
+        "posicao": 3
+      },
+      {
+        "codigo": 19265,
+        "posicao": 3
+      },
+      {
+        "codigo": 16503,
+        "posicao": 3
+      },
+      {
+        "codigo": 58933,
+        "posicao": 3
+      },
+      {
+        "codigo": 14887,
+        "posicao": 3
+      },
+      {
+        "codigo": 53874,
+        "posicao": 3
+      },
+      {
+        "codigo": 38220,
+        "posicao": 3
+      },
+      {
+        "codigo": 37502,
+        "posicao": 3
+      },
+      {
+        "codigo": 90325,
+        "posicao": 3
+      },
+      {
+        "codigo": 39135,
+        "posicao": 3
+      },
+      {
+        "codigo": 39503,
+        "posicao": 3
+      },
+      {
+        "codigo": 63340,
+        "posicao": 3
+      }
+    ],
+    [
+      {
+        "codigo": 68200,
+        "posicao": 3
+      },
+      {
+        "codigo": 39503,
+        "posicao": 3
+      },
+      {
+        "codigo": 28039,
+        "posicao": 3
+      },
+      {
+        "codigo": 20506,
+        "posicao": 3
+      },
+      {
+        "codigo": 33552,
+        "posicao": 3
+      },
+      {
+        "codigo": 88517,
+        "posicao": 3
+      },
+      {
+        "codigo": 74805,
+        "posicao": 3
+      },
+      {
+        "codigo": 28132,
+        "posicao": 3
+      },
+      {
+        "codigo": 35789,
+        "posicao": 3
+      },
+      {
+        "codigo": 95924,
+        "posicao": 3
+      },
+      {
+        "codigo": 49993,
+        "posicao": 3
+      },
+      {
+        "codigo": 19265,
+        "posicao": 3
+      },
+      {
+        "codigo": 16503,
+        "posicao": 3
+      },
+      {
+        "codigo": 58933,
+        "posicao": 3
+      },
+      {
+        "codigo": 14887,
+        "posicao": 3
+      },
+      {
+        "codigo": 53874,
+        "posicao": 3
+      },
+      {
+        "codigo": 38220,
+        "posicao": 3
+      },
+      {
+        "codigo": 37502,
+        "posicao": 3
+      },
+      {
+        "codigo": 90325,
+        "posicao": 3
+      },
+      {
+        "codigo": 39135,
+        "posicao": 3
+      }
+    ],
+    [
+      {
+        "codigo": 28039,
+        "posicao": 3
+      },
+      {
+        "codigo": 68200,
+        "posicao": 3
+      },
+      {
+        "codigo": 39503,
+        "posicao": 3
+      },
+      {
+        "codigo": 20506,
+        "posicao": 3
+      },
+      {
+        "codigo": 33552,
+        "posicao": 3
+      },
+      {
+        "codigo": 28132,
+        "posicao": 3
+      },
+      {
+        "codigo": 35789,
+        "posicao": 3
+      },
+      {
+        "codigo": 90325,
+        "posicao": 3
+      },
+      {
+        "codigo": 77490,
+        "posicao": 3
+      },
+      {
+        "codigo": 76097,
+        "posicao": 3
+      },
+      {
+        "codigo": 4464,
+        "posicao": 3
+      },
+      {
+        "codigo": 45010,
+        "posicao": 3
+      },
+      {
+        "codigo": 15412,
+        "posicao": 3
+      },
+      {
+        "codigo": 11930,
+        "posicao": 3
+      },
+      {
+        "codigo": 39766,
+        "posicao": 3
+      },
+      {
+        "codigo": 88517,
+        "posicao": 3
+      },
+      {
+        "codigo": 74805,
+        "posicao": 3
+      },
+      {
+        "codigo": 95924,
+        "posicao": 3
+      },
+      {
+        "codigo": 49993,
+        "posicao": 3
+      },
+      {
+        "codigo": 19265,
+        "posicao": 3
+      }
+    ],
+    [
+      {
+        "codigo": 28039,
+        "posicao": 3
+      },
+      {
+        "codigo": 68200,
+        "posicao": 3
+      },
+      {
+        "codigo": 39503,
+        "posicao": 3
+      },
+      {
+        "codigo": 20506,
+        "posicao": 3
+      },
+      {
+        "codigo": 33552,
+        "posicao": 3
+      },
+      {
+        "codigo": 28132,
+        "posicao": 3
+      },
+      {
+        "codigo": 35789,
+        "posicao": 3
+      },
+      {
+        "codigo": 90325,
+        "posicao": 3
+      },
+      {
+        "codigo": 77490,
+        "posicao": 3
+      },
+      {
+        "codigo": 76097,
+        "posicao": 3
+      },
+      {
+        "codigo": 4464,
+        "posicao": 3
+      },
+      {
+        "codigo": 45010,
+        "posicao": 3
+      },
+      {
+        "codigo": 15412,
+        "posicao": 3
+      },
+      {
+        "codigo": 11930,
+        "posicao": 3
+      },
+      {
+        "codigo": 39766,
+        "posicao": 3
+      },
+      {
+        "codigo": 58587,
+        "posicao": 3
+      },
+      {
+        "codigo": 88517,
+        "posicao": 3
+      },
+      {
+        "codigo": 74805,
+        "posicao": 3
+      },
+      {
+        "codigo": 95924,
+        "posicao": 3
+      },
+      {
+        "codigo": 49993,
+        "posicao": 3
+      }
+    ],
+    [
+      {
+        "codigo": 28039,
+        "posicao": 3
+      },
+      {
+        "codigo": 11930,
+        "posicao": 3
+      },
+      {
+        "codigo": 39766,
+        "posicao": 3
+      },
+      {
+        "codigo": 68200,
+        "posicao": 3
+      },
+      {
+        "codigo": 39503,
+        "posicao": 3
+      },
+      {
+        "codigo": 20506,
+        "posicao": 3
+      },
+      {
+        "codigo": 33552,
+        "posicao": 3
+      },
+      {
+        "codigo": 28132,
+        "posicao": 3
+      },
+      {
+        "codigo": 35789,
+        "posicao": 3
+      },
+      {
+        "codigo": 90325,
+        "posicao": 3
+      },
+      {
+        "codigo": 77490,
+        "posicao": 3
+      },
+      {
+        "codigo": 76097,
+        "posicao": 3
+      },
+      {
+        "codigo": 4464,
+        "posicao": 3
+      },
+      {
+        "codigo": 45010,
+        "posicao": 3
+      },
+      {
+        "codigo": 15412,
+        "posicao": 3
+      },
+      {
+        "codigo": 58587,
+        "posicao": 3
+      },
+      {
+        "codigo": 75511,
+        "posicao": 3
+      },
+      {
+        "codigo": 88517,
+        "posicao": 3
+      },
+      {
+        "codigo": 74805,
+        "posicao": 3
+      },
+      {
+        "codigo": 95924,
+        "posicao": 3
+      }
+    ],
+    [
+      {
+        "codigo": 28039,
+        "posicao": 3
+      },
+      {
+        "codigo": 11930,
+        "posicao": 3
+      },
+      {
+        "codigo": 39766,
+        "posicao": 3
+      },
+      {
+        "codigo": 68200,
+        "posicao": 3
+      },
+      {
+        "codigo": 39503,
+        "posicao": 3
+      },
+      {
+        "codigo": 20506,
+        "posicao": 3
+      },
+      {
+        "codigo": 33552,
+        "posicao": 3
+      },
+      {
+        "codigo": 28132,
+        "posicao": 3
+      },
+      {
+        "codigo": 35789,
+        "posicao": 3
+      },
+      {
+        "codigo": 90325,
+        "posicao": 3
+      },
+      {
+        "codigo": 77490,
+        "posicao": 3
+      },
+      {
+        "codigo": 76097,
+        "posicao": 3
+      },
+      {
+        "codigo": 4464,
+        "posicao": 3
+      },
+      {
+        "codigo": 45010,
+        "posicao": 3
+      },
+      {
+        "codigo": 15412,
+        "posicao": 3
+      },
+      {
+        "codigo": 58587,
+        "posicao": 3
+      },
+      {
+        "codigo": 75511,
+        "posicao": 3
+      },
+      {
+        "codigo": 14887,
+        "posicao": 3
+      },
+      {
+        "codigo": 78111,
+        "posicao": 3
+      },
+      {
+        "codigo": 94108,
+        "posicao": 3
+      }
+    ],
+    [
+      {
+        "codigo": 28039,
+        "posicao": 3
+      },
+      {
+        "codigo": 11930,
+        "posicao": 3
+      },
+      {
+        "codigo": 39766,
+        "posicao": 3
+      },
+      {
+        "codigo": 45010,
+        "posicao": 3
+      },
+      {
+        "codigo": 68200,
+        "posicao": 3
+      },
+      {
+        "codigo": 39503,
+        "posicao": 3
+      },
+      {
+        "codigo": 20506,
+        "posicao": 3
+      },
+      {
+        "codigo": 33552,
+        "posicao": 3
+      },
+      {
+        "codigo": 28132,
+        "posicao": 3
+      },
+      {
+        "codigo": 35789,
+        "posicao": 3
+      },
+      {
+        "codigo": 90325,
+        "posicao": 3
+      },
+      {
+        "codigo": 77490,
+        "posicao": 3
+      },
+      {
+        "codigo": 76097,
+        "posicao": 3
+      },
+      {
+        "codigo": 4464,
+        "posicao": 3
+      },
+      {
+        "codigo": 15412,
+        "posicao": 3
+      },
+      {
+        "codigo": 58587,
+        "posicao": 3
+      },
+      {
+        "codigo": 75511,
+        "posicao": 3
+      },
+      {
+        "codigo": 14887,
+        "posicao": 3
+      },
+      {
+        "codigo": 78111,
+        "posicao": 3
+      },
+      {
+        "codigo": 94108,
+        "posicao": 3
+      }
+    ],
+    [
+      {
+        "codigo": 28039,
+        "posicao": 3
+      },
+      {
+        "codigo": 11930,
+        "posicao": 3
+      },
+      {
+        "codigo": 39766,
+        "posicao": 3
+      },
+      {
+        "codigo": 45010,
+        "posicao": 3
+      },
+      {
+        "codigo": 45742,
+        "posicao": 3
+      },
+      {
+        "codigo": 68200,
+        "posicao": 3
+      },
+      {
+        "codigo": 39503,
+        "posicao": 3
+      },
+      {
+        "codigo": 20506,
+        "posicao": 3
+      },
+      {
+        "codigo": 33552,
+        "posicao": 3
+      },
+      {
+        "codigo": 28132,
+        "posicao": 3
+      },
+      {
+        "codigo": 35789,
+        "posicao": 3
+      },
+      {
+        "codigo": 90325,
+        "posicao": 3
+      },
+      {
+        "codigo": 77490,
+        "posicao": 3
+      },
+      {
+        "codigo": 76097,
+        "posicao": 3
+      },
+      {
+        "codigo": 4464,
+        "posicao": 3
+      },
+      {
+        "codigo": 15412,
+        "posicao": 3
+      },
+      {
+        "codigo": 58587,
+        "posicao": 3
+      },
+      {
+        "codigo": 75511,
+        "posicao": 3
+      },
+      {
+        "codigo": 14887,
+        "posicao": 3
+      },
+      {
+        "codigo": 78111,
+        "posicao": 3
+      }
+    ],
+    [
+      {
+        "codigo": 28039,
+        "posicao": 3
+      },
+      {
+        "codigo": 11930,
+        "posicao": 3
+      },
+      {
+        "codigo": 39766,
+        "posicao": 3
+      },
+      {
+        "codigo": 45010,
+        "posicao": 3
+      },
+      {
+        "codigo": 45742,
+        "posicao": 3
+      },
+      {
+        "codigo": 68200,
+        "posicao": 3
+      },
+      {
+        "codigo": 39503,
+        "posicao": 3
+      },
+      {
+        "codigo": 20506,
+        "posicao": 3
+      },
+      {
+        "codigo": 33552,
+        "posicao": 3
+      },
+      {
+        "codigo": 28132,
+        "posicao": 3
+      },
+      {
+        "codigo": 35789,
+        "posicao": 3
+      },
+      {
+        "codigo": 90325,
+        "posicao": 3
+      },
+      {
+        "codigo": 77490,
+        "posicao": 3
+      },
+      {
+        "codigo": 76097,
+        "posicao": 3
+      },
+      {
+        "codigo": 4464,
+        "posicao": 3
+      },
+      {
+        "codigo": 15412,
+        "posicao": 3
+      },
+      {
+        "codigo": 58587,
+        "posicao": 3
+      },
+      {
+        "codigo": 75511,
+        "posicao": 3
+      },
+      {
+        "codigo": 14887,
+        "posicao": 3
+      },
+      {
+        "codigo": 78111,
+        "posicao": 3
+      }
+    ],
+    [
+      {
+        "codigo": 28039,
+        "posicao": 3
+      },
+      {
+        "codigo": 11930,
+        "posicao": 3
+      },
+      {
+        "codigo": 39766,
+        "posicao": 3
+      },
+      {
+        "codigo": 45010,
+        "posicao": 3
+      },
+      {
+        "codigo": 45742,
+        "posicao": 3
+      },
+      {
+        "codigo": 11987,
+        "posicao": 3
+      },
+      {
+        "codigo": 21464,
+        "posicao": 3
+      },
+      {
+        "codigo": 96460,
+        "posicao": 3
+      },
+      {
+        "codigo": 25045,
+        "posicao": 3
+      },
+      {
+        "codigo": 61827,
+        "posicao": 3
+      },
+      {
+        "codigo": 68200,
+        "posicao": 3
+      },
+      {
+        "codigo": 39503,
+        "posicao": 3
+      },
+      {
+        "codigo": 20506,
+        "posicao": 3
+      },
+      {
+        "codigo": 33552,
+        "posicao": 3
+      },
+      {
+        "codigo": 28132,
+        "posicao": 3
+      },
+      {
+        "codigo": 35789,
+        "posicao": 3
+      },
+      {
+        "codigo": 90325,
+        "posicao": 3
+      },
+      {
+        "codigo": 77490,
+        "posicao": 3
+      },
+      {
+        "codigo": 76097,
+        "posicao": 3
+      },
+      {
+        "codigo": 4464,
+        "posicao": 3
+      }
+    ],
+    [
+      {
+        "codigo": 28039,
+        "posicao": 3
+      },
+      {
+        "codigo": 11930,
+        "posicao": 3
+      },
+      {
+        "codigo": 39766,
+        "posicao": 3
+      },
+      {
+        "codigo": 45010,
+        "posicao": 3
+      },
+      {
+        "codigo": 45742,
+        "posicao": 3
+      },
+      {
+        "codigo": 11987,
+        "posicao": 3
+      },
+      {
+        "codigo": 21464,
+        "posicao": 3
+      },
+      {
+        "codigo": 96460,
+        "posicao": 3
+      },
+      {
+        "codigo": 25045,
+        "posicao": 3
+      },
+      {
+        "codigo": 61827,
+        "posicao": 3
+      },
+      {
+        "codigo": 20506,
+        "posicao": 3
+      },
+      {
+        "codigo": 28132,
+        "posicao": 3
+      },
+      {
+        "codigo": 90325,
+        "posicao": 3
+      },
+      {
+        "codigo": 75511,
+        "posicao": 3
+      },
+      {
+        "codigo": 96198,
+        "posicao": 3
+      },
+      {
+        "codigo": 57108,
+        "posicao": 3
+      },
+      {
+        "codigo": 62781,
+        "posicao": 3
+      },
+      {
+        "codigo": 30277,
+        "posicao": 3
+      },
+      {
+        "codigo": 57214,
+        "posicao": 3
+      },
+      {
+        "codigo": 78698,
+        "posicao": 3
+      }
+    ],
+    [
+      {
+        "codigo": 28039,
+        "posicao": 3
+      },
+      {
+        "codigo": 62781,
+        "posicao": 3
+      },
+      {
+        "codigo": 78698,
+        "posicao": 3
+      },
+      {
+        "codigo": 11930,
+        "posicao": 3
+      },
+      {
+        "codigo": 39766,
+        "posicao": 3
+      },
+      {
+        "codigo": 45010,
+        "posicao": 3
+      },
+      {
+        "codigo": 45742,
+        "posicao": 3
+      },
+      {
+        "codigo": 11987,
+        "posicao": 3
+      },
+      {
+        "codigo": 21464,
+        "posicao": 3
+      },
+      {
+        "codigo": 96460,
+        "posicao": 3
+      },
+      {
+        "codigo": 25045,
+        "posicao": 3
+      },
+      {
+        "codigo": 61827,
+        "posicao": 3
+      },
+      {
+        "codigo": 20506,
+        "posicao": 3
+      },
+      {
+        "codigo": 28132,
+        "posicao": 3
+      },
+      {
+        "codigo": 90325,
+        "posicao": 3
+      },
+      {
+        "codigo": 75511,
+        "posicao": 3
+      },
+      {
+        "codigo": 96198,
+        "posicao": 3
+      },
+      {
+        "codigo": 57108,
+        "posicao": 3
+      },
+      {
+        "codigo": 30277,
+        "posicao": 3
+      },
+      {
+        "codigo": 57214,
+        "posicao": 3
+      }
+    ],
+    [
+      {
+        "codigo": 28039,
+        "posicao": 3
+      },
+      {
+        "codigo": 62781,
+        "posicao": 3
+      },
+      {
+        "codigo": 78698,
+        "posicao": 3
+      },
+      {
+        "codigo": 96198,
+        "posicao": 3
+      },
+      {
+        "codigo": 97307,
+        "posicao": 3
+      },
+      {
+        "codigo": 20293,
+        "posicao": 3
+      },
+      {
+        "codigo": 11930,
+        "posicao": 3
+      },
+      {
+        "codigo": 39766,
+        "posicao": 3
+      },
+      {
+        "codigo": 45010,
+        "posicao": 3
+      },
+      {
+        "codigo": 45742,
+        "posicao": 3
+      },
+      {
+        "codigo": 11987,
+        "posicao": 3
+      },
+      {
+        "codigo": 21464,
+        "posicao": 3
+      },
+      {
+        "codigo": 96460,
+        "posicao": 3
+      },
+      {
+        "codigo": 25045,
+        "posicao": 3
+      },
+      {
+        "codigo": 61827,
+        "posicao": 3
+      },
+      {
+        "codigo": 20506,
+        "posicao": 3
+      },
+      {
+        "codigo": 28132,
+        "posicao": 3
+      },
+      {
+        "codigo": 90325,
+        "posicao": 3
+      },
+      {
+        "codigo": 75511,
+        "posicao": 3
+      },
+      {
+        "codigo": 57108,
+        "posicao": 3
+      }
+    ],
+    [
+      {
+        "codigo": 28039,
+        "posicao": 3
+      },
+      {
+        "codigo": 62781,
+        "posicao": 3
+      },
+      {
+        "codigo": 78698,
+        "posicao": 3
+      },
+      {
+        "codigo": 96198,
+        "posicao": 3
+      },
+      {
+        "codigo": 97307,
+        "posicao": 3
+      },
+      {
+        "codigo": 20293,
+        "posicao": 3
+      },
+      {
+        "codigo": 21464,
+        "posicao": 3
+      },
+      {
+        "codigo": 11930,
+        "posicao": 3
+      },
+      {
+        "codigo": 39766,
+        "posicao": 3
+      },
+      {
+        "codigo": 45010,
+        "posicao": 3
+      },
+      {
+        "codigo": 45742,
+        "posicao": 3
+      },
+      {
+        "codigo": 11987,
+        "posicao": 3
+      },
+      {
+        "codigo": 96460,
+        "posicao": 3
+      },
+      {
+        "codigo": 25045,
+        "posicao": 3
+      },
+      {
+        "codigo": 61827,
+        "posicao": 3
+      },
+      {
+        "codigo": 20506,
+        "posicao": 3
+      },
+      {
+        "codigo": 28132,
+        "posicao": 3
+      },
+      {
+        "codigo": 90325,
+        "posicao": 3
+      },
+      {
+        "codigo": 75511,
+        "posicao": 3
+      },
+      {
+        "codigo": 57108,
+        "posicao": 3
+      }
+    ],
+    [
+      {
+        "codigo": 28039,
+        "posicao": 3
+      },
+      {
+        "codigo": 62781,
+        "posicao": 3
+      },
+      {
+        "codigo": 78698,
+        "posicao": 3
+      },
+      {
+        "codigo": 96198,
+        "posicao": 3
+      },
+      {
+        "codigo": 97307,
+        "posicao": 3
+      },
+      {
+        "codigo": 20293,
+        "posicao": 3
+      },
+      {
+        "codigo": 21464,
+        "posicao": 3
+      },
+      {
+        "codigo": 53228,
+        "posicao": 3
+      },
+      {
+        "codigo": 59384,
+        "posicao": 3
+      },
+      {
+        "codigo": 32139,
+        "posicao": 3
+      },
+      {
+        "codigo": 11930,
+        "posicao": 3
+      },
+      {
+        "codigo": 39766,
+        "posicao": 3
+      },
+      {
+        "codigo": 45010,
+        "posicao": 3
+      },
+      {
+        "codigo": 45742,
+        "posicao": 3
+      },
+      {
+        "codigo": 11987,
+        "posicao": 3
+      },
+      {
+        "codigo": 96460,
+        "posicao": 3
+      },
+      {
+        "codigo": 25045,
+        "posicao": 3
+      },
+      {
+        "codigo": 61827,
+        "posicao": 3
+      },
+      {
+        "codigo": 20506,
+        "posicao": 3
+      },
+      {
+        "codigo": 28132,
+        "posicao": 3
+      }
+    ],
+    [
+      {
+        "codigo": 78698,
+        "posicao": 3
+      },
+      {
+        "codigo": 28039,
+        "posicao": 3
+      },
+      {
+        "codigo": 62781,
+        "posicao": 3
+      },
+      {
+        "codigo": 96198,
+        "posicao": 3
+      },
+      {
+        "codigo": 97307,
+        "posicao": 3
+      },
+      {
+        "codigo": 20293,
+        "posicao": 3
+      },
+      {
+        "codigo": 21464,
+        "posicao": 3
+      },
+      {
+        "codigo": 53228,
+        "posicao": 3
+      },
+      {
+        "codigo": 59384,
+        "posicao": 3
+      },
+      {
+        "codigo": 32139,
+        "posicao": 3
+      },
+      {
+        "codigo": 45010,
+        "posicao": 3
+      },
+      {
+        "codigo": 75511,
+        "posicao": 3
+      },
+      {
+        "codigo": 64652,
+        "posicao": 3
+      },
+      {
+        "codigo": 87413,
+        "posicao": 3
+      },
+      {
+        "codigo": 27552,
+        "posicao": 3
+      },
+      {
+        "codigo": 14964,
+        "posicao": 3
+      },
+      {
+        "codigo": 58405,
+        "posicao": 3
+      },
+      {
+        "codigo": 552,
+        "posicao": 3
+      },
+      {
+        "codigo": 60957,
+        "posicao": 3
+      },
+      {
+        "codigo": 65346,
+        "posicao": 3
+      }
+    ],
+    [
+      {
+        "codigo": 78698,
+        "posicao": 3
+      },
+      {
+        "codigo": 45010,
+        "posicao": 3
+      },
+      {
+        "codigo": 28039,
+        "posicao": 3
+      },
+      {
+        "codigo": 62781,
+        "posicao": 3
+      },
+      {
+        "codigo": 96198,
+        "posicao": 3
+      },
+      {
+        "codigo": 97307,
+        "posicao": 3
+      },
+      {
+        "codigo": 20293,
+        "posicao": 3
+      },
+      {
+        "codigo": 21464,
+        "posicao": 3
+      },
+      {
+        "codigo": 53228,
+        "posicao": 3
+      },
+      {
+        "codigo": 59384,
+        "posicao": 3
+      },
+      {
+        "codigo": 32139,
+        "posicao": 3
+      },
+      {
+        "codigo": 75511,
+        "posicao": 3
+      },
+      {
+        "codigo": 64652,
+        "posicao": 3
+      },
+      {
+        "codigo": 87413,
+        "posicao": 3
+      },
+      {
+        "codigo": 27552,
+        "posicao": 3
+      },
+      {
+        "codigo": 14964,
+        "posicao": 3
+      },
+      {
+        "codigo": 58405,
+        "posicao": 3
+      },
+      {
+        "codigo": 552,
+        "posicao": 3
+      },
+      {
+        "codigo": 60957,
+        "posicao": 3
+      },
+      {
+        "codigo": 65346,
+        "posicao": 3
+      }
+    ],
+    [
+      {
+        "codigo": 78698,
+        "posicao": 3
+      },
+      {
+        "codigo": 45010,
+        "posicao": 3
+      },
+      {
+        "codigo": 28039,
+        "posicao": 3
+      },
+      {
+        "codigo": 62781,
+        "posicao": 3
+      },
+      {
+        "codigo": 96198,
+        "posicao": 3
+      },
+      {
+        "codigo": 97307,
+        "posicao": 3
+      },
+      {
+        "codigo": 20293,
+        "posicao": 3
+      },
+      {
+        "codigo": 21464,
+        "posicao": 3
+      },
+      {
+        "codigo": 53228,
+        "posicao": 3
+      },
+      {
+        "codigo": 59384,
+        "posicao": 3
+      },
+      {
+        "codigo": 32139,
+        "posicao": 3
+      },
+      {
+        "codigo": 75511,
+        "posicao": 3
+      },
+      {
+        "codigo": 64652,
+        "posicao": 3
+      },
+      {
+        "codigo": 87413,
+        "posicao": 3
+      },
+      {
+        "codigo": 27552,
+        "posicao": 3
+      },
+      {
+        "codigo": 14964,
+        "posicao": 3
+      },
+      {
+        "codigo": 58405,
+        "posicao": 3
+      },
+      {
+        "codigo": 552,
+        "posicao": 3
+      },
+      {
+        "codigo": 60957,
+        "posicao": 3
+      },
+      {
+        "codigo": 65346,
+        "posicao": 3
+      }
+    ],
+    [
+      {
+        "codigo": 78698,
+        "posicao": 3
+      },
+      {
+        "codigo": 45010,
+        "posicao": 3
+      },
+      {
+        "codigo": 65346,
+        "posicao": 3
+      },
+      {
+        "codigo": 28039,
+        "posicao": 3
+      },
+      {
+        "codigo": 62781,
+        "posicao": 3
+      },
+      {
+        "codigo": 96198,
+        "posicao": 3
+      },
+      {
+        "codigo": 97307,
+        "posicao": 3
+      },
+      {
+        "codigo": 20293,
+        "posicao": 3
+      },
+      {
+        "codigo": 21464,
+        "posicao": 3
+      },
+      {
+        "codigo": 53228,
+        "posicao": 3
+      },
+      {
+        "codigo": 59384,
+        "posicao": 3
+      },
+      {
+        "codigo": 32139,
+        "posicao": 3
+      },
+      {
+        "codigo": 75511,
+        "posicao": 3
+      },
+      {
+        "codigo": 64652,
+        "posicao": 3
+      },
+      {
+        "codigo": 87413,
+        "posicao": 3
+      },
+      {
+        "codigo": 27552,
+        "posicao": 3
+      },
+      {
+        "codigo": 14964,
+        "posicao": 3
+      },
+      {
+        "codigo": 58405,
+        "posicao": 3
+      },
+      {
+        "codigo": 552,
+        "posicao": 3
+      },
+      {
+        "codigo": 60957,
+        "posicao": 3
+      }
+    ],
+    [
+      {
+        "codigo": 78698,
+        "posicao": 3
+      },
+      {
+        "codigo": 45010,
+        "posicao": 3
+      },
+      {
+        "codigo": 65346,
+        "posicao": 3
+      },
+      {
+        "codigo": 32915,
+        "posicao": 3
+      },
+      {
+        "codigo": 28039,
+        "posicao": 3
+      },
+      {
+        "codigo": 62781,
+        "posicao": 3
+      },
+      {
+        "codigo": 96198,
+        "posicao": 3
+      },
+      {
+        "codigo": 97307,
+        "posicao": 3
+      },
+      {
+        "codigo": 20293,
+        "posicao": 3
+      },
+      {
+        "codigo": 21464,
+        "posicao": 3
+      },
+      {
+        "codigo": 53228,
+        "posicao": 3
+      },
+      {
+        "codigo": 59384,
+        "posicao": 3
+      },
+      {
+        "codigo": 32139,
+        "posicao": 3
+      },
+      {
+        "codigo": 75511,
+        "posicao": 3
+      },
+      {
+        "codigo": 64652,
+        "posicao": 3
+      },
+      {
+        "codigo": 87413,
+        "posicao": 3
+      },
+      {
+        "codigo": 27552,
+        "posicao": 3
+      },
+      {
+        "codigo": 14964,
+        "posicao": 3
+      },
+      {
+        "codigo": 58405,
+        "posicao": 3
+      },
+      {
+        "codigo": 552,
+        "posicao": 3
+      }
+    ],
+    [
+      {
+        "codigo": 78698,
+        "posicao": 3
+      },
+      {
+        "codigo": 45010,
+        "posicao": 3
+      },
+      {
+        "codigo": 65346,
+        "posicao": 3
+      },
+      {
+        "codigo": 32915,
+        "posicao": 3
+      },
+      {
+        "codigo": 89278,
+        "posicao": 3
+      },
+      {
+        "codigo": 66228,
+        "posicao": 3
+      },
+      {
+        "codigo": 47776,
+        "posicao": 3
+      },
+      {
+        "codigo": 94108,
+        "posicao": 3
+      },
+      {
+        "codigo": 34679,
+        "posicao": 3
+      },
+      {
+        "codigo": 35678,
+        "posicao": 3
+      },
+      {
+        "codigo": 54285,
+        "posicao": 3
+      },
+      {
+        "codigo": 74146,
+        "posicao": 3
+      },
+      {
+        "codigo": 5424,
+        "posicao": 3
+      },
+      {
+        "codigo": 41112,
+        "posicao": 3
+      },
+      {
+        "codigo": 28039,
+        "posicao": 3
+      },
+      {
+        "codigo": 62781,
+        "posicao": 3
+      },
+      {
+        "codigo": 96198,
+        "posicao": 3
+      },
+      {
+        "codigo": 97307,
+        "posicao": 3
+      },
+      {
+        "codigo": 20293,
+        "posicao": 3
+      },
+      {
+        "codigo": 21464,
+        "posicao": 3
+      }
+    ],
+    [
+      {
+        "codigo": 78698,
+        "posicao": 3
+      },
+      {
+        "codigo": 45010,
+        "posicao": 3
+      },
+      {
+        "codigo": 65346,
+        "posicao": 3
+      },
+      {
+        "codigo": 32915,
+        "posicao": 3
+      },
+      {
+        "codigo": 89278,
+        "posicao": 3
+      },
+      {
+        "codigo": 66228,
+        "posicao": 3
+      },
+      {
+        "codigo": 47776,
+        "posicao": 3
+      },
+      {
+        "codigo": 94108,
+        "posicao": 3
+      },
+      {
+        "codigo": 34679,
+        "posicao": 3
+      },
+      {
+        "codigo": 35678,
+        "posicao": 3
+      },
+      {
+        "codigo": 54285,
+        "posicao": 3
+      },
+      {
+        "codigo": 74146,
+        "posicao": 3
+      },
+      {
+        "codigo": 5424,
+        "posicao": 3
+      },
+      {
+        "codigo": 41112,
+        "posicao": 3
+      },
+      {
+        "codigo": 97307,
+        "posicao": 3
+      },
+      {
+        "codigo": 92957,
+        "posicao": 3
+      },
+      {
+        "codigo": 12873,
+        "posicao": 3
+      },
+      {
+        "codigo": 15431,
+        "posicao": 3
+      },
+      {
+        "codigo": 98952,
+        "posicao": 3
+      },
+      {
+        "codigo": 28039,
+        "posicao": 3
+      }
+    ],
+    [
+      {
+        "codigo": 78698,
+        "posicao": 3
+      },
+      {
+        "codigo": 45010,
+        "posicao": 3
+      },
+      {
+        "codigo": 65346,
+        "posicao": 3
+      },
+      {
+        "codigo": 32915,
+        "posicao": 3
+      },
+      {
+        "codigo": 89278,
+        "posicao": 3
+      },
+      {
+        "codigo": 66228,
+        "posicao": 3
+      },
+      {
+        "codigo": 47776,
+        "posicao": 3
+      },
+      {
+        "codigo": 94108,
+        "posicao": 3
+      },
+      {
+        "codigo": 34679,
+        "posicao": 3
+      },
+      {
+        "codigo": 35678,
+        "posicao": 3
+      },
+      {
+        "codigo": 54285,
+        "posicao": 3
+      },
+      {
+        "codigo": 74146,
+        "posicao": 3
+      },
+      {
+        "codigo": 5424,
+        "posicao": 3
+      },
+      {
+        "codigo": 41112,
+        "posicao": 3
+      },
+      {
+        "codigo": 97307,
+        "posicao": 3
+      },
+      {
+        "codigo": 92957,
+        "posicao": 3
+      },
+      {
+        "codigo": 12873,
+        "posicao": 3
+      },
+      {
+        "codigo": 15431,
+        "posicao": 3
+      },
+      {
+        "codigo": 98952,
+        "posicao": 3
+      },
+      {
+        "codigo": 27552,
+        "posicao": 3
+      }
+    ],
+    [
+      {
+        "codigo": 58220,
+        "posicao": 3
+      },
+      {
+        "codigo": 78698,
+        "posicao": 3
+      },
+      {
+        "codigo": 45010,
+        "posicao": 3
+      },
+      {
+        "codigo": 65346,
+        "posicao": 3
+      },
+      {
+        "codigo": 32915,
+        "posicao": 3
+      },
+      {
+        "codigo": 89278,
+        "posicao": 3
+      },
+      {
+        "codigo": 66228,
+        "posicao": 3
+      },
+      {
+        "codigo": 47776,
+        "posicao": 3
+      },
+      {
+        "codigo": 94108,
+        "posicao": 3
+      },
+      {
+        "codigo": 34679,
+        "posicao": 3
+      },
+      {
+        "codigo": 35678,
+        "posicao": 3
+      },
+      {
+        "codigo": 54285,
+        "posicao": 3
+      },
+      {
+        "codigo": 74146,
+        "posicao": 3
+      },
+      {
+        "codigo": 5424,
+        "posicao": 3
+      },
+      {
+        "codigo": 41112,
+        "posicao": 3
+      },
+      {
+        "codigo": 97307,
+        "posicao": 3
+      },
+      {
+        "codigo": 92957,
+        "posicao": 3
+      },
+      {
+        "codigo": 12873,
+        "posicao": 3
+      },
+      {
+        "codigo": 15431,
+        "posicao": 3
+      },
+      {
+        "codigo": 98952,
+        "posicao": 3
+      }
+    ],
+    [
+      {
+        "codigo": 58220,
+        "posicao": 3
+      },
+      {
+        "codigo": 5424,
+        "posicao": 3
+      },
+      {
+        "codigo": 92957,
+        "posicao": 3
+      },
+      {
+        "codigo": 33457,
+        "posicao": 3
+      },
+      {
+        "codigo": 76524,
+        "posicao": 3
+      },
+      {
+        "codigo": 52296,
+        "posicao": 3
+      },
+      {
+        "codigo": 78698,
+        "posicao": 3
+      },
+      {
+        "codigo": 45010,
+        "posicao": 3
+      },
+      {
+        "codigo": 65346,
+        "posicao": 3
+      },
+      {
+        "codigo": 32915,
+        "posicao": 3
+      },
+      {
+        "codigo": 89278,
+        "posicao": 3
+      },
+      {
+        "codigo": 66228,
+        "posicao": 3
+      },
+      {
+        "codigo": 47776,
+        "posicao": 3
+      },
+      {
+        "codigo": 94108,
+        "posicao": 3
+      },
+      {
+        "codigo": 34679,
+        "posicao": 3
+      },
+      {
+        "codigo": 35678,
+        "posicao": 3
+      },
+      {
+        "codigo": 54285,
+        "posicao": 3
+      },
+      {
+        "codigo": 74146,
+        "posicao": 3
+      },
+      {
+        "codigo": 41112,
+        "posicao": 3
+      },
+      {
+        "codigo": 97307,
+        "posicao": 3
+      }
+    ],
+    [
+      {
+        "codigo": 5424,
+        "posicao": 3
+      },
+      {
+        "codigo": 52296,
+        "posicao": 3
+      },
+      {
+        "codigo": 58220,
+        "posicao": 3
+      },
+      {
+        "codigo": 92957,
+        "posicao": 3
+      },
+      {
+        "codigo": 33457,
+        "posicao": 3
+      },
+      {
+        "codigo": 76524,
+        "posicao": 3
+      },
+      {
+        "codigo": 94108,
+        "posicao": 3
+      },
+      {
+        "codigo": 19840,
+        "posicao": 3
+      },
+      {
+        "codigo": 78698,
+        "posicao": 3
+      },
+      {
+        "codigo": 45010,
+        "posicao": 3
+      },
+      {
+        "codigo": 65346,
+        "posicao": 3
+      },
+      {
+        "codigo": 32915,
+        "posicao": 3
+      },
+      {
+        "codigo": 89278,
+        "posicao": 3
+      },
+      {
+        "codigo": 66228,
+        "posicao": 3
+      },
+      {
+        "codigo": 47776,
+        "posicao": 3
+      },
+      {
+        "codigo": 34679,
+        "posicao": 3
+      },
+      {
+        "codigo": 35678,
+        "posicao": 3
+      },
+      {
+        "codigo": 54285,
+        "posicao": 3
+      },
+      {
+        "codigo": 74146,
+        "posicao": 3
+      },
+      {
+        "codigo": 41112,
+        "posicao": 3
+      }
+    ],
+    [
+      {
+        "codigo": 5424,
+        "posicao": 3
+      },
+      {
+        "codigo": 52296,
+        "posicao": 3
+      },
+      {
+        "codigo": 76524,
+        "posicao": 3
+      },
+      {
+        "codigo": 58220,
+        "posicao": 3
+      },
+      {
+        "codigo": 92957,
+        "posicao": 3
+      },
+      {
+        "codigo": 33457,
+        "posicao": 3
+      },
+      {
+        "codigo": 94108,
+        "posicao": 3
+      },
+      {
+        "codigo": 19840,
+        "posicao": 3
+      },
+      {
+        "codigo": 65346,
+        "posicao": 3
+      },
+      {
+        "codigo": 71412,
+        "posicao": 3
+      },
+      {
+        "codigo": 12907,
+        "posicao": 3
+      },
+      {
+        "codigo": 49299,
+        "posicao": 3
+      },
+      {
+        "codigo": 94481,
+        "posicao": 3
+      },
+      {
+        "codigo": 33000,
+        "posicao": 3
+      },
+      {
+        "codigo": 78698,
+        "posicao": 3
+      },
+      {
+        "codigo": 45010,
+        "posicao": 3
+      },
+      {
+        "codigo": 32915,
+        "posicao": 3
+      },
+      {
+        "codigo": 89278,
+        "posicao": 3
+      },
+      {
+        "codigo": 66228,
+        "posicao": 3
+      },
+      {
+        "codigo": 47776,
+        "posicao": 3
+      }
+    ],
+    [
+      {
+        "codigo": 5424,
+        "posicao": 3
+      },
+      {
+        "codigo": 52296,
+        "posicao": 3
+      },
+      {
+        "codigo": 76524,
+        "posicao": 3
+      },
+      {
+        "codigo": 58220,
+        "posicao": 3
+      },
+      {
+        "codigo": 92957,
+        "posicao": 3
+      },
+      {
+        "codigo": 33457,
+        "posicao": 3
+      },
+      {
+        "codigo": 94108,
+        "posicao": 3
+      },
+      {
+        "codigo": 19840,
+        "posicao": 3
+      },
+      {
+        "codigo": 65346,
+        "posicao": 3
+      },
+      {
+        "codigo": 71412,
+        "posicao": 3
+      },
+      {
+        "codigo": 12907,
+        "posicao": 3
+      },
+      {
+        "codigo": 49299,
+        "posicao": 3
+      },
+      {
+        "codigo": 94481,
+        "posicao": 3
+      },
+      {
+        "codigo": 33000,
+        "posicao": 3
+      },
+      {
+        "codigo": 89278,
+        "posicao": 3
+      },
+      {
+        "codigo": 34679,
+        "posicao": 3
+      },
+      {
+        "codigo": 46057,
+        "posicao": 3
+      },
+      {
+        "codigo": 69213,
+        "posicao": 3
+      },
+      {
+        "codigo": 78698,
+        "posicao": 3
+      },
+      {
+        "codigo": 45010,
+        "posicao": 3
+      }
     ]
+  ],
+  "vencedores": [
+    [
+      51683,
+      73078
+    ],
+    [
+      73078
+    ],
+    [
+      5424
+    ]
+  ],
+  "bolas_vencedoras": [
+    37,
+    40,
+    50
+  ]
 }

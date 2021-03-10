@@ -7,26 +7,26 @@ using TMPro;
 public class Line : MonoBehaviour
 {
 
-    public TextMeshProUGUI id;
-    public TextMeshProUGUI estabelecimento;
-    public List<Image> numbers = new List<Image>();
+  public TextMeshProUGUI id;
+  public TextMeshProUGUI estabelecimento;
+  public List<Image> numbers = new List<Image>();
 
 
-    Card currentCard;
+  Card currentCard;
 
-    public void Setup(Card card)
+  public void Setup(Card card)
+  {
+    if (card == currentCard) return;
+
+    currentCard = card;
+    id.text = card.codigo.ToString();
+    estabelecimento.text = card.estabelecimento;
+
+    // Debug.Log(1);
+    for (int i = 0; i < numbers.Count; i++)
     {
-        if (card == currentCard) return;
-
-        currentCard = card;
-        id.text = card.codigo.ToString();
-        estabelecimento.text = card.estabelecimento;
-
-        Debug.Log(1);
-        for (int i = 0; i < numbers.Count; i++)
-        {
-            numbers[i].sprite = NumberSprites.main.sprites[card.numbers[i] - 1];
-        }
+      numbers[i].sprite = NumberSprites.main.sprites[card.numbers[i] - 1];
     }
+  }
 
 }
