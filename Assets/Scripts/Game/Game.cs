@@ -6,14 +6,17 @@ using System.Linq;
 
 public class Game : MonoBehaviour
 {
-    [Header("Confi Data")]
+    [Header("Config Data")]
     public string sorteioId;
     public bool offlineMode = true;
 
     [NonSerialized] public Sorteio sorteio;
 
     public List<int> usedBalls = new List<int>();
+
+    [Header("Views")]
     public CardView[] cards = new CardView[4];
+    public Line[] lines = new Line[15];
 
     public CustomAnim globo;
     public BallController control;
@@ -27,7 +30,7 @@ public class Game : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.A)) Request();
+        if (Input.GetKeyDown(KeyCode.Mouse0)) Request();
     }
 
     public void Request()
@@ -40,16 +43,27 @@ public class Game : MonoBehaviour
     {
         sorteio = novoSorteio;
 
+        SetCards();
+        SetLines();
 
+        StartDraw();
+    }
+
+    public void SetCards()
+    {
         for (int i = 0; i < cards.Length; i++)
         {
             cards[i].Setup(sorteio.cards[i]);
         }
-        StartDraw();
     }
 
-    public void Jeitinho()
+    public void SetLines()
     {
+        for (int i = 0; i < lines.Length; i++)
+        {
+            if (i < sorteio.cards.Count) lines[i].Setup(sorteio.cards[i]);
+            else lines[i].gameObject.SetActive(false);
+        }
     }
 
     public void StartDraw()
@@ -99,26 +113,21 @@ public class Game : MonoBehaviour
 
     public void Sort(int round)
     {
-        Debug.Log(1);
         var topPlayers = sorteio.topPlayers[round];
-        Debug.Log(2);
-        for (int i = 0; i < cards.Length; i++)
+        for (int i = 0; i < lines.Length; i++)
         {
-            Debug.Log(3);
+            if (!lines[i].gameObject.activeInHierarchy) return;
+
             var card = sorteio.cards.Find(x => x.codigo == topPlayers[i].id);
-            Debug.Log(4);
-            if (cards[i].Setup(card))
+            if (i < cards.Length)
             {
-                Debug.Log(5);
-                cards[i].CatchUp(usedBalls);
+                if (cards[i].Setup(card))
+                    cards[i].CatchUp(usedBalls);
+                else
+                    cards[i].Mark(usedBalls[round]);
             }
-            else
-            {
-                Debug.Log(6);
-                Debug.Log(cards[i]);
-                cards[i].Mark(usedBalls[round]);
-            }
-            Debug.Log(7);
+
+            lines[i].Setup(card);
         }
     }
 
