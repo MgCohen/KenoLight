@@ -54,6 +54,8 @@ public class Sorteio
       List<Card> cartelas,
       string bolas_sorteadas,
       int numero_bolas_acumulado,
+      // List<int> bolas_vencedoras,
+      List<List<int>> vencedores,
       int bola_kuadra,
       int bola_kina,
       int bola_keno,
@@ -93,11 +95,12 @@ public class Sorteio
 
     if (cartelas != null) Debug.Log(cartelas.Count);
 
-    winners.Add(new List<int>() { 9652 });
-    winners.Add(new List<int>() { 9652 });
-    winners.Add(new List<int>() { 9650 });
-
     topPlayers = turnos;
+    winners = vencedores;
+
+    // winners.Add(new List<int>() { 9652 });
+    // winners.Add(new List<int>() { 9652 });
+    // winners.Add(new List<int>() { 9650 });
     // topPlayers.Add(new List<player>() { new player(0), new player(1), new player(2), new player(3), new player(4) });
     // topPlayers.Add(new List<player>() { new player(1), new player(0), new player(4), new player(2), new player(3) });
     // topPlayers.Add(new List<player>() { new player(2), new player(1), new player(0), new player(4), new player(3) });
