@@ -77,6 +77,9 @@ public class Sorteio
 
         cards = cartelas;
 
+        //TEST
+        foreach (var card in cards) card.Set();
+        //REMOVE
 
         prizes[0] = kuadraPrize = valor_kuadra;
         prizes[1] = kinaPrize = valor_kina;

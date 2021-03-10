@@ -39,8 +39,8 @@ public class Game : MonoBehaviour
     public void Setup(Sorteio novoSorteio)
     {
         sorteio = novoSorteio;
-        Debug.Log(sorteio.cards.Count);
-        Debug.Log(sorteio.cards[0].numbers[2]);
+
+
         for (int i = 0; i < cards.Length; i++)
         {
             cards[i].Setup(sorteio.cards[i]);
@@ -61,31 +61,36 @@ public class Game : MonoBehaviour
     {
         globo.Resume();
         List<int> missingBalls = sorteio.balls;
-        yield return new WaitForSeconds(drawTime);
-        //pega bola
-        var number = missingBalls[0];
-        missingBalls.Remove(number);
 
-        //wait for ball draw
-        yield return control.Draw(number);
-
-        //Arruma e marca
-        usedBalls.Add(number);
-        Sort(usedBalls.Count - 1);
-
-        //Verifica ganhador
-        if (sorteio.winnerBalls.Contains(number))
+        while (missingBalls.Count > 0)
         {
-            var index = Array.IndexOf(sorteio.winnerBalls, number);
-            var winnersId = sorteio.winners[index];
-            var winners = sorteio.cards.Where(card => winnersId.Exists(x => x == card.id)).ToArray();
 
-            if (index == 2 && usedBalls.Count <= sorteio.acumuladoBallCount)
+            yield return new WaitForSeconds(drawTime);
+            //pega bola
+            var number = missingBalls[0];
+            missingBalls.Remove(number);
+
+            //wait for ball draw
+            yield return control.Draw(number);
+
+            //Arruma e marca
+            usedBalls.Add(number);
+            Sort(usedBalls.Count - 1);
+
+            //Verifica ganhador
+            if (sorteio.winnerBalls.Contains(number))
             {
-                index = 3;
-            }
+                var index = Array.IndexOf(sorteio.winnerBalls, number);
+                var winnersId = sorteio.winners[index];
+                var winners = sorteio.cards.Where(card => winnersId.Exists(x => x == card.codigo)).ToArray();
 
-            yield return winnerPanel.ShowWinners(winners, index + 4);
+                if (index == 2 && usedBalls.Count <= sorteio.acumuladoBallCount)
+                {
+                    index = 3;
+                }
+
+                yield return winnerPanel.ShowWinners(winners, index + 4);
+            }
         }
 
         //espera
@@ -95,17 +100,25 @@ public class Game : MonoBehaviour
     public void Sort(int round)
     {
         Debug.Log(1);
-        Debug.Log(sorteio.topPlayers.Count);
         var topPlayers = sorteio.topPlayers[round];
         Debug.Log(2);
         for (int i = 0; i < cards.Length; i++)
         {
             Debug.Log(3);
-            var card = sorteio.cards.Find(x => x.id == topPlayers[i].id);
+            var card = sorteio.cards.Find(x => x.codigo == topPlayers[i].id);
             Debug.Log(4);
-            if (cards[i].Setup(card)) cards[i].CatchUp(usedBalls);
-            else cards[i].Mark(usedBalls[round - 1]);
-            Debug.Log(5);
+            if (cards[i].Setup(card))
+            {
+                Debug.Log(5);
+                cards[i].CatchUp(usedBalls);
+            }
+            else
+            {
+                Debug.Log(6);
+                Debug.Log(cards[i]);
+                cards[i].Mark(usedBalls[round]);
+            }
+            Debug.Log(7);
         }
     }
 

@@ -19,8 +19,8 @@ public class CardView : MonoBehaviour
     {
         if (card == newCard) return false;
         card = newCard;
-        cardId.text = card.id.ToString();
-        cardSource.text = card.cardSource;
+        cardId.text = card.codigo.ToString();
+        cardSource.text = card.estabelecimento;
 
         for (int i = 0; i < numbers.Count; i++)
         {

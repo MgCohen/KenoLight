@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using DG.Tweening;
 using System.Linq;
+using UnityEngine.UI;
 
 public class BallController : MonoBehaviour
 {
@@ -60,7 +61,8 @@ public class BallController : MonoBehaviour
         });
 
         //if keno, set reveal
-        if (end) t.OnComplete(() => ShowKeno(number));
+        if (end) t.OnComplete(() => ShowNumber(number, o.GetComponentsInChildren<Image>()[1]));
+        else ShowNumber(number, o.GetComponentsInChildren<Image>()[1]);
 
         //wait for tween
         yield return t.WaitForCompletion();
@@ -92,9 +94,9 @@ public class BallController : MonoBehaviour
         kenoPath = kenoEntry.Select(x => x.position).ToArray();
     }
 
-    public void ShowKeno(int number)
+    public void ShowNumber(int number, Image image)
     {
-
+        image.sprite = NumberSprites.main.sprites[number - 1];
     }
 
     public void Stop()
