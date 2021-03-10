@@ -93,11 +93,11 @@ public class Sorteio
 
     if (cartelas != null) Debug.Log(cartelas.Count);
 
-    winners.Add(new List<int>() { 9652 });
-    winners.Add(new List<int>() { 9652 });
-    winners.Add(new List<int>() { 9650 });
-
     topPlayers = turnos;
+
+    // winners.Add(new List<int>() { 9652 });
+    // winners.Add(new List<int>() { 9652 });
+    // winners.Add(new List<int>() { 9650 });
     // topPlayers.Add(new List<player>() { new player(0), new player(1), new player(2), new player(3), new player(4) });
     // topPlayers.Add(new List<player>() { new player(1), new player(0), new player(4), new player(2), new player(3) });
     // topPlayers.Add(new List<player>() { new player(2), new player(1), new player(0), new player(4), new player(3) });
