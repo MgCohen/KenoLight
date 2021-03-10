@@ -40,7 +40,6 @@ public class NetworkInterface : MonoBehaviour
 
   public void RequestSorteio(string id, bool offline = false, Action<Sorteio> callback = null)
   {
-
     void OfflineLoad(string err = null)
     {
       if(err != null) Debug.LogError(err);
@@ -62,6 +61,25 @@ public class NetworkInterface : MonoBehaviour
     Debug.Log($"Getting Sorteio Nº{id}");
     _api.Get<Sorteio>($"/sorteio/1/{id}/")
         .OnComplete(callback);
+  }
+   public void RequestLogoOngOferecimento(string sala)
+  {
+    _api.Get<List<Logo>>($"/logosespecial/{sala}")
+       .OnComplete(UpdateLogos)
+       .OnError((err) =>
+        {
+          // Debug.Log("Logos Offline");
+          var data = Resources.Load<TextAsset>("LogosEspecial").text;
+          if (data == null) throw new Exception("Invalid File Path: Logos");
+          UpdateLogos(JsonConvert.DeserializeObject<List<Logo>>(data));
+        });
+  }
+   private void UpdateLogos(List<Logo> logoE)
+  {
+    foreach(var logo in logoE){
+      logo.se = false;
+    }
+    //events.LogoUrl.Invoke(logoE);
   }
 
 }
