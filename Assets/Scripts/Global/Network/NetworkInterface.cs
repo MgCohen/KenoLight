@@ -65,20 +65,17 @@ public class NetworkInterface : MonoBehaviour
    public void RequestLogoOngOferecimento(string sala)
   {
     _api.Get<List<Logo>>($"/logosespecial/{sala}")
-       .OnComplete(UpdateLogos)
+       .OnComplete(UpdateRequestLogoOngOferecimento)
        .OnError((err) =>
         {
           // Debug.Log("Logos Offline");
-          var data = Resources.Load<TextAsset>("LogosEspecial").text;
-          if (data == null) throw new Exception("Invalid File Path: Logos");
-          UpdateLogos(JsonConvert.DeserializeObject<List<Logo>>(data));
+          var data = Resources.Load<TextAsset>("LogoOngOferecimento").text;
+          if (data == null) throw new Exception("Invalid File Path: LogoOngOferecimento");
+          UpdateRequestLogoOngOferecimento(JsonConvert.DeserializeObject<List<Logo>>(data));
         });
   }
-   private void UpdateLogos(List<Logo> logoE)
+   private void UpdateRequestLogoOngOferecimento(List<Logo> logo)
   {
-    foreach(var logo in logoE){
-      logo.se = false;
-    }
     //events.LogoUrl.Invoke(logoE);
   }
 

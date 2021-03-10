@@ -343,7 +343,7 @@ TextureImporter:
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 3
-    compressionQuality: 100
+    compressionQuality: 50
     crunchedCompression: 1
     allowsAlphaSplitting: 0
     overridden: 0
@@ -355,7 +355,7 @@ TextureImporter:
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 3
-    compressionQuality: 100
+    compressionQuality: 50
     crunchedCompression: 1
     allowsAlphaSplitting: 0
     overridden: 0
@@ -367,7 +367,7 @@ TextureImporter:
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 3
-    compressionQuality: 100
+    compressionQuality: 50
     crunchedCompression: 1
     allowsAlphaSplitting: 0
     overridden: 0
@@ -380,12 +380,12 @@ TextureImporter:
       name: Sprite - Numeros_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 460.8
-        width: 56.88889
-        height: 51.2
+        x: 10
+        y: 456.3
+        width: 55.77778
+        height: 50.7
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -401,12 +401,12 @@ TextureImporter:
       name: Sprite - Numeros_1
       rect:
         serializedVersion: 2
-        x: 56
-        y: 460.8
-        width: 56.88889
-        height: 51.2
+        x: 65
+        y: 456.3
+        width: 55.77778
+        height: 50.7
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -422,12 +422,12 @@ TextureImporter:
       name: Sprite - Numeros_2
       rect:
         serializedVersion: 2
-        x: 112
-        y: 460.8
-        width: 56.88889
-        height: 51.2
+        x: 120
+        y: 456.3
+        width: 55.77778
+        height: 50.7
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -443,12 +443,12 @@ TextureImporter:
       name: Sprite - Numeros_3
       rect:
         serializedVersion: 2
-        x: 168
-        y: 460.8
-        width: 56.88889
-        height: 51.2
+        x: 175
+        y: 456.3
+        width: 55.77778
+        height: 50.7
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -464,12 +464,12 @@ TextureImporter:
       name: Sprite - Numeros_4
       rect:
         serializedVersion: 2
-        x: 224
-        y: 460.8
-        width: 56.88889
-        height: 51.2
+        x: 230
+        y: 456.3
+        width: 55.77778
+        height: 50.7
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -485,12 +485,12 @@ TextureImporter:
       name: Sprite - Numeros_5
       rect:
         serializedVersion: 2
-        x: 280
-        y: 460.8
-        width: 56.88889
-        height: 51.2
+        x: 285
+        y: 456.3
+        width: 55.77778
+        height: 50.7
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -506,12 +506,12 @@ TextureImporter:
       name: Sprite - Numeros_6
       rect:
         serializedVersion: 2
-        x: 336
-        y: 460.8
-        width: 56.88889
-        height: 51.2
+        x: 340
+        y: 456.3
+        width: 55.77778
+        height: 50.7
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -527,12 +527,12 @@ TextureImporter:
       name: Sprite - Numeros_7
       rect:
         serializedVersion: 2
-        x: 392
-        y: 460.8
-        width: 56.88889
-        height: 51.2
+        x: 395
+        y: 456.3
+        width: 55.77778
+        height: 50.7
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -548,12 +548,12 @@ TextureImporter:
       name: Sprite - Numeros_8
       rect:
         serializedVersion: 2
-        x: 448
-        y: 460.8
-        width: 56.88889
-        height: 51.2
+        x: 450
+        y: 456.3
+        width: 55.77778
+        height: 50.7
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -569,12 +569,12 @@ TextureImporter:
       name: Sprite - Numeros_9
       rect:
         serializedVersion: 2
-        x: 0
-        y: 409.8
-        width: 56.88889
-        height: 51.2
+        x: 10
+        y: 406.3
+        width: 55.77778
+        height: 50.7
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -590,12 +590,12 @@ TextureImporter:
       name: Sprite - Numeros_10
       rect:
         serializedVersion: 2
-        x: 56
-        y: 409.8
-        width: 56.88889
-        height: 51.2
+        x: 65
+        y: 406.3
+        width: 55.77778
+        height: 50.7
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -611,12 +611,12 @@ TextureImporter:
       name: Sprite - Numeros_11
       rect:
         serializedVersion: 2
-        x: 112
-        y: 409.8
-        width: 56.88889
-        height: 51.2
+        x: 120
+        y: 406.3
+        width: 55.77778
+        height: 50.7
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -632,12 +632,12 @@ TextureImporter:
       name: Sprite - Numeros_12
       rect:
         serializedVersion: 2
-        x: 168
-        y: 409.8
-        width: 56.88889
-        height: 51.2
+        x: 175
+        y: 406.3
+        width: 55.77778
+        height: 50.7
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -653,12 +653,12 @@ TextureImporter:
       name: Sprite - Numeros_13
       rect:
         serializedVersion: 2
-        x: 224
-        y: 409.8
-        width: 56.88889
-        height: 51.2
+        x: 230
+        y: 406.3
+        width: 55.77778
+        height: 50.7
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -674,12 +674,12 @@ TextureImporter:
       name: Sprite - Numeros_14
       rect:
         serializedVersion: 2
-        x: 280
-        y: 409.8
-        width: 56.88889
-        height: 51.2
+        x: 285
+        y: 406.3
+        width: 55.77778
+        height: 50.7
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -695,12 +695,12 @@ TextureImporter:
       name: Sprite - Numeros_15
       rect:
         serializedVersion: 2
-        x: 336
-        y: 409.8
-        width: 56.88889
-        height: 51.2
+        x: 340
+        y: 406.3
+        width: 55.77778
+        height: 50.7
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -716,12 +716,12 @@ TextureImporter:
       name: Sprite - Numeros_16
       rect:
         serializedVersion: 2
-        x: 392
-        y: 409.8
-        width: 56.88889
-        height: 51.2
+        x: 395
+        y: 406.3
+        width: 55.77778
+        height: 50.7
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -737,12 +737,12 @@ TextureImporter:
       name: Sprite - Numeros_17
       rect:
         serializedVersion: 2
-        x: 448
-        y: 409.8
-        width: 56.88889
-        height: 51.2
+        x: 450
+        y: 406.3
+        width: 55.77778
+        height: 50.7
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -758,12 +758,12 @@ TextureImporter:
       name: Sprite - Numeros_18
       rect:
         serializedVersion: 2
-        x: 0
-        y: 358.8
-        width: 56.88889
-        height: 51.2
+        x: 10
+        y: 356.3
+        width: 55.77778
+        height: 50.7
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -779,12 +779,12 @@ TextureImporter:
       name: Sprite - Numeros_19
       rect:
         serializedVersion: 2
-        x: 56
-        y: 358.8
-        width: 56.88889
-        height: 51.2
+        x: 65
+        y: 356.3
+        width: 55.77778
+        height: 50.7
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -800,12 +800,12 @@ TextureImporter:
       name: Sprite - Numeros_20
       rect:
         serializedVersion: 2
-        x: 112
-        y: 358.8
-        width: 56.88889
-        height: 51.2
+        x: 120
+        y: 356.3
+        width: 55.77778
+        height: 50.7
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -821,12 +821,12 @@ TextureImporter:
       name: Sprite - Numeros_21
       rect:
         serializedVersion: 2
-        x: 168
-        y: 358.8
-        width: 56.88889
-        height: 51.2
+        x: 175
+        y: 356.3
+        width: 55.77778
+        height: 50.7
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -842,12 +842,12 @@ TextureImporter:
       name: Sprite - Numeros_22
       rect:
         serializedVersion: 2
-        x: 224
-        y: 358.8
-        width: 56.88889
-        height: 51.2
+        x: 230
+        y: 356.3
+        width: 55.77778
+        height: 50.7
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -863,12 +863,12 @@ TextureImporter:
       name: Sprite - Numeros_23
       rect:
         serializedVersion: 2
-        x: 280
-        y: 358.8
-        width: 56.88889
-        height: 51.2
+        x: 285
+        y: 356.3
+        width: 55.77778
+        height: 50.7
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -884,12 +884,12 @@ TextureImporter:
       name: Sprite - Numeros_24
       rect:
         serializedVersion: 2
-        x: 336
-        y: 358.8
-        width: 56.88889
-        height: 51.2
+        x: 340
+        y: 356.3
+        width: 55.77778
+        height: 50.7
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -905,12 +905,12 @@ TextureImporter:
       name: Sprite - Numeros_25
       rect:
         serializedVersion: 2
-        x: 392
-        y: 358.8
-        width: 56.88889
-        height: 51.2
+        x: 395
+        y: 356.3
+        width: 55.77778
+        height: 50.7
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -926,12 +926,12 @@ TextureImporter:
       name: Sprite - Numeros_26
       rect:
         serializedVersion: 2
-        x: 448
-        y: 358.8
-        width: 56.88889
-        height: 51.2
+        x: 450
+        y: 356.3
+        width: 55.77778
+        height: 50.7
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -947,12 +947,12 @@ TextureImporter:
       name: Sprite - Numeros_27
       rect:
         serializedVersion: 2
-        x: 0
-        y: 307.8
-        width: 56.88889
-        height: 51.2
+        x: 10
+        y: 306.3
+        width: 55.77778
+        height: 50.7
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -968,12 +968,12 @@ TextureImporter:
       name: Sprite - Numeros_28
       rect:
         serializedVersion: 2
-        x: 56
-        y: 307.8
-        width: 56.88889
-        height: 51.2
+        x: 65
+        y: 306.3
+        width: 55.77778
+        height: 50.7
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -989,12 +989,12 @@ TextureImporter:
       name: Sprite - Numeros_29
       rect:
         serializedVersion: 2
-        x: 112
-        y: 307.8
-        width: 56.88889
-        height: 51.2
+        x: 120
+        y: 306.3
+        width: 55.77778
+        height: 50.7
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1010,12 +1010,12 @@ TextureImporter:
       name: Sprite - Numeros_30
       rect:
         serializedVersion: 2
-        x: 168
-        y: 307.8
-        width: 56.88889
-        height: 51.2
+        x: 175
+        y: 306.3
+        width: 55.77778
+        height: 50.7
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1031,12 +1031,12 @@ TextureImporter:
       name: Sprite - Numeros_31
       rect:
         serializedVersion: 2
-        x: 224
-        y: 307.8
-        width: 56.88889
-        height: 51.2
+        x: 230
+        y: 306.3
+        width: 55.77778
+        height: 50.7
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1052,12 +1052,12 @@ TextureImporter:
       name: Sprite - Numeros_32
       rect:
         serializedVersion: 2
-        x: 280
-        y: 307.8
-        width: 56.88889
-        height: 51.2
+        x: 285
+        y: 306.3
+        width: 55.77778
+        height: 50.7
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1073,12 +1073,12 @@ TextureImporter:
       name: Sprite - Numeros_33
       rect:
         serializedVersion: 2
-        x: 336
-        y: 307.8
-        width: 56.88889
-        height: 51.2
+        x: 340
+        y: 306.3
+        width: 55.77778
+        height: 50.7
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1094,12 +1094,12 @@ TextureImporter:
       name: Sprite - Numeros_34
       rect:
         serializedVersion: 2
-        x: 392
-        y: 307.8
-        width: 56.88889
-        height: 51.2
+        x: 395
+        y: 306.3
+        width: 55.77778
+        height: 50.7
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1115,12 +1115,12 @@ TextureImporter:
       name: Sprite - Numeros_35
       rect:
         serializedVersion: 2
-        x: 448
-        y: 307.8
-        width: 56.88889
-        height: 51.2
+        x: 450
+        y: 306.3
+        width: 55.77778
+        height: 50.7
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1136,12 +1136,12 @@ TextureImporter:
       name: Sprite - Numeros_36
       rect:
         serializedVersion: 2
-        x: 0
-        y: 256.8
-        width: 56.88889
-        height: 51.2
+        x: 10
+        y: 256.3
+        width: 55.77778
+        height: 50.7
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1157,12 +1157,12 @@ TextureImporter:
       name: Sprite - Numeros_37
       rect:
         serializedVersion: 2
-        x: 56
-        y: 256.8
-        width: 56.88889
-        height: 51.2
+        x: 65
+        y: 256.3
+        width: 55.77778
+        height: 50.7
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1178,12 +1178,12 @@ TextureImporter:
       name: Sprite - Numeros_38
       rect:
         serializedVersion: 2
-        x: 112
-        y: 256.8
-        width: 56.88889
-        height: 51.2
+        x: 120
+        y: 256.3
+        width: 55.77778
+        height: 50.7
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1199,12 +1199,12 @@ TextureImporter:
       name: Sprite - Numeros_39
       rect:
         serializedVersion: 2
-        x: 168
-        y: 256.8
-        width: 56.88889
-        height: 51.2
+        x: 175
+        y: 256.3
+        width: 55.77778
+        height: 50.7
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1220,12 +1220,12 @@ TextureImporter:
       name: Sprite - Numeros_40
       rect:
         serializedVersion: 2
-        x: 224
-        y: 256.8
-        width: 56.88889
-        height: 51.2
+        x: 230
+        y: 256.3
+        width: 55.77778
+        height: 50.7
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1241,12 +1241,12 @@ TextureImporter:
       name: Sprite - Numeros_41
       rect:
         serializedVersion: 2
-        x: 280
-        y: 256.8
-        width: 56.88889
-        height: 51.2
+        x: 285
+        y: 256.3
+        width: 55.77778
+        height: 50.7
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1262,12 +1262,12 @@ TextureImporter:
       name: Sprite - Numeros_42
       rect:
         serializedVersion: 2
-        x: 336
-        y: 256.8
-        width: 56.88889
-        height: 51.2
+        x: 340
+        y: 256.3
+        width: 55.77778
+        height: 50.7
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1283,12 +1283,12 @@ TextureImporter:
       name: Sprite - Numeros_43
       rect:
         serializedVersion: 2
-        x: 392
-        y: 256.8
-        width: 56.88889
-        height: 51.2
+        x: 395
+        y: 256.3
+        width: 55.77778
+        height: 50.7
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1304,12 +1304,12 @@ TextureImporter:
       name: Sprite - Numeros_44
       rect:
         serializedVersion: 2
-        x: 448
-        y: 256.8
-        width: 56.88889
-        height: 51.2
+        x: 450
+        y: 256.3
+        width: 55.77778
+        height: 50.7
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1325,12 +1325,12 @@ TextureImporter:
       name: Sprite - Numeros_45
       rect:
         serializedVersion: 2
-        x: 0
-        y: 205.8
-        width: 56.88889
-        height: 51.2
+        x: 10
+        y: 206.3
+        width: 55.77778
+        height: 50.7
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1346,12 +1346,12 @@ TextureImporter:
       name: Sprite - Numeros_46
       rect:
         serializedVersion: 2
-        x: 56
-        y: 205.8
-        width: 56.88889
-        height: 51.2
+        x: 65
+        y: 206.3
+        width: 55.77778
+        height: 50.7
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1367,12 +1367,12 @@ TextureImporter:
       name: Sprite - Numeros_47
       rect:
         serializedVersion: 2
-        x: 112
-        y: 205.8
-        width: 56.88889
-        height: 51.2
+        x: 120
+        y: 206.3
+        width: 55.77778
+        height: 50.7
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1388,12 +1388,12 @@ TextureImporter:
       name: Sprite - Numeros_48
       rect:
         serializedVersion: 2
-        x: 168
-        y: 205.8
-        width: 56.88889
-        height: 51.2
+        x: 175
+        y: 206.3
+        width: 55.77778
+        height: 50.7
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1409,12 +1409,12 @@ TextureImporter:
       name: Sprite - Numeros_49
       rect:
         serializedVersion: 2
-        x: 224
-        y: 205.8
-        width: 56.88889
-        height: 51.2
+        x: 230
+        y: 206.3
+        width: 55.77778
+        height: 50.7
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1430,12 +1430,12 @@ TextureImporter:
       name: Sprite - Numeros_50
       rect:
         serializedVersion: 2
-        x: 280
-        y: 205.8
-        width: 56.88889
-        height: 51.2
+        x: 285
+        y: 206.3
+        width: 55.77778
+        height: 50.7
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1451,12 +1451,12 @@ TextureImporter:
       name: Sprite - Numeros_51
       rect:
         serializedVersion: 2
-        x: 336
-        y: 205.8
-        width: 56.88889
-        height: 51.2
+        x: 340
+        y: 206.3
+        width: 55.77778
+        height: 50.7
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1472,12 +1472,12 @@ TextureImporter:
       name: Sprite - Numeros_52
       rect:
         serializedVersion: 2
-        x: 392
-        y: 205.8
-        width: 56.88889
-        height: 51.2
+        x: 395
+        y: 206.3
+        width: 55.77778
+        height: 50.7
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1493,12 +1493,12 @@ TextureImporter:
       name: Sprite - Numeros_53
       rect:
         serializedVersion: 2
-        x: 448
-        y: 205.8
-        width: 56.88889
-        height: 51.2
+        x: 450
+        y: 206.3
+        width: 55.77778
+        height: 50.7
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1514,12 +1514,12 @@ TextureImporter:
       name: Sprite - Numeros_54
       rect:
         serializedVersion: 2
-        x: 0
-        y: 154.8
-        width: 56.88889
-        height: 51.2
+        x: 10
+        y: 156.3
+        width: 55.77778
+        height: 50.7
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1535,12 +1535,12 @@ TextureImporter:
       name: Sprite - Numeros_55
       rect:
         serializedVersion: 2
-        x: 56
-        y: 154.8
-        width: 56.88889
-        height: 51.2
+        x: 65
+        y: 156.3
+        width: 55.77778
+        height: 50.7
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1556,12 +1556,12 @@ TextureImporter:
       name: Sprite - Numeros_56
       rect:
         serializedVersion: 2
-        x: 112
-        y: 154.8
-        width: 56.88889
-        height: 51.2
+        x: 120
+        y: 156.3
+        width: 55.77778
+        height: 50.7
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1577,12 +1577,12 @@ TextureImporter:
       name: Sprite - Numeros_57
       rect:
         serializedVersion: 2
-        x: 168
-        y: 154.8
-        width: 56.88889
-        height: 51.2
+        x: 175
+        y: 156.3
+        width: 55.77778
+        height: 50.7
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1598,12 +1598,12 @@ TextureImporter:
       name: Sprite - Numeros_58
       rect:
         serializedVersion: 2
-        x: 224
-        y: 154.8
-        width: 56.88889
-        height: 51.2
+        x: 230
+        y: 156.3
+        width: 55.77778
+        height: 50.7
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1619,12 +1619,12 @@ TextureImporter:
       name: Sprite - Numeros_59
       rect:
         serializedVersion: 2
-        x: 280
-        y: 154.8
-        width: 56.88889
-        height: 51.2
+        x: 285
+        y: 156.3
+        width: 55.77778
+        height: 50.7
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1640,12 +1640,12 @@ TextureImporter:
       name: Sprite - Numeros_60
       rect:
         serializedVersion: 2
-        x: 336
-        y: 154.8
-        width: 56.88889
-        height: 51.2
+        x: 340
+        y: 156.3
+        width: 55.77778
+        height: 50.7
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1661,12 +1661,12 @@ TextureImporter:
       name: Sprite - Numeros_61
       rect:
         serializedVersion: 2
-        x: 392
-        y: 154.8
-        width: 56.88889
-        height: 51.2
+        x: 395
+        y: 156.3
+        width: 55.77778
+        height: 50.7
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1682,12 +1682,12 @@ TextureImporter:
       name: Sprite - Numeros_62
       rect:
         serializedVersion: 2
-        x: 448
-        y: 154.8
-        width: 56.88889
-        height: 51.2
+        x: 450
+        y: 156.3
+        width: 55.77778
+        height: 50.7
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1703,12 +1703,12 @@ TextureImporter:
       name: Sprite - Numeros_63
       rect:
         serializedVersion: 2
-        x: 0
-        y: 103.8
-        width: 56.88889
-        height: 51.2
+        x: 10
+        y: 106.3
+        width: 55.77778
+        height: 50.7
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1724,12 +1724,12 @@ TextureImporter:
       name: Sprite - Numeros_64
       rect:
         serializedVersion: 2
-        x: 56
-        y: 103.8
-        width: 56.88889
-        height: 51.2
+        x: 65
+        y: 106.3
+        width: 55.77778
+        height: 50.7
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1745,12 +1745,12 @@ TextureImporter:
       name: Sprite - Numeros_65
       rect:
         serializedVersion: 2
-        x: 112
-        y: 103.8
-        width: 56.88889
-        height: 51.2
+        x: 120
+        y: 106.3
+        width: 55.77778
+        height: 50.7
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1766,12 +1766,12 @@ TextureImporter:
       name: Sprite - Numeros_66
       rect:
         serializedVersion: 2
-        x: 168
-        y: 103.8
-        width: 56.88889
-        height: 51.2
+        x: 175
+        y: 106.3
+        width: 55.77778
+        height: 50.7
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1787,12 +1787,12 @@ TextureImporter:
       name: Sprite - Numeros_67
       rect:
         serializedVersion: 2
-        x: 224
-        y: 103.8
-        width: 56.88889
-        height: 51.2
+        x: 230
+        y: 106.3
+        width: 55.77778
+        height: 50.7
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1808,12 +1808,12 @@ TextureImporter:
       name: Sprite - Numeros_68
       rect:
         serializedVersion: 2
-        x: 280
-        y: 103.8
-        width: 56.88889
-        height: 51.2
+        x: 285
+        y: 106.3
+        width: 55.77778
+        height: 50.7
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1829,12 +1829,12 @@ TextureImporter:
       name: Sprite - Numeros_69
       rect:
         serializedVersion: 2
-        x: 336
-        y: 103.8
-        width: 56.88889
-        height: 51.2
+        x: 340
+        y: 106.3
+        width: 55.77778
+        height: 50.7
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1850,12 +1850,12 @@ TextureImporter:
       name: Sprite - Numeros_70
       rect:
         serializedVersion: 2
-        x: 392
-        y: 103.8
-        width: 56.88889
-        height: 51.2
+        x: 395
+        y: 106.3
+        width: 55.77778
+        height: 50.7
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1871,12 +1871,12 @@ TextureImporter:
       name: Sprite - Numeros_71
       rect:
         serializedVersion: 2
-        x: 448
-        y: 103.8
-        width: 56.88889
-        height: 51.2
+        x: 450
+        y: 106.3
+        width: 55.77778
+        height: 50.7
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1892,12 +1892,12 @@ TextureImporter:
       name: Sprite - Numeros_72
       rect:
         serializedVersion: 2
-        x: 0
-        y: 52.8
-        width: 56.88889
-        height: 51.2
+        x: 10
+        y: 56.3
+        width: 55.77778
+        height: 50.7
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1913,12 +1913,12 @@ TextureImporter:
       name: Sprite - Numeros_73
       rect:
         serializedVersion: 2
-        x: 56
-        y: 52.8
-        width: 56.88889
-        height: 51.2
+        x: 65
+        y: 56.3
+        width: 55.77778
+        height: 50.7
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1934,12 +1934,12 @@ TextureImporter:
       name: Sprite - Numeros_74
       rect:
         serializedVersion: 2
-        x: 112
-        y: 52.8
-        width: 56.88889
-        height: 51.2
+        x: 120
+        y: 56.3
+        width: 55.77778
+        height: 50.7
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1955,12 +1955,12 @@ TextureImporter:
       name: Sprite - Numeros_75
       rect:
         serializedVersion: 2
-        x: 168
-        y: 52.8
-        width: 56.88889
-        height: 51.2
+        x: 175
+        y: 56.3
+        width: 55.77778
+        height: 50.7
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1976,12 +1976,12 @@ TextureImporter:
       name: Sprite - Numeros_76
       rect:
         serializedVersion: 2
-        x: 224
-        y: 52.8
-        width: 56.88889
-        height: 51.2
+        x: 230
+        y: 56.3
+        width: 55.77778
+        height: 50.7
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1997,12 +1997,12 @@ TextureImporter:
       name: Sprite - Numeros_77
       rect:
         serializedVersion: 2
-        x: 280
-        y: 52.8
-        width: 56.88889
-        height: 51.2
+        x: 285
+        y: 56.3
+        width: 55.77778
+        height: 50.7
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2018,12 +2018,12 @@ TextureImporter:
       name: Sprite - Numeros_78
       rect:
         serializedVersion: 2
-        x: 336
-        y: 52.8
-        width: 56.88889
-        height: 51.2
+        x: 340
+        y: 56.3
+        width: 55.77778
+        height: 50.7
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2039,12 +2039,12 @@ TextureImporter:
       name: Sprite - Numeros_79
       rect:
         serializedVersion: 2
-        x: 392
-        y: 52.8
-        width: 56.88889
-        height: 51.2
+        x: 395
+        y: 56.3
+        width: 55.77778
+        height: 50.7
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2060,12 +2060,12 @@ TextureImporter:
       name: Sprite - Numeros_80
       rect:
         serializedVersion: 2
-        x: 448
-        y: 52.8
-        width: 56.88889
-        height: 51.2
+        x: 450
+        y: 56.3
+        width: 55.77778
+        height: 50.7
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2081,12 +2081,12 @@ TextureImporter:
       name: Sprite - Numeros_81
       rect:
         serializedVersion: 2
-        x: 0
-        y: 1.7999992
-        width: 56.88889
-        height: 51.2
+        x: 10
+        y: 6.299999
+        width: 55.77778
+        height: 50.7
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2102,12 +2102,12 @@ TextureImporter:
       name: Sprite - Numeros_82
       rect:
         serializedVersion: 2
-        x: 56
-        y: 1.7999992
-        width: 56.88889
-        height: 51.2
+        x: 65
+        y: 6.299999
+        width: 55.77778
+        height: 50.7
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2123,12 +2123,12 @@ TextureImporter:
       name: Sprite - Numeros_83
       rect:
         serializedVersion: 2
-        x: 112
-        y: 1.7999992
-        width: 56.88889
-        height: 51.2
+        x: 120
+        y: 6.299999
+        width: 55.77778
+        height: 50.7
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2144,12 +2144,12 @@ TextureImporter:
       name: Sprite - Numeros_84
       rect:
         serializedVersion: 2
-        x: 168
-        y: 1.7999992
-        width: 56.88889
-        height: 51.2
+        x: 175
+        y: 6.299999
+        width: 55.77778
+        height: 50.7
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2165,12 +2165,12 @@ TextureImporter:
       name: Sprite - Numeros_85
       rect:
         serializedVersion: 2
-        x: 224
-        y: 1.7999992
-        width: 56.88889
-        height: 51.2
+        x: 230
+        y: 6.299999
+        width: 55.77778
+        height: 50.7
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2186,12 +2186,12 @@ TextureImporter:
       name: Sprite - Numeros_86
       rect:
         serializedVersion: 2
-        x: 280
-        y: 1.7999992
-        width: 56.88889
-        height: 51.2
+        x: 285
+        y: 6.299999
+        width: 55.77778
+        height: 50.7
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2207,12 +2207,12 @@ TextureImporter:
       name: Sprite - Numeros_87
       rect:
         serializedVersion: 2
-        x: 336
-        y: 1.7999992
-        width: 56.88889
-        height: 51.2
+        x: 340
+        y: 6.299999
+        width: 55.77778
+        height: 50.7
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2228,12 +2228,12 @@ TextureImporter:
       name: Sprite - Numeros_88
       rect:
         serializedVersion: 2
-        x: 392
-        y: 1.7999992
-        width: 56.88889
-        height: 51.2
+        x: 395
+        y: 6.299999
+        width: 55.77778
+        height: 50.7
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2249,12 +2249,12 @@ TextureImporter:
       name: Sprite - Numeros_89
       rect:
         serializedVersion: 2
-        x: 448
-        y: 1.7999992
-        width: 56.88889
-        height: 51.2
+        x: 450
+        y: 6.299999
+        width: 55.77778
+        height: 50.7
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
