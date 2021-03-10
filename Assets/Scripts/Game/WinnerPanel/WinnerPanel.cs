@@ -86,6 +86,7 @@ public class WinnerPanel : MonoBehaviour
       if (c == null) continue;
       var cart = Instantiate(cardPrefab, holders[i / 4]);
       cart.Setup(c);
+      cart.CatchUp(manager.usedBalls);
     }
 
 

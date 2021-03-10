@@ -1,0 +1,2782 @@
+fileFormatVersion: 2
+guid: 43977eba9d4f07746b3240864732089e
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -7729892661663101656
+    second: POR-LIGHT-Layout---Azul---Sem-Textos_0
+  - first:
+      213: -6205300819825046695
+    second: POR-LIGHT-Layout---Azul---Sem-Textos_1
+  - first:
+      213: -1223360222369413553
+    second: Cart
+  - first:
+      213: 2625063256104704310
+    second: POR-LIGHT-Layout---Azul---Sem-Textos_3
+  - first:
+      213: 540274939929389942
+    second: POR-LIGHT-Layout---Azul---Sem-Textos_4
+  - first:
+      213: 7678905266705639354
+    second: POR-LIGHT-Layout---Azul---Sem-Textos_5
+  - first:
+      213: -3113896344441798702
+    second: POR-LIGHT-Layout---Azul---Sem-Textos_6
+  - first:
+      213: -2981976145174249725
+    second: POR-LIGHT-Layout---Azul---Sem-Textos_7
+  - first:
+      213: -8355931072457975525
+    second: POR-LIGHT-Layout---Azul---Sem-Textos_8
+  - first:
+      213: 3352659858862240593
+    second: POR-LIGHT-Layout---Azul---Sem-Textos_9
+  - first:
+      213: 5070580775311158989
+    second: POR-LIGHT-Layout---Azul---Sem-Textos_10
+  - first:
+      213: -2201958322059113381
+    second: POR-LIGHT-Layout---Azul---Sem-Textos_11
+  - first:
+      213: -1915977506229467028
+    second: POR-LIGHT-Layout---Azul---Sem-Textos_12
+  - first:
+      213: -7134958403758384341
+    second: POR-LIGHT-Layout---Azul---Sem-Textos_13
+  - first:
+      213: -427548468180676052
+    second: POR-LIGHT-Layout---Azul---Sem-Textos_14
+  - first:
+      213: 7702986595412064613
+    second: POR-LIGHT-Layout---Azul---Sem-Textos_15
+  - first:
+      213: -4248177685219348954
+    second: POR-LIGHT-Layout---Azul---Sem-Textos_16
+  - first:
+      213: 8378992319400654065
+    second: POR-LIGHT-Layout---Azul---Sem-Textos_17
+  - first:
+      213: 6154007829190749110
+    second: POR-LIGHT-Layout---Azul---Sem-Textos_18
+  - first:
+      213: -4984682797123005458
+    second: POR-LIGHT-Layout---Azul---Sem-Textos_19
+  - first:
+      213: 2353159803952941822
+    second: POR-LIGHT-Layout---Azul---Sem-Textos_20
+  - first:
+      213: -2495356567400398636
+    second: POR-LIGHT-Layout---Azul---Sem-Textos_21
+  - first:
+      213: -7328435196269615566
+    second: POR-LIGHT-Layout---Azul---Sem-Textos_22
+  - first:
+      213: -1588216054703445091
+    second: POR-LIGHT-Layout---Azul---Sem-Textos_23
+  - first:
+      213: 8750197283209472406
+    second: POR-LIGHT-Layout---Azul---Sem-Textos_24
+  - first:
+      213: -3509888206339311588
+    second: POR-LIGHT-Layout---Azul---Sem-Textos_25
+  - first:
+      213: -7543039819006632546
+    second: POR-LIGHT-Layout---Azul---Sem-Textos_26
+  - first:
+      213: 498277917511691723
+    second: POR-LIGHT-Layout---Azul---Sem-Textos_27
+  - first:
+      213: 6056171752013820386
+    second: POR-LIGHT-Layout---Azul---Sem-Textos_28
+  - first:
+      213: -182091781482608984
+    second: POR-LIGHT-Layout---Azul---Sem-Textos_29
+  - first:
+      213: 3712416244767347412
+    second: POR-LIGHT-Layout---Azul---Sem-Textos_30
+  - first:
+      213: -4189964994509767031
+    second: POR-LIGHT-Layout---Azul---Sem-Textos_31
+  - first:
+      213: 8750306001869882644
+    second: POR-LIGHT-Layout---Azul---Sem-Textos_32
+  - first:
+      213: -5565644445815103666
+    second: POR-LIGHT-Layout---Azul---Sem-Textos_33
+  - first:
+      213: -1602986471911851680
+    second: POR-LIGHT-Layout---Azul---Sem-Textos_34
+  - first:
+      213: -1107557923055035209
+    second: POR-LIGHT-Layout---Azul---Sem-Textos_35
+  - first:
+      213: 3461811787962482099
+    second: POR-LIGHT-Layout---Azul---Sem-Textos_36
+  - first:
+      213: -8453707495455360095
+    second: POR-LIGHT-Layout---Azul---Sem-Textos_37
+  - first:
+      213: -1853188989036843806
+    second: POR-LIGHT-Layout---Azul---Sem-Textos_38
+  - first:
+      213: 7694108619019967159
+    second: POR-LIGHT-Layout---Azul---Sem-Textos_39
+  - first:
+      213: 2644089409006927880
+    second: POR-LIGHT-Layout---Azul---Sem-Textos_40
+  - first:
+      213: -398452741424352692
+    second: POR-LIGHT-Layout---Azul---Sem-Textos_41
+  - first:
+      213: 1667660703872394972
+    second: POR-LIGHT-Layout---Azul---Sem-Textos_42
+  - first:
+      213: 7348963326353780738
+    second: POR-LIGHT-Layout---Azul---Sem-Textos_43
+  - first:
+      213: -4320874520418067747
+    second: POR-LIGHT-Layout---Azul---Sem-Textos_44
+  - first:
+      213: -4214728512283383870
+    second: POR-LIGHT-Layout---Azul---Sem-Textos_45
+  - first:
+      213: -8410842726203776481
+    second: POR-LIGHT-Layout---Azul---Sem-Textos_46
+  - first:
+      213: -4604218208403657373
+    second: POR-LIGHT-Layout---Azul---Sem-Textos_47
+  - first:
+      213: 7792923199937571814
+    second: POR-LIGHT-Layout---Azul---Sem-Textos_48
+  - first:
+      213: -1486886457495513770
+    second: POR-LIGHT-Layout---Azul---Sem-Textos_49
+  - first:
+      213: 4605499770522876228
+    second: POR-LIGHT-Layout---Azul---Sem-Textos_50
+  - first:
+      213: -7213460021758858585
+    second: POR-LIGHT-Layout---Azul---Sem-Textos_51
+  - first:
+      213: -6237577462132555901
+    second: POR-LIGHT-Layout---Azul---Sem-Textos_52
+  - first:
+      213: -7608750694056433431
+    second: POR-LIGHT-Layout---Azul---Sem-Textos_53
+  - first:
+      213: 8404932881260790558
+    second: POR-LIGHT-Layout---Azul---Sem-Textos_54
+  - first:
+      213: -6175005612275359257
+    second: POR-LIGHT-Layout---Azul---Sem-Textos_55
+  - first:
+      213: 3537511690772327792
+    second: POR-LIGHT-Layout---Azul---Sem-Textos_56
+  - first:
+      213: -504986899905140179
+    second: POR-LIGHT-Layout---Azul---Sem-Textos_57
+  - first:
+      213: 297999640911174698
+    second: POR-LIGHT-Layout---Azul---Sem-Textos_58
+  - first:
+      213: -7092574622959427215
+    second: POR-LIGHT-Layout---Azul---Sem-Textos_59
+  - first:
+      213: -4853963755152206117
+    second: POR-LIGHT-Layout---Azul---Sem-Textos_60
+  - first:
+      213: -4340826981854010763
+    second: POR-LIGHT-Layout---Azul---Sem-Textos_61
+  - first:
+      213: 6959118295497934949
+    second: POR-LIGHT-Layout---Azul---Sem-Textos_62
+  - first:
+      213: -7814844858774379626
+    second: POR-LIGHT-Layout---Azul---Sem-Textos_63
+  - first:
+      213: 7601357243938685579
+    second: POR-LIGHT-Layout---Azul---Sem-Textos_64
+  - first:
+      213: -1163450928512395004
+    second: POR-LIGHT-Layout---Azul---Sem-Textos_65
+  - first:
+      213: -3339362322962793337
+    second: POR-LIGHT-Layout---Azul---Sem-Textos_66
+  - first:
+      213: -3168453039161678369
+    second: POR-LIGHT-Layout---Azul---Sem-Textos_67
+  - first:
+      213: -3759322062136932254
+    second: POR-LIGHT-Layout---Azul---Sem-Textos_68
+  - first:
+      213: -3991986411986430409
+    second: POR-LIGHT-Layout---Azul---Sem-Textos_69
+  - first:
+      213: -3151948254895869777
+    second: POR-LIGHT-Layout---Azul---Sem-Textos_70
+  - first:
+      213: 2084640281410814565
+    second: POR-LIGHT-Layout---Azul---Sem-Textos_71
+  - first:
+      213: -8647429053434910127
+    second: POR-LIGHT-Layout---Azul---Sem-Textos_72
+  - first:
+      213: 386741356591081705
+    second: POR-LIGHT-Layout---Azul---Sem-Textos_73
+  - first:
+      213: 6998900609366416656
+    second: POR-LIGHT-Layout---Azul---Sem-Textos_74
+  - first:
+      213: -8522539039937107967
+    second: POR-LIGHT-Layout---Azul---Sem-Textos_75
+  - first:
+      213: -5018898367586431988
+    second: POR-LIGHT-Layout---Azul---Sem-Textos_76
+  - first:
+      213: -6393168745116850180
+    second: POR-LIGHT-Layout---Azul---Sem-Textos_77
+  - first:
+      213: -5898706507415834850
+    second: POR-LIGHT-Layout---Azul---Sem-Textos_78
+  - first:
+      213: -5152786103326402994
+    second: POR-LIGHT-Layout---Azul---Sem-Textos_79
+  - first:
+      213: 7806764853384822764
+    second: POR-LIGHT-Layout---Azul---Sem-Textos_80
+  - first:
+      213: 6410165913424453456
+    second: POR-LIGHT-Layout---Azul---Sem-Textos_81
+  - first:
+      213: -5414457400893701006
+    second: POR-LIGHT-Layout---Azul---Sem-Textos_82
+  - first:
+      213: -6061740038056820645
+    second: POR-LIGHT-Layout---Azul---Sem-Textos_83
+  - first:
+      213: 2161178078811787483
+    second: POR-LIGHT-Layout---Azul---Sem-Textos_84
+  - first:
+      213: -5548172882721793931
+    second: POR-LIGHT-Layout---Azul---Sem-Textos_85
+  - first:
+      213: -2481533180078489369
+    second: POR-LIGHT-Layout---Azul---Sem-Textos_86
+  - first:
+      213: -7752521794141411180
+    second: POR-LIGHT-Layout---Azul---Sem-Textos_87
+  - first:
+      213: 2297972631186622870
+    second: POR-LIGHT-Layout---Azul---Sem-Textos_88
+  - first:
+      213: 5819339888593309648
+    second: POR-LIGHT-Layout---Azul---Sem-Textos_89
+  - first:
+      213: -7480589842984516881
+    second: POR-LIGHT-Layout---Azul---Sem-Textos_90
+  - first:
+      213: 4218934583337860376
+    second: POR-LIGHT-Layout---Azul---Sem-Textos_91
+  - first:
+      213: 5488547784589206071
+    second: POR-LIGHT-Layout---Azul---Sem-Textos_92
+  - first:
+      213: -241994452886953643
+    second: POR-LIGHT-Layout---Azul---Sem-Textos_93
+  - first:
+      213: -7865949175693106168
+    second: POR-LIGHT-Layout---Azul---Sem-Textos_94
+  - first:
+      213: 37423646936061498
+    second: POR-LIGHT-Layout---Azul---Sem-Textos_95
+  - first:
+      213: 3987995871509794026
+    second: POR-LIGHT-Layout---Azul---Sem-Textos_96
+  - first:
+      213: 769561509043415537
+    second: POR-LIGHT-Layout---Azul---Sem-Textos_97
+  - first:
+      213: -6791332976115364425
+    second: POR-LIGHT-Layout---Azul---Sem-Textos_98
+  - first:
+      213: -3911585231914491853
+    second: POR-LIGHT-Layout---Azul---Sem-Textos_99
+  - first:
+      213: 5758146141149466549
+    second: POR-LIGHT-Layout---Azul---Sem-Textos_100
+  - first:
+      213: -9031477816895739172
+    second: POR-LIGHT-Layout---Azul---Sem-Textos_101
+  - first:
+      213: 2786021017345853734
+    second: POR-LIGHT-Layout---Azul---Sem-Textos_102
+  - first:
+      213: 8100544741497250703
+    second: POR-LIGHT-Layout---Azul---Sem-Textos_103
+  - first:
+      213: -4000471734491930786
+    second: POR-LIGHT-Layout---Azul---Sem-Textos_104
+  - first:
+      213: 1644221317672542915
+    second: POR-LIGHT-Layout---Azul---Sem-Textos_105
+  - first:
+      213: 2814398435701482887
+    second: POR-LIGHT-Layout---Azul---Sem-Textos_106
+  - first:
+      213: 6052297388930290714
+    second: POR-LIGHT-Layout---Azul---Sem-Textos_107
+  - first:
+      213: 1376684587772530431
+    second: POR-LIGHT-Layout---Azul---Sem-Textos_108
+  - first:
+      213: -4303090171144676054
+    second: POR-LIGHT-Layout---Azul---Sem-Textos_109
+  - first:
+      213: 7846760236738613466
+    second: POR-LIGHT-Layout---Azul---Sem-Textos_110
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 449, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 1024
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 3
+    compressionQuality: 100
+    crunchedCompression: 1
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 1024
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 3
+    compressionQuality: 100
+    crunchedCompression: 1
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 1024
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 3
+    compressionQuality: 100
+    crunchedCompression: 1
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: POR-LIGHT-Layout---Azul---Sem-Textos_0
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 685
+        width: 51
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82d0ca53497e9b490800000000000000
+      internalID: -7729892661663101656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: POR-LIGHT-Layout---Azul---Sem-Textos_1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 968
+        width: 1920
+        height: 1080
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95b43ed08c752e9a0800000000000000
+      internalID: -6205300819825046695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cart
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 707
+        width: 411
+        height: 246
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4604510c50c50fe0800000000000000
+      internalID: -1223360222369413553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: POR-LIGHT-Layout---Azul---Sem-Textos_3
+      rect:
+        serializedVersion: 2
+        x: 453
+        y: 895
+        width: 708
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6391d0d8f191e6420800000000000000
+      internalID: 2625063256104704310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: POR-LIGHT-Layout---Azul---Sem-Textos_4
+      rect:
+        serializedVersion: 2
+        x: 453
+        y: 749
+        width: 27
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67b698302317f7700800000000000000
+      internalID: 540274939929389942
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: POR-LIGHT-Layout---Azul---Sem-Textos_5
+      rect:
+        serializedVersion: 2
+        x: 465
+        y: 813
+        width: 20
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab7adddc7a3f09a60800000000000000
+      internalID: 7678905266705639354
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: POR-LIGHT-Layout---Azul---Sem-Textos_6
+      rect:
+        serializedVersion: 2
+        x: 477
+        y: 749
+        width: 20
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2dfb82ad5c739c4d0800000000000000
+      internalID: -3113896344441798702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: POR-LIGHT-Layout---Azul---Sem-Textos_7
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 749
+        width: 21
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30f3332ce74ed96d0800000000000000
+      internalID: -2981976145174249725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: POR-LIGHT-Layout---Azul---Sem-Textos_8
+      rect:
+        serializedVersion: 2
+        x: 513
+        y: 685
+        width: 52
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b195e7216f4c90c80800000000000000
+      internalID: -8355931072457975525
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: POR-LIGHT-Layout---Azul---Sem-Textos_9
+      rect:
+        serializedVersion: 2
+        x: 525
+        y: 813
+        width: 28
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 153f134e06a078e20800000000000000
+      internalID: 3352659858862240593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: POR-LIGHT-Layout---Azul---Sem-Textos_10
+      rect:
+        serializedVersion: 2
+        x: 537
+        y: 749
+        width: 28
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dcea85d99525e5640800000000000000
+      internalID: 5070580775311158989
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: POR-LIGHT-Layout---Azul---Sem-Textos_11
+      rect:
+        serializedVersion: 2
+        x: 575
+        y: 686
+        width: 54
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5c837392921171e0800000000000000
+      internalID: -2201958322059113381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: POR-LIGHT-Layout---Azul---Sem-Textos_12
+      rect:
+        serializedVersion: 2
+        x: 577
+        y: 744
+        width: 23
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c68cd8ffb941965e0800000000000000
+      internalID: -1915977506229467028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: POR-LIGHT-Layout---Azul---Sem-Textos_13
+      rect:
+        serializedVersion: 2
+        x: 589
+        y: 813
+        width: 26
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2b1bc862298bfc90800000000000000
+      internalID: -7134958403758384341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: POR-LIGHT-Layout---Azul---Sem-Textos_14
+      rect:
+        serializedVersion: 2
+        x: 601
+        y: 744
+        width: 26
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2214d5feea011af0800000000000000
+      internalID: -427548468180676052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: POR-LIGHT-Layout---Azul---Sem-Textos_15
+      rect:
+        serializedVersion: 2
+        x: 637
+        y: 685
+        width: 56
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 569b1211f7186ea60800000000000000
+      internalID: 7702986595412064613
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: POR-LIGHT-Layout---Azul---Sem-Textos_16
+      rect:
+        serializedVersion: 2
+        x: 639
+        y: 744
+        width: 20
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62e62c137e07b05c0800000000000000
+      internalID: -4248177685219348954
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: POR-LIGHT-Layout---Azul---Sem-Textos_17
+      rect:
+        serializedVersion: 2
+        x: 651
+        y: 813
+        width: 28
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f43a95ee19284470800000000000000
+      internalID: 8378992319400654065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: POR-LIGHT-Layout---Azul---Sem-Textos_18
+      rect:
+        serializedVersion: 2
+        x: 663
+        y: 749
+        width: 28
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6bb23ebe38d676550800000000000000
+      internalID: 6154007829190749110
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: POR-LIGHT-Layout---Azul---Sem-Textos_19
+      rect:
+        serializedVersion: 2
+        x: 701
+        y: 686
+        width: 54
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee39b7fe769d2dab0800000000000000
+      internalID: -4984682797123005458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: POR-LIGHT-Layout---Azul---Sem-Textos_20
+      rect:
+        serializedVersion: 2
+        x: 703
+        y: 749
+        width: 20
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: efac756cf5a18a020800000000000000
+      internalID: 2353159803952941822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: POR-LIGHT-Layout---Azul---Sem-Textos_21
+      rect:
+        serializedVersion: 2
+        x: 715
+        y: 808
+        width: 29
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d049244c66be5dd0800000000000000
+      internalID: -2495356567400398636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: POR-LIGHT-Layout---Azul---Sem-Textos_22
+      rect:
+        serializedVersion: 2
+        x: 727
+        y: 744
+        width: 28
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23621e6440b2c4a90800000000000000
+      internalID: -7328435196269615566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: POR-LIGHT-Layout---Azul---Sem-Textos_23
+      rect:
+        serializedVersion: 2
+        x: 765
+        y: 686
+        width: 54
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9b24d8b9e585f9e0800000000000000
+      internalID: -1588216054703445091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: POR-LIGHT-Layout---Azul---Sem-Textos_24
+      rect:
+        serializedVersion: 2
+        x: 765
+        y: 749
+        width: 22
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 699e94c8112fe6970800000000000000
+      internalID: 8750197283209472406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: POR-LIGHT-Layout---Azul---Sem-Textos_25
+      rect:
+        serializedVersion: 2
+        x: 779
+        y: 813
+        width: 26
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c18ffc3c54f5a4fc0800000000000000
+      internalID: -3509888206339311588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: POR-LIGHT-Layout---Azul---Sem-Textos_26
+      rect:
+        serializedVersion: 2
+        x: 789
+        y: 744
+        width: 28
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9d9b75df3db15790800000000000000
+      internalID: -7543039819006632546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: POR-LIGHT-Layout---Azul---Sem-Textos_27
+      rect:
+        serializedVersion: 2
+        x: 829
+        y: 685
+        width: 52
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bcda4b0402d3ae600800000000000000
+      internalID: 498277917511691723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: POR-LIGHT-Layout---Azul---Sem-Textos_28
+      rect:
+        serializedVersion: 2
+        x: 829
+        y: 749
+        width: 22
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e1f9891f18db0450800000000000000
+      internalID: 6056171752013820386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: POR-LIGHT-Layout---Azul---Sem-Textos_29
+      rect:
+        serializedVersion: 2
+        x: 841
+        y: 813
+        width: 28
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a606305d74197df0800000000000000
+      internalID: -182091781482608984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: POR-LIGHT-Layout---Azul---Sem-Textos_30
+      rect:
+        serializedVersion: 2
+        x: 853
+        y: 744
+        width: 28
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d25fb7c7e6258330800000000000000
+      internalID: 3712416244767347412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: POR-LIGHT-Layout---Azul---Sem-Textos_31
+      rect:
+        serializedVersion: 2
+        x: 891
+        y: 686
+        width: 54
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98e7ce079014ad5c0800000000000000
+      internalID: -4189964994509767031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: POR-LIGHT-Layout---Azul---Sem-Textos_32
+      rect:
+        serializedVersion: 2
+        x: 893
+        y: 749
+        width: 50
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4154c6592f45f6970800000000000000
+      internalID: 8750306001869882644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: POR-LIGHT-Layout---Azul---Sem-Textos_33
+      rect:
+        serializedVersion: 2
+        x: 905
+        y: 813
+        width: 26
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4f90155ddbd2c2b0800000000000000
+      internalID: -5565644445815103666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: POR-LIGHT-Layout---Azul---Sem-Textos_34
+      rect:
+        serializedVersion: 2
+        x: 955
+        y: 686
+        width: 54
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 069ffe9fb4c01c9e0800000000000000
+      internalID: -1602986471911851680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: POR-LIGHT-Layout---Azul---Sem-Textos_35
+      rect:
+        serializedVersion: 2
+        x: 955
+        y: 749
+        width: 20
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7bc9224efe921a0f0800000000000000
+      internalID: -1107557923055035209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: POR-LIGHT-Layout---Azul---Sem-Textos_36
+      rect:
+        serializedVersion: 2
+        x: 969
+        y: 813
+        width: 26
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3bd73ccca73da0030800000000000000
+      internalID: 3461811787962482099
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: POR-LIGHT-Layout---Azul---Sem-Textos_37
+      rect:
+        serializedVersion: 2
+        x: 981
+        y: 744
+        width: 26
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ab735292d56eaa80800000000000000
+      internalID: -8453707495455360095
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: POR-LIGHT-Layout---Azul---Sem-Textos_38
+      rect:
+        serializedVersion: 2
+        x: 1019
+        y: 686
+        width: 52
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ec2bcede662846e0800000000000000
+      internalID: -1853188989036843806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: POR-LIGHT-Layout---Azul---Sem-Textos_39
+      rect:
+        serializedVersion: 2
+        x: 1019
+        y: 744
+        width: 52
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7bad4fb1607f6ca60800000000000000
+      internalID: 7694108619019967159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: POR-LIGHT-Layout---Azul---Sem-Textos_40
+      rect:
+        serializedVersion: 2
+        x: 1019
+        y: 813
+        width: 20
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8000b3afe41b1b420800000000000000
+      internalID: 2644089409006927880
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: POR-LIGHT-Layout---Azul---Sem-Textos_41
+      rect:
+        serializedVersion: 2
+        x: 1043
+        y: 813
+        width: 26
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c42fe9fb759687af0800000000000000
+      internalID: -398452741424352692
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: POR-LIGHT-Layout---Azul---Sem-Textos_42
+      rect:
+        serializedVersion: 2
+        x: 1413
+        y: 815
+        width: 178
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd621341398b42710800000000000000
+      internalID: 1667660703872394972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: POR-LIGHT-Layout---Azul---Sem-Textos_43
+      rect:
+        serializedVersion: 2
+        x: 331
+        y: 635
+        width: 80
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 200b0b67533ccf560800000000000000
+      internalID: 7348963326353780738
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: POR-LIGHT-Layout---Azul---Sem-Textos_44
+      rect:
+        serializedVersion: 2
+        x: 453
+        y: 623
+        width: 26
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ddad173448b2904c0800000000000000
+      internalID: -4320874520418067747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: POR-LIGHT-Layout---Azul---Sem-Textos_45
+      rect:
+        serializedVersion: 2
+        x: 479
+        y: 623
+        width: 20
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c763a8afb64285c0800000000000000
+      internalID: -4214728512283383870
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: POR-LIGHT-Layout---Azul---Sem-Textos_46
+      rect:
+        serializedVersion: 2
+        x: 513
+        y: 623
+        width: 52
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1222f26a1fa64b80800000000000000
+      internalID: -8410842726203776481
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: POR-LIGHT-Layout---Azul---Sem-Textos_47
+      rect:
+        serializedVersion: 2
+        x: 577
+        y: 623
+        width: 52
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36de6b30fe78a10c0800000000000000
+      internalID: -4604218208403657373
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: POR-LIGHT-Layout---Azul---Sem-Textos_48
+      rect:
+        serializedVersion: 2
+        x: 638
+        y: 623
+        width: 55
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ebed269c56062c60800000000000000
+      internalID: 7792923199937571814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: POR-LIGHT-Layout---Azul---Sem-Textos_49
+      rect:
+        serializedVersion: 2
+        x: 701
+        y: 623
+        width: 54
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65514af05a48d5be0800000000000000
+      internalID: -1486886457495513770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: POR-LIGHT-Layout---Azul---Sem-Textos_50
+      rect:
+        serializedVersion: 2
+        x: 765
+        y: 623
+        width: 54
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 449b82be3a50aef30800000000000000
+      internalID: 4605499770522876228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: POR-LIGHT-Layout---Azul---Sem-Textos_51
+      rect:
+        serializedVersion: 2
+        x: 824
+        y: 623
+        width: 57
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7aae4992454a4eb90800000000000000
+      internalID: -7213460021758858585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: POR-LIGHT-Layout---Azul---Sem-Textos_52
+      rect:
+        serializedVersion: 2
+        x: 893
+        y: 623
+        width: 52
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38f3b96a85caf69a0800000000000000
+      internalID: -6237577462132555901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: POR-LIGHT-Layout---Azul---Sem-Textos_53
+      rect:
+        serializedVersion: 2
+        x: 955
+        y: 623
+        width: 54
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e862408e89486690800000000000000
+      internalID: -7608750694056433431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: POR-LIGHT-Layout---Azul---Sem-Textos_54
+      rect:
+        serializedVersion: 2
+        x: 1019
+        y: 623
+        width: 52
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e13cc8c9ce154a470800000000000000
+      internalID: 8404932881260790558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: POR-LIGHT-Layout---Azul---Sem-Textos_55
+      rect:
+        serializedVersion: 2
+        x: 453
+        y: 559
+        width: 28
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e1a84abc19fd4aa0800000000000000
+      internalID: -6175005612275359257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: POR-LIGHT-Layout---Azul---Sem-Textos_56
+      rect:
+        serializedVersion: 2
+        x: 481
+        y: 559
+        width: 20
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07da645e324c71130800000000000000
+      internalID: 3537511690772327792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: POR-LIGHT-Layout---Azul---Sem-Textos_57
+      rect:
+        serializedVersion: 2
+        x: 513
+        y: 559
+        width: 52
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2aadee071dedf8f0800000000000000
+      internalID: -504986899905140179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: POR-LIGHT-Layout---Azul---Sem-Textos_58
+      rect:
+        serializedVersion: 2
+        x: 575
+        y: 560
+        width: 57
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2c54b33815b22400800000000000000
+      internalID: 297999640911174698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: POR-LIGHT-Layout---Azul---Sem-Textos_59
+      rect:
+        serializedVersion: 2
+        x: 637
+        y: 559
+        width: 56
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 171ad8f55fc129d90800000000000000
+      internalID: -7092574622959427215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: POR-LIGHT-Layout---Azul---Sem-Textos_60
+      rect:
+        serializedVersion: 2
+        x: 701
+        y: 561
+        width: 59
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd6188d9ea143acb0800000000000000
+      internalID: -4853963755152206117
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: POR-LIGHT-Layout---Azul---Sem-Textos_61
+      rect:
+        serializedVersion: 2
+        x: 765
+        y: 561
+        width: 54
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5722923dbd842c3c0800000000000000
+      internalID: -4340826981854010763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: POR-LIGHT-Layout---Azul---Sem-Textos_62
+      rect:
+        serializedVersion: 2
+        x: 827
+        y: 559
+        width: 30
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56883110831c39060800000000000000
+      internalID: 6959118295497934949
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: POR-LIGHT-Layout---Azul---Sem-Textos_63
+      rect:
+        serializedVersion: 2
+        x: 855
+        y: 559
+        width: 28
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69327f971081c8390800000000000000
+      internalID: -7814844858774379626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: POR-LIGHT-Layout---Azul---Sem-Textos_64
+      rect:
+        serializedVersion: 2
+        x: 891
+        y: 561
+        width: 54
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b82cecfb3227d7960800000000000000
+      internalID: 7601357243938685579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: POR-LIGHT-Layout---Azul---Sem-Textos_65
+      rect:
+        serializedVersion: 2
+        x: 955
+        y: 561
+        width: 54
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4099b647b879adfe0800000000000000
+      internalID: -1163450928512395004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: POR-LIGHT-Layout---Azul---Sem-Textos_66
+      rect:
+        serializedVersion: 2
+        x: 1019
+        y: 561
+        width: 52
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78cba73f8a338a1d0800000000000000
+      internalID: -3339362322962793337
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: POR-LIGHT-Layout---Azul---Sem-Textos_67
+      rect:
+        serializedVersion: 2
+        x: 453
+        y: 497
+        width: 26
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd5e2418fb46704d0800000000000000
+      internalID: -3168453039161678369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: POR-LIGHT-Layout---Azul---Sem-Textos_68
+      rect:
+        serializedVersion: 2
+        x: 479
+        y: 497
+        width: 20
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2680a02908434dbc0800000000000000
+      internalID: -3759322062136932254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: POR-LIGHT-Layout---Azul---Sem-Textos_69
+      rect:
+        serializedVersion: 2
+        x: 513
+        y: 497
+        width: 55
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 736dc5d328d9998c0800000000000000
+      internalID: -3991986411986430409
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: POR-LIGHT-Layout---Azul---Sem-Textos_70
+      rect:
+        serializedVersion: 2
+        x: 575
+        y: 497
+        width: 54
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa0f48c03c70244d0800000000000000
+      internalID: -3151948254895869777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: POR-LIGHT-Layout---Azul---Sem-Textos_71
+      rect:
+        serializedVersion: 2
+        x: 637
+        y: 497
+        width: 56
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56246f18a412eec10800000000000000
+      internalID: 2084640281410814565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: POR-LIGHT-Layout---Azul---Sem-Textos_72
+      rect:
+        serializedVersion: 2
+        x: 701
+        y: 497
+        width: 54
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15aae9987192ef780800000000000000
+      internalID: -8647429053434910127
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: POR-LIGHT-Layout---Azul---Sem-Textos_73
+      rect:
+        serializedVersion: 2
+        x: 765
+        y: 497
+        width: 54
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e8609bf63bfd5500800000000000000
+      internalID: 386741356591081705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: POR-LIGHT-Layout---Azul---Sem-Textos_74
+      rect:
+        serializedVersion: 2
+        x: 829
+        y: 497
+        width: 52
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01ddc8fb507112160800000000000000
+      internalID: 6998900609366416656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: POR-LIGHT-Layout---Azul---Sem-Textos_75
+      rect:
+        serializedVersion: 2
+        x: 891
+        y: 497
+        width: 54
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1086624c5ebd9b980800000000000000
+      internalID: -8522539039937107967
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: POR-LIGHT-Layout---Azul---Sem-Textos_76
+      rect:
+        serializedVersion: 2
+        x: 955
+        y: 497
+        width: 54
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0c0934a68a495ab0800000000000000
+      internalID: -5018898367586431988
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: POR-LIGHT-Layout---Azul---Sem-Textos_77
+      rect:
+        serializedVersion: 2
+        x: 1019
+        y: 497
+        width: 52
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf72e2616e6e647a0800000000000000
+      internalID: -6393168745116850180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: POR-LIGHT-Layout---Azul---Sem-Textos_78
+      rect:
+        serializedVersion: 2
+        x: 453
+        y: 433
+        width: 46
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1fa1372fa5932ea0800000000000000
+      internalID: -5898706507415834850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: POR-LIGHT-Layout---Azul---Sem-Textos_79
+      rect:
+        serializedVersion: 2
+        x: 513
+        y: 433
+        width: 52
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4619a3f650ad78b0800000000000000
+      internalID: -5152786103326402994
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: POR-LIGHT-Layout---Azul---Sem-Textos_80
+      rect:
+        serializedVersion: 2
+        x: 575
+        y: 433
+        width: 57
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cefb10ba543375c60800000000000000
+      internalID: 7806764853384822764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: POR-LIGHT-Layout---Azul---Sem-Textos_81
+      rect:
+        serializedVersion: 2
+        x: 638
+        y: 433
+        width: 55
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05f5bfc8feb75f850800000000000000
+      internalID: 6410165913424453456
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: POR-LIGHT-Layout---Azul---Sem-Textos_82
+      rect:
+        serializedVersion: 2
+        x: 701
+        y: 433
+        width: 54
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2740f305eabfbd4b0800000000000000
+      internalID: -5414457400893701006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: POR-LIGHT-Layout---Azul---Sem-Textos_83
+      rect:
+        serializedVersion: 2
+        x: 765
+        y: 433
+        width: 54
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b504cd64d8f50eba0800000000000000
+      internalID: -6061740038056820645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: POR-LIGHT-Layout---Azul---Sem-Textos_84
+      rect:
+        serializedVersion: 2
+        x: 829
+        y: 433
+        width: 52
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd010f3230c0efd10800000000000000
+      internalID: 2161178078811787483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: POR-LIGHT-Layout---Azul---Sem-Textos_85
+      rect:
+        serializedVersion: 2
+        x: 891
+        y: 433
+        width: 54
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57899ec982ee003b0800000000000000
+      internalID: -5548172882721793931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: POR-LIGHT-Layout---Azul---Sem-Textos_86
+      rect:
+        serializedVersion: 2
+        x: 955
+        y: 433
+        width: 52
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e0831f68b2df8dd0800000000000000
+      internalID: -2481533180078489369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: POR-LIGHT-Layout---Azul---Sem-Textos_87
+      rect:
+        serializedVersion: 2
+        x: 1019
+        y: 433
+        width: 52
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4982abab082896490800000000000000
+      internalID: -7752521794141411180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: POR-LIGHT-Layout---Azul---Sem-Textos_88
+      rect:
+        serializedVersion: 2
+        x: 453
+        y: 369
+        width: 46
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 699c271dee904ef10800000000000000
+      internalID: 2297972631186622870
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: POR-LIGHT-Layout---Azul---Sem-Textos_89
+      rect:
+        serializedVersion: 2
+        x: 513
+        y: 369
+        width: 52
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0df8dd6ebc272c050800000000000000
+      internalID: 5819339888593309648
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: POR-LIGHT-Layout---Azul---Sem-Textos_90
+      rect:
+        serializedVersion: 2
+        x: 575
+        y: 371
+        width: 54
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe24382fb2b9f2890800000000000000
+      internalID: -7480589842984516881
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: POR-LIGHT-Layout---Azul---Sem-Textos_91
+      rect:
+        serializedVersion: 2
+        x: 638
+        y: 369
+        width: 27
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81db67296aaac8a30800000000000000
+      internalID: 4218934583337860376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: POR-LIGHT-Layout---Azul---Sem-Textos_92
+      rect:
+        serializedVersion: 2
+        x: 663
+        y: 369
+        width: 30
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7326239612d3b2c40800000000000000
+      internalID: 5488547784589206071
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: POR-LIGHT-Layout---Azul---Sem-Textos_93
+      rect:
+        serializedVersion: 2
+        x: 701
+        y: 371
+        width: 28
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 551ee06c35344acf0800000000000000
+      internalID: -241994452886953643
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: POR-LIGHT-Layout---Azul---Sem-Textos_94
+      rect:
+        serializedVersion: 2
+        x: 727
+        y: 371
+        width: 33
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 804298976e886d290800000000000000
+      internalID: -7865949175693106168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: POR-LIGHT-Layout---Azul---Sem-Textos_95
+      rect:
+        serializedVersion: 2
+        x: 765
+        y: 371
+        width: 54
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a36d2ddcb94f48000800000000000000
+      internalID: 37423646936061498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: POR-LIGHT-Layout---Azul---Sem-Textos_96
+      rect:
+        serializedVersion: 2
+        x: 829
+        y: 371
+        width: 52
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aecc017ad15385730800000000000000
+      internalID: 3987995871509794026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: POR-LIGHT-Layout---Azul---Sem-Textos_97
+      rect:
+        serializedVersion: 2
+        x: 891
+        y: 371
+        width: 54
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f9a85b7d180eaa00800000000000000
+      internalID: 769561509043415537
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: POR-LIGHT-Layout---Azul---Sem-Textos_98
+      rect:
+        serializedVersion: 2
+        x: 955
+        y: 371
+        width: 52
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7bd4f37e3a650c1a0800000000000000
+      internalID: -6791332976115364425
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: POR-LIGHT-Layout---Azul---Sem-Textos_99
+      rect:
+        serializedVersion: 2
+        x: 1019
+        y: 371
+        width: 52
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 330a21fb4f147b9c0800000000000000
+      internalID: -3911585231914491853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: POR-LIGHT-Layout---Azul---Sem-Textos_100
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 307
+        width: 31
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5bf000c486b09ef40800000000000000
+      internalID: 5758146141149466549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: POR-LIGHT-Layout---Azul---Sem-Textos_101
+      rect:
+        serializedVersion: 2
+        x: 479
+        y: 307
+        width: 20
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cdaeb1fb6ceb9a280800000000000000
+      internalID: -9031477816895739172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: POR-LIGHT-Layout---Azul---Sem-Textos_102
+      rect:
+        serializedVersion: 2
+        x: 513
+        y: 307
+        width: 52
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6290ca3ba5fe9a620800000000000000
+      internalID: 2786021017345853734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: POR-LIGHT-Layout---Azul---Sem-Textos_103
+      rect:
+        serializedVersion: 2
+        x: 575
+        y: 307
+        width: 54
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f832a1c168aea6070800000000000000
+      internalID: 8100544741497250703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: POR-LIGHT-Layout---Azul---Sem-Textos_104
+      rect:
+        serializedVersion: 2
+        x: 637
+        y: 307
+        width: 56
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5f1e9327287b78c0800000000000000
+      internalID: -4000471734491930786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: POR-LIGHT-Layout---Azul---Sem-Textos_105
+      rect:
+        serializedVersion: 2
+        x: 701
+        y: 307
+        width: 54
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c22ff3b39271d610800000000000000
+      internalID: 1644221317672542915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: POR-LIGHT-Layout---Azul---Sem-Textos_106
+      rect:
+        serializedVersion: 2
+        x: 765
+        y: 307
+        width: 59
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 785e6684770ce0720800000000000000
+      internalID: 2814398435701482887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: POR-LIGHT-Layout---Azul---Sem-Textos_107
+      rect:
+        serializedVersion: 2
+        x: 829
+        y: 307
+        width: 52
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a14d636a8641ef350800000000000000
+      internalID: 6052297388930290714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: POR-LIGHT-Layout---Azul---Sem-Textos_108
+      rect:
+        serializedVersion: 2
+        x: 888
+        y: 307
+        width: 57
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ffecfeda657fa1310800000000000000
+      internalID: 1376684587772530431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: POR-LIGHT-Layout---Azul---Sem-Textos_109
+      rect:
+        serializedVersion: 2
+        x: 955
+        y: 307
+        width: 52
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2d5270c94a5844c0800000000000000
+      internalID: -4303090171144676054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: POR-LIGHT-Layout---Azul---Sem-Textos_110
+      rect:
+        serializedVersion: 2
+        x: 1019
+        y: 307
+        width: 52
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad017748cda45ec60800000000000000
+      internalID: 7846760236738613466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

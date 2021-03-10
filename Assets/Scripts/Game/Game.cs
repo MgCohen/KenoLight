@@ -3,6 +3,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using System.Linq;
+using UnityEngine.SceneManagement;
+using DG.Tweening;
 
 public class Game : MonoBehaviour
 {
@@ -29,9 +31,9 @@ public class Game : MonoBehaviour
   [SerializeField] private WinnerPanel winnerPanel = default;
 
 
-  private void Update()
+  private void Start()
   {
-    if (Input.GetKeyDown(KeyCode.Mouse0)) Request();
+    Invoke("Request", 3);
   }
 
   public void Request()
@@ -62,8 +64,10 @@ public class Game : MonoBehaviour
   {
     for (int i = 0; i < lines.Length; i++)
     {
-      if (i < sorteio.cards.Count) lines[i].Setup(sorteio.cards[i]);
-      else lines[i].gameObject.SetActive(false);
+      if (i < sorteio.cards.Count)
+        lines[i].Setup(sorteio.cards[i]);
+      else
+        lines[i].gameObject.SetActive(false);
     }
   }
 
@@ -96,6 +100,7 @@ public class Game : MonoBehaviour
       if (sorteio.winnerBalls.Contains(number))
       {
         var index = Array.IndexOf(sorteio.winnerBalls, number);
+        Debug.Log($"{index} cout: {sorteio.winners.Count}");
         var winnersId = sorteio.winners[index];
         var winners = sorteio.cards.Where(card => winnersId.Exists(x => x == card.codigo)).ToArray();
 
@@ -107,6 +112,9 @@ public class Game : MonoBehaviour
         yield return winnerPanel.ShowWinners(winners, index + 4);
       }
     }
+
+    DOTween.KillAll();
+    SceneManager.LoadScene(0);
 
     //espera
   }
