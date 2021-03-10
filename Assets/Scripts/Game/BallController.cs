@@ -80,15 +80,15 @@ public class BallController : MonoBehaviour
 
 
     //exit
-    o.transform.DOPath(exitPath, exitTime, PathType.CatmullRom).SetEase(Ease.OutQuad).OnComplete(DropPipe);
+    o.transform.DOPath(exitPath, exitTime, PathType.CatmullRom).SetEase(Ease.OutQuad).OnComplete(() => DropPipe(o));
     o.transform.DOScale(exitScaleSize, exitTime * 0.85f);
 
     //return control
   }
 
-  public void DropPipe()
+  public void DropPipe(GameObject o)
   {
-
+        Destroy(o, 0.2f);
   }
 
   public void SetPath()
