@@ -68,7 +68,11 @@ public class CustomAnim : MonoBehaviour
     {
         if (playing)
         {
+
+            if (!currentAnimation) currentAnimation = defaultAnim;
+
             timer += Time.deltaTime;
+
             if (timer >= frameDelay)
             {
                 timer = 0;

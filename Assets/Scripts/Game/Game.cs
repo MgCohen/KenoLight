@@ -12,6 +12,12 @@ public class Game : MonoBehaviour
     public CardView[] cards = new CardView[4];
 
     public CustomAnim globo;
+
+    public BallController control;
+
+    [Header("Timer")]
+    public float drawTime;
+
     public void Setup(Sorteio novoSorteio)
     {
         sorteio = novoSorteio;
@@ -20,26 +26,32 @@ public class Game : MonoBehaviour
 
     public void StartDraw()
     {
-
+        StartCoroutine(Drawing());
     }
 
     IEnumerator Drawing()
     {
+        globo.Resume();
         List<int> missingBalls = sorteio.balls;
-        yield return null;
+        yield return new WaitForSeconds(drawTime);
         //pega bola
         var number = missingBalls[0];
         missingBalls.Remove(number);
-        //puxa bola
-        //espera
-        //reseta bola
-        //sort
+
+        //wait for ball draw
+        yield return control.Draw(number);
+
+        //Arruma e marca
         usedBalls.Add(number);
         Sort(usedBalls.Count - 1);
+
+        //Verifica ganhador
         if (sorteio.winnerBalls.Contains(number))
         {
             var index = sorteio.winnerBalls.IndexOf(number);
             var winners = sorteio.winners[index];
+
+            //se ganhador for keno + acumulado
             if(index == 2 && usedBalls.Count <= sorteio.acumuladoBallCount)
             {
                 index = 3;
@@ -47,8 +59,10 @@ public class Game : MonoBehaviour
 
             //GET WINNERS ( INDEX, WINNERS)
         }
+
         //espera
     }
+
 
     public void Sort(int round)
     {
