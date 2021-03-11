@@ -26,7 +26,7 @@ public class Line : MonoBehaviour
 
         for (int i = 0; i < numbers.Count; i++)
         {
-            numbers[i].sprite = NumberSprites.main.sprites[card.numbers[i] - 1];
+            numbers[i].sprite = SpriteLoader.main.sprites[card.numbers[i] - 1];
         }
     }
 
@@ -45,7 +45,7 @@ public class Line : MonoBehaviour
             else
             {
                 numbers[i].enabled = true;
-                numbers[i].sprite = NumberSprites.main.sprites[missingNumbers[i] - 1];
+                numbers[i].sprite = SpriteLoader.main.sprites[missingNumbers[i] - 1];
             }
         }
     }

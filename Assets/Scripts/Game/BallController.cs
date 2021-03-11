@@ -103,7 +103,7 @@ public class BallController : MonoBehaviour
 
     public void ShowNumber(int number, Image image)
     {
-        image.sprite = NumberSprites.main.sprites[number - 1];
+        image.sprite = SpriteLoader.main.sprites[number - 1];
     }
 
     public void Stop()

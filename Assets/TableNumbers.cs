@@ -20,7 +20,7 @@ public class TableNumbers : MonoBehaviour
         var y = (number - 1) / 10;
         var o = Instantiate(numberPrefab, tableHolder);
         var image = o.GetComponent<Image>();
-        image.sprite = NumberSprites.main.sprites[number - 1];
+        image.sprite = SpriteLoader.main.sprites[number - 1];
         image.color = color;
         var pos = start + new Vector2(offset.x * x, offset.y * y);
         o.transform.localPosition = pos;
@@ -28,6 +28,6 @@ public class TableNumbers : MonoBehaviour
 
     public void SetCount(int count)
     {
-        counter.sprite = NumberSprites.main.sprites[count - 1];
+        counter.sprite = SpriteLoader.main.sprites[count - 1];
     }
 }

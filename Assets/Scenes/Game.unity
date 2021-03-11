@@ -3407,7 +3407,7 @@ MonoBehaviour:
   image: {fileID: 1338532124}
   playOnAwake: 0
   playing: 0
-  frameDelay: 0.05
+  frameDelay: 0.025
   defaultAnim: {fileID: 0}
   anims:
   - {fileID: 11400000, guid: eeed9644b29d445468081f21e2362fd6, type: 2}
@@ -3694,19 +3694,19 @@ MonoBehaviour:
   - {fileID: 22294723}
   - {fileID: 601897748}
   spawner: {fileID: 2042016213}
-  moveTime: 1
-  moveDelay: 0.3
+  moveTime: 0.2
+  moveDelay: 0.2
   entryScaleSize: 8
   exitPoints:
   - {fileID: 867733434}
   - {fileID: 1757839894}
   - {fileID: 1469902030}
-  exitTime: 0.4
+  exitTime: 0.2
   exitScaleSize: 1.75
   pipe: {fileID: 490110625}
   kenoMoveTime: 0
   kenoEntry: []
-  waitTime: 2
+  waitTime: 0.2
   ballPrefab: {fileID: 4690237196457205543, guid: e0d1ac7cb4854924dbef3c823e598fcf, type: 3}
   ballDrawer: {fileID: 1338532123}
 --- !u!1 &1469902029

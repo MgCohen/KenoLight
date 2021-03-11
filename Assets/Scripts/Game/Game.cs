@@ -124,8 +124,9 @@ public class Game : MonoBehaviour
         }
 
         DOTween.KillAll();
+        DOTween.ClearCachedTweens();
+        
         SceneManager.LoadScene(1);
-
         //espera
     }
 
