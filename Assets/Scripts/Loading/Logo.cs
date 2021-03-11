@@ -8,6 +8,6 @@ using Newtonsoft.Json;
 public class Logo {
      public int id;  
     public string url;
-    public bool se;
+    public short se;
 
 }

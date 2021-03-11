@@ -4819,7 +4819,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1539754584}
-  - component: {fileID: 1539754586}
   - component: {fileID: 1539754585}
   m_Layer: 0
   m_Name: LobbyManager
@@ -4851,25 +4850,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 1539754583}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c4978b7b5d15da941816a115e1a16228, type: 3}
+  m_Script: {fileID: 11500000, guid: 808597f56cf8b854d886a5bb74865922, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  imgOferecimento: {fileID: 3240412023713678289}
-  imgOng: {fileID: 3240412024090218286}
-  imgPartList: []
-  imgSuperPartList: []
---- !u!114 &1539754586
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1539754583}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ed23cda377257a84cbe5072f23d89d09, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  handler: {fileID: 0}
+  tempoTxt: {fileID: 0}
+  sorteioTxt: {fileID: 0}
+  donateTxt: {fileID: 0}
+  acumuladoTxt: {fileID: 0}
   _horaEspecial: {fileID: 0}
   _dataEspecial: {fileID: 0}
   _valorKenoEspecial: {fileID: 0}
@@ -4887,6 +4875,83 @@ MonoBehaviour:
   _valorKuadra: {fileID: 0}
   linhasAnterior: []
   linhasProximo: []
+  imgOferecimento: {fileID: 3240412023713678289}
+  imgOng: {fileID: 3240412024090218286}
+  imgPartList: []
+  imgSuperPartList: []
+  sorteios: []
+  ativo:
+    header: {fileID: 0}
+    kuadra: {fileID: 0}
+    kina: {fileID: 0}
+    keno: {fileID: 0}
+  especial:
+    header: {fileID: 0}
+    kuadra: {fileID: 0}
+    kina: {fileID: 0}
+    keno: {fileID: 0}
+  headerTabelaTxt: {fileID: 0}
+  tabelaHolder: {fileID: 0}
+  dataAudio: {fileID: 11400000, guid: 56d99c910bb87204892ccae8b1dcc6ac, type: 2}
+  esp: 0
+  espSE: 0
+--- !u!1 &1564150522
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1564150524}
+  - component: {fileID: 1564150523}
+  - component: {fileID: 1564150525}
+  m_Layer: 0
+  m_Name: NetworkInterface
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1564150523
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1564150522}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 72d13e4951273d14ab81d12668dd1cc8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  events: {fileID: 11400000, guid: e6c5b665df071a149a95cb5d3774c1b3, type: 2}
+--- !u!4 &1564150524
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1564150522}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.0321022, y: 0.14700326, z: 58.09193}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1564150525
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1564150522}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 79fdb249ff8522f4f94e10f293bb2871, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1577338699
 GameObject:
   m_ObjectHideFlags: 0
