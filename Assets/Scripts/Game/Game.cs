@@ -30,6 +30,10 @@ public class Game : MonoBehaviour
     [Header("Components")]
     [SerializeField] private WinnerPanel winnerPanel = default;
 
+    [Header("Visuals")]
+    public ValueSetter values;
+    public TableNumbers table;
+
 
     private void Start()
     {
@@ -45,6 +49,8 @@ public class Game : MonoBehaviour
     public void Setup(Sorteio novoSorteio)
     {
         sorteio = novoSorteio;
+
+        values.Set(sorteio);
 
         SetCards();
         SetLines();
@@ -92,8 +98,10 @@ public class Game : MonoBehaviour
             //wait for ball draw
             yield return control.Draw(number);
 
+            table.SetNumber(number);
             //Arruma e marca
             usedBalls.Add(number);
+            table.SetCount(usedBalls.Count);
             Sort(usedBalls.Count - 1);
 
             //Verifica ganhador
@@ -101,15 +109,17 @@ public class Game : MonoBehaviour
             {
                 var index = Array.IndexOf(sorteio.winnerBalls, number);
                 Debug.Log($"{index} cout: {sorteio.winners.Count}");
+
                 var winnersId = sorteio.winners[index];
                 var winners = sorteio.cards.Where(card => winnersId.Exists(x => x == card.codigo)).ToArray();
 
-                if (index == 2 && usedBalls.Count <= sorteio.acumuladoBallCount)
-                {
-                    index = 3;
-                }
+                Win(index);
+                //if (index == 2 && usedBalls.Count <= sorteio.acumuladoBallCount)
+                //{
+                //    index = 3;
+                //}
 
-                yield return winnerPanel.ShowWinners(winners, index + 4);
+                //yield return winnerPanel.ShowWinners(winners, index + 4);
             }
         }
 
@@ -142,6 +152,13 @@ public class Game : MonoBehaviour
             i = Mathf.Clamp(i, 0, 14);
             lines[i].Setup(card, topPlayers[i]);
         }
+    }
+
+    public void Win(int prizeIndex)
+    {
+        values.SetPrize(prizeIndex);
+        //get winner
+        //show screen
     }
 
 }

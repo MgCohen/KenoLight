@@ -32,8 +32,6 @@ public class Line : MonoBehaviour
 
     public void Setup(Card card, Player player)
     {
-        if (card == currentCard) return;
-
 
         currentCard = card;
         id.text = card.codigo.ToString();

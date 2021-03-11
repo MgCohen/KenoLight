@@ -30,11 +30,16 @@ public class SoundManager : MonoBehaviour
     }
     public static void EntryNumber()
     {
-        SoundSystem.Play(instance.data.sfxBola, AudioType.Ball, 1, instance.mixerGroup);
+        SoundSystem.Play(instance.data.sfxSaidaBola, AudioType.Ball, 1, instance.mixerGroup);
+    }
+
+    public static void EntryKeno()
+    {
+        SoundSystem.Play(instance.data.sfxSaidaKeno, AudioType.Ball, 1, instance.mixerGroup);
     }
     public static void ExitNumber()
     {
-        SoundSystem.Play(instance.data.sfxSaidaBola, AudioType.Ball, 1, instance.mixerGroup);
+        SoundSystem.Play(instance.data.sfxBola, AudioType.Ball, 1, instance.mixerGroup);
     }
     public static void callPrize(int prize)
     {

@@ -19,13 +19,14 @@ public class CustomAnim : MonoBehaviour
     int currentFrame;
 
     UnityAction callBack;
+    UnityAction pendingCallback;
 
     public AnimationAsset defaultAnim;
     public List<AnimationAsset> anims = new List<AnimationAsset>();
-    
+
     private void OnEnable()
     {
-        if(!defaultAnim) defaultAnim = anims[0];
+        if (!defaultAnim) defaultAnim = anims[0];
         if (playOnAwake) Play();
     }
 
@@ -43,14 +44,18 @@ public class CustomAnim : MonoBehaviour
         {
             //trigger animation
             playing = true;
-            if (currentAnimation.waitForEnd) pendingAnim = anim;
+            if (currentAnimation.waitForEnd)
+            {
+                pendingAnim = anim;
+                pendingCallback = OnComplete;
+            }
             else
             {
                 currentAnimation = anim;
                 currentFrame = 0;
                 timer = 0;
+                callBack = OnComplete;
             }
-            callBack = OnComplete;
         }
     }
 
@@ -95,6 +100,8 @@ public class CustomAnim : MonoBehaviour
                         currentAnimation = pendingAnim;
                         pendingAnim = null;
                         image.sprite = currentAnimation.frames[currentFrame];
+                        callBack = pendingCallback;
+                        pendingCallback = null;
                         return;
                     }
 
