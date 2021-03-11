@@ -5,7 +5,8 @@ using Newtonsoft.Json;
 using UnityEngine;
 
 public class NetworkInterface : MonoBehaviour
-{
+{ 
+   public EventHandler events;
   private static NetworkInterface _instance;
 
   public static NetworkInterface Instance
@@ -31,6 +32,9 @@ public class NetworkInterface : MonoBehaviour
 
     _instance = this;
     DontDestroyOnLoad(gameObject);
+  }
+  private void Update() {
+    if (Input.GetKeyDown(KeyCode.O)) RequestLogoOngOferecimento("sala1");
   }
 
 
@@ -64,7 +68,7 @@ public class NetworkInterface : MonoBehaviour
   }
    public void RequestLogoOngOferecimento(string sala)
   {
-    _api.Get<List<Logo>>($"/logosespecial/{sala}")
+    _api.Get<List<Logo>>($"/logosongoferecimento/{sala}")
        .OnComplete(UpdateRequestLogoOngOferecimento)
        .OnError((err) =>
         {
@@ -74,9 +78,52 @@ public class NetworkInterface : MonoBehaviour
           UpdateRequestLogoOngOferecimento(JsonConvert.DeserializeObject<List<Logo>>(data));
         });
   }
-   private void UpdateRequestLogoOngOferecimento(List<Logo> logo)
+  public void RequestLogoEspecial(string sala)
   {
-    //events.LogoUrl.Invoke(logoE);
+    _api.Get<List<Logo>>($"/logosespecial/{sala}")
+       .OnComplete(UpdateLogosE)
+       .OnError((err) =>
+        {
+          // Debug.Log("Logos Offline");
+          var data = Resources.Load<TextAsset>("LogosEspecial").text;
+          if (data == null) throw new Exception("Invalid File Path: Logos");
+          UpdateLogosE(JsonConvert.DeserializeObject<List<Logo>>(data));
+        });
+  }
+   public void RequestLogosSuperEspecial(string sala)
+  {
+    _api.Get<List<Logo>>($"/logosse/{sala}")  
+       .OnComplete(UpdateLogosSe)
+       .OnError((err) =>
+        {
+          // Debug.Log("Logos Offline");
+          var data = Resources.Load<TextAsset>("LogosSuperEspecial").text;
+          if (data == null) throw new Exception("Invalid File Path: LogosSuperEspecial");
+          UpdateLogosSe(JsonConvert.DeserializeObject<List<Logo>>(data));
+
+        });
+  }
+   private void UpdateRequestLogoOngOferecimento(List<Logo> logos)
+  {
+     foreach(var logo in logos){
+      logo.se = 1;
+    }
+    events.LogoUrlOngOferecimento.Invoke(logos);
+    Debug.Log("Entrei request");
+  }
+   private void UpdateLogosE(List<Logo> logos)
+  {
+    foreach(var logo in logos){
+      logo.se = 2;
+    }
+    events.LogoUrlEspecial.Invoke(logos);
+  }
+   private void UpdateLogosSe(List<Logo> logos)
+  {
+    foreach(var logo in logos){
+      logo.se = 3;
+    }
+    events.LogoUrlSuperEspecial.Invoke(logos);
   }
 
 }
