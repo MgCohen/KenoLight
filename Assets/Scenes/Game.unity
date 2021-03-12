@@ -5740,7 +5740,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sorteioId: 
-  offlineMode: 1
+  offlineMode: 0
   usedBalls: 
   cards:
   - {fileID: 1638732694}
