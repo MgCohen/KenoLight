@@ -7,22 +7,20 @@ using TMPro;
 
 public class CardView : MonoBehaviour
 {
-    [HideInInspector]
-    public Card card;
-
-    public TextMeshProUGUI cardId;
-    public TextMeshProUGUI cardSource;
+    private int             _id;
+    public  TextMeshProUGUI cardId;
+    public  TextMeshProUGUI cardSource;
 
     public List<CardNumber> numbers = new List<CardNumber>();
 
-    public bool Setup(Card newCard)
+    public bool Setup(Card card)
     {
-        if (card == newCard) return false;
-        card = newCard;
-        cardId.text = card.codigo.ToString();
+        if (card.codigo == _id) return false;
+        _id              = card.codigo;
+        cardId.text     = _id.ToString();
         cardSource.text = card.estabelecimento;
 
-        for (int i = 0; i < numbers.Count; i++)
+        for (var i = 0; i < numbers.Count; i++)
         {
             numbers[i].Setup(card.numbers[i]);
         }

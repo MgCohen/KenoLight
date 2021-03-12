@@ -11,4 +11,5 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Wait.unity
     guid: 093c4b75ae2b4cf479a30d073f93ef46
-  m_configObjects: {}
+  m_configObjects:
+    com.unity.addressableassets: {fileID: 11400000, guid: d5baa74d866cefa449b8770cdbb212a8, type: 2}

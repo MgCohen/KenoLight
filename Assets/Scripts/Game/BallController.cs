@@ -9,35 +9,37 @@ public class BallController : MonoBehaviour
 {
     [Header("Entry")]
     public List<Transform> entryPoints = new List<Transform>();
-    Vector3[] entryPath;
-    public Transform spawner;
-    public float moveTime;
-    public float moveDelay;
-    public float entryScaleSize;
+
+    private Vector3[] _entryPath;
+    public  Transform spawner;
+    public  float     moveTime;
+    public  float     moveDelay;
+    public  float     entryScaleSize;
 
     [Header("Exit")]
     public List<Transform> exitPoints = new List<Transform>();
-    Vector3[] exitPath;
-    public float exitTime;
-    public float exitScaleSize;
-    public Pipe pipe;
+
+    private Vector3[] _exitPath;
+    public  float     exitTime;
+    public  float     exitScaleSize;
+    public  Pipe      pipe;
 
 
     [Header("Keno Settings")]
     public float kenoMoveTime;
-    public List<Transform> kenoEntry = new List<Transform>();
-    Vector3[] kenoPath;
+    public  List<Transform> kenoEntry = new List<Transform>();
+    private Vector3[]       _kenoPath;
 
     [Header("Settings")]
     public float waitTime;
     public GameObject ballPrefab;
     public CustomAnim ballDrawer;
 
-    bool playing = false;
+    private bool _playing = false;
 
     public IEnumerator Draw(int number, bool end = false)
     {
-        if (entryPath == null) SetPath();
+        if (_entryPath == null) SetPath();
 
         //Trigger Draw Animation
         Stop();
@@ -45,7 +47,7 @@ public class BallController : MonoBehaviour
         ballDrawer.Play("Vermelho", Resume);
 
         //wait for animation
-        while (!playing) yield return null;
+        while (!_playing) yield return null;
 
         //spawn
         //SELECT PREFAB
@@ -56,7 +58,7 @@ public class BallController : MonoBehaviour
         else SoundManager.EntryKeno();
 
         //move
-        var path = end ? kenoPath : entryPath;
+        var path = end ? _kenoPath : _entryPath;
         var time = end ? kenoMoveTime : moveTime;
         o.transform.DOScale(entryScaleSize, time * 0.9f).SetDelay(moveDelay);
         var t = o.transform.DOPath(path, time, PathType.CatmullRom).SetDelay(moveDelay).SetEase(Ease.OutQuad).OnStart(() =>
@@ -83,37 +85,37 @@ public class BallController : MonoBehaviour
 
         //exit
         DropPipe(o);
-        o.transform.DOPath(exitPath, exitTime, PathType.CatmullRom).SetEase(Ease.OutQuad).OnComplete(() => o.transform.SetParent(pipe.ballHolder));
+        o.transform.DOPath(_exitPath, exitTime, PathType.CatmullRom).SetEase(Ease.OutQuad).OnComplete(() => o.transform.SetParent(pipe.ballHolder));
         o.transform.DOScale(exitScaleSize, exitTime * 0.85f);
 
         //return control
     }
 
-    public void DropPipe(GameObject o)
+    private void DropPipe(GameObject o)
     {
         pipe.Drop(o.transform);
     }
 
-    public void SetPath()
+    private void SetPath()
     {
-        entryPath = entryPoints.Select(x => x.position).ToArray();
-        exitPath = exitPoints.Select(x => x.position).ToArray();
-        kenoPath = kenoEntry.Select(x => x.position).ToArray();
+        _entryPath = entryPoints.Select(x => x.position).ToArray();
+        _exitPath = exitPoints.Select(x => x.position).ToArray();
+        _kenoPath = kenoEntry.Select(x => x.position).ToArray();
     }
 
-    public void ShowNumber(int number, Image image)
+    private static void ShowNumber(int number, Image image)
     {
-        image.sprite = SpriteLoader.main.sprites[number - 1];
+        image.sprite = NumberSprites.Main.sprites[number - 1];
     }
 
-    public void Stop()
+    private void Stop()
     {
-        playing = false;
+        _playing = false;
     }
 
-    public void Resume()
+    private void Resume()
     {
-        playing = true;
+        _playing = true;
     }
 }
 
