@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using DG.Tweening;
 
 public class TestScript : MonoBehaviour
 {
@@ -8,9 +9,9 @@ public class TestScript : MonoBehaviour
     {
         Invoke(nameof(Next), 5f);
     }
-
     public void Next()
     {
+        Destroy(DOTween.instance.gameObject);
         UnityEngine.SceneManagement.SceneManager.LoadScene(0);
         Game.loopCount += 1;
     }
