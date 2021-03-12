@@ -42,18 +42,22 @@ public class BallController : MonoBehaviour
   public IEnumerator Draw(int number, bool end = false)
   {
     // if (_entryPath == null) SetPath();
-
+      Debug.Log("1");
     //Trigger Draw Animation
     Stop();
+
     //SELECT ANIMATION
-    ballDrawer.Play(1, Resume);
+    //desativei animacao, adicionado tempo para imitar o tempo de animação
+    //yield return new WaitForSeconds(0.01f);
+    ////ballDrawer.Play(1, Resume);
+
 
     //wait for animation
-    while (!_playing) yield return null;
+    //while (!_playing) yield return null;
 
     //spawn
     //SELECT PREFAB
-    var o = Instantiate(ballPrefab, spawner);
+    ////var o = Instantiate(ballPrefab, spawner);
 
     //moveSound
     if (!end) SoundManager.EntryNumber();
@@ -62,35 +66,37 @@ public class BallController : MonoBehaviour
     //move
     var path = end ? _kenoPath : _entryPath;
     var time = end ? kenoMoveTime : moveTime;
-
-    o.transform.DOScale(entryScaleSize, time * 0.9f).SetDelay(moveDelay);
-
-    var t = o.transform.DOPath(path, time, PathType.CatmullRom).SetDelay(moveDelay).SetEase(Ease.OutQuad).OnStart(() =>
-    {
-      ballDrawer.Play(2);
-    });
-
+    
+    ////o.transform.DOScale(entryScaleSize, time * 0.9f).SetDelay(moveDelay);
+     Debug.Log("2");
+    ////var t = o.transform.DOPath(path, time, PathType.CatmullRom).SetDelay(moveDelay).SetEase(Ease.OutQuad).OnStart(() =>
+    ////{
+    ////  ballDrawer.Play(2);
+    ////});
+  //yield return new WaitForSeconds(0.01f);
     //if keno, set reveal
-    if (end) t.OnComplete(() => ShowNumber(number, o.number));
-    else ShowNumber(number, o.number);
+    // if (end) t.OnComplete(() => ShowNumber(number, o.number));
+    // else ShowNumber(number, o.number);
 
     //wait for tween
-    yield return t.WaitForCompletion();
 
+    //yield return t.WaitForCompletion();
+    //  yield return new WaitForSeconds(0.01f);
     //call
     SoundManager.PlayNumberVoice(number);
 
-
+     Debug.Log("3");
     //wait for screen time
-    yield return new WaitForSeconds(waitTime);
+    yield return new WaitForSeconds(0.01f);
 
     //exit sound
     SoundManager.ExitNumber();
-
+     Debug.Log("4");
+    //yield return new WaitForSeconds(0.01f);
     //exit
-    DropPipe(o);
-    o.transform.DOPath(_exitPath, exitTime, PathType.CatmullRom).SetEase(Ease.OutQuad).OnComplete(() => o.transform.SetParent(pipe.ballHolder));
-    o.transform.DOScale(exitScaleSize, exitTime * 0.85f);
+    // DropPipe(o);
+    // o.transform.DOPath(_exitPath, exitTime, PathType.CatmullRom).SetEase(Ease.OutQuad).OnComplete(() => o.transform.SetParent(pipe.ballHolder));
+    // o.transform.DOScale(exitScaleSize, exitTime * 0.85f);
 
     //return control
   }
