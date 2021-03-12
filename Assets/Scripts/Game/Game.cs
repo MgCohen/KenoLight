@@ -5,12 +5,15 @@ using UnityEngine;
 using System.Linq;
 using UnityEngine.SceneManagement;
 using DG.Tweening;
+using TMPro;
 
 public class Game : MonoBehaviour
 {
   [Header("Config Data")]
   public string sorteioId;
   public bool offlineMode = true;
+
+  //////
 
   private Sorteio _sorteio;
 
@@ -27,18 +30,21 @@ public class Game : MonoBehaviour
   public float drawTime;
 
   [Header("Components")]
-  [SerializeField] private WinnerPanel winnerPanel = default;
+  // [SerializeField] private WinnerPanel winnerPanel = default;
 
   [Header("Visuals")]
   public ValueSetter values;
   public TableNumbers table;
 
+  public static byte loopCount;
+  public TextMeshProUGUI contador;
 
   private void Start()
   {
     GC.Collect();
     GC.WaitForPendingFinalizers();
-    Invoke(nameof(Request), 3);
+    Invoke("Request", 3);
+    contador.text = loopCount.ToString();
   }
 
   public void Request()
@@ -57,20 +63,21 @@ public class Game : MonoBehaviour
 
   private void SetCards()
   {
+    var carts = _sorteio.cards.Values.Take(cards.Length).ToList();
     for (var i = 0; i < cards.Length; i++)
     {
-      cards[i].Setup(_sorteio.cards[i]);
+      cards[i].Setup(carts[i]);
     }
   }
 
   private void SetLines()
   {
+    var carts = _sorteio.cards.Values.Take(lines.Length).ToList();
+
     for (var i = 0; i < lines.Length; i++)
     {
-      if (i < _sorteio.cards.Count)
-        lines[i].Setup(_sorteio.cards[i]);
-      else
-        lines[i].gameObject.SetActive(false);
+      if (i < _sorteio.cards.Count) lines[i].Setup(carts[i]);
+      else lines[i].gameObject.SetActive(false);
     }
   }
 
@@ -103,9 +110,9 @@ public class Game : MonoBehaviour
 
       //Verifica ganhador
       if (!_sorteio.winnerBalls.Contains(number)) continue;
-      
+
       var index = Array.IndexOf(_sorteio.winnerBalls, number);
-      Debug.Log($"{index} cout: {_sorteio.winners.Count}");
+      // Debug.Log($"{index} cout: {_sorteio.winners.Count}");
 
       // var winnersId = _sorteio.winners[index];
       // var winners   = _sorteio.cards.Where(card => winnersId.Exists(x => x == card.codigo)).ToArray();
@@ -122,7 +129,7 @@ public class Game : MonoBehaviour
     DOTween.KillAll();
     DOTween.ClearCachedTweens();
     SceneManager.LoadScene(1);
-
+    _sorteio = null;
     //espera
   }
 
@@ -131,13 +138,15 @@ public class Game : MonoBehaviour
   {
     var topPlayers = _sorteio.topPlayers[round];
     var topCards = topPlayers.Select(x => x.id).Distinct().ToArray();
+
     for (var i = 0; i < lines.Length; i++)
     {
       if (!lines[i].gameObject.activeInHierarchy) return;
       // Debug.Log($"{i} top players count: {topPlayers.Count}");
 
-      var card = _sorteio.cards.Find(x => x.codigo == topPlayers[i].id);
-      var topCard = _sorteio.cards.Find(x => x.codigo == topCards[i]);
+      var card = _sorteio.cards[topPlayers[i].id];
+      var topCard = _sorteio.cards[topCards[i]];
+
       if (i < cards.Length)
       {
         if (cards[i].Setup(topCard))

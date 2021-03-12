@@ -6,8 +6,8 @@ using Newtonsoft.Json;
 using UnityEngine;
 
 public class NetworkInterface : MonoBehaviour
-{ 
-   public EventHandler events;
+{
+  public EventHandler events;
   private static NetworkInterface _instance;
 
   public static NetworkInterface Instance
@@ -34,56 +34,61 @@ public class NetworkInterface : MonoBehaviour
     _instance = this;
     DontDestroyOnLoad(gameObject);
   }
-  private void Update() {
+  private void Update()
+  {
     if (Input.GetKeyDown(KeyCode.O)) RequestLogoOngOferecimento("sala1");
   }
 
 
-  private readonly       Api     _api         = new Api("https://slots.gamesdasorte.com/api/v1");
+  private readonly Api _api = new Api("https://slots.gamesdasorte.com");
   [NonSerialized] public Sorteio SorteioAtual = null;
 
+  private void OfflineLoad(string sorteioPath = "", Action<Sorteio> callback = null)
+  {
+
+
+
+    using (var sr = new StreamReader(sorteioPath))
+    using (JsonReader reader = new JsonTextReader(sr))
+    {
+      var serializer = new JsonSerializer();
+      var sorteio = serializer.Deserialize<Sorteio>(reader);
+
+      callback?.Invoke(sorteio);
+      return;
+    }
+
+
+  }
 
   public void RequestSorteio(string id, bool offline = false, Action<Sorteio> callback = null)
   {
-    void OfflineLoad(string err = null)
-    {
-      if(err != null) Debug.LogError(err);
-      
-      var sorteioPath = Application.persistentDataPath + "/sorteio.json";
-      Debug.LogWarning("Sorteio Local: " + sorteioPath );
 
-      if (File.Exists(sorteioPath))
-      {
-        using (var sr = new StreamReader(sorteioPath))
-        using (JsonReader reader = new JsonTextReader(sr))
-        {
-          var    serializer = new JsonSerializer();
-          var sorteio = serializer.Deserialize<Sorteio>(reader);
-          
-          callback?.Invoke(sorteio);
-          return;
-        }
-      }
-      
-      Debug.Log("Salvando sorteio na maquina");
-      
-      var ogPath   = Application.streamingAssetsPath + "/sorteio.json";
-      var getter = new Api("");
 
-      getter.GetFile(ogPath, sorteioPath).OnComplete(OfflineLoad);
-    }
 
     if (offline)
     {
-      OfflineLoad();
+      var sorteioPath = Application.persistentDataPath + "/sorteio.json";
+      Debug.LogWarning("Sorteio Local: " + sorteioPath);
+
+      // if (File.Exists(sorteioPath))
+      // {
+      //   OfflineLoad(sorteioPath, callback);
+      //   return;
+      // }
+
+      Debug.Log("Salvando sorteio na maquina");
+      var ogPath = Application.streamingAssetsPath + "/sorteio.json";
+      new Api("").GetFile(ogPath, sorteioPath)
+        .OnComplete(() => OfflineLoad(sorteioPath, callback));
       return;
     }
-    
+
     Debug.Log($"Getting Sorteio Nº{id}");
-    _api.Get<Sorteio>($"/sorteio/1/{id}/")
+    _api.Get<Sorteio>("/static/temp/sorteio.json")
         .OnComplete(callback);
   }
-   public void RequestLogoOngOferecimento(string sala)
+  public void RequestLogoOngOferecimento(string sala)
   {
     _api.Get<List<Logo>>($"/logosongoferecimento/{sala}")
        .OnComplete(UpdateRequestLogoOngOferecimento)
@@ -107,9 +112,9 @@ public class NetworkInterface : MonoBehaviour
           UpdateLogosE(JsonConvert.DeserializeObject<List<Logo>>(data));
         });
   }
-   public void RequestLogosSuperEspecial(string sala)
+  public void RequestLogosSuperEspecial(string sala)
   {
-    _api.Get<List<Logo>>($"/logosse/{sala}")  
+    _api.Get<List<Logo>>($"/logosse/{sala}")
        .OnComplete(UpdateLogosSe)
        .OnError((err) =>
         {
@@ -120,24 +125,27 @@ public class NetworkInterface : MonoBehaviour
 
         });
   }
-   private void UpdateRequestLogoOngOferecimento(List<Logo> logos)
+  private void UpdateRequestLogoOngOferecimento(List<Logo> logos)
   {
-     foreach(var logo in logos){
+    foreach (var logo in logos)
+    {
       logo.se = 1;
     }
     events.LogoUrlOngOferecimento.Invoke(logos);
     Debug.Log("Entrei request");
   }
-   private void UpdateLogosE(List<Logo> logos)
+  private void UpdateLogosE(List<Logo> logos)
   {
-    foreach(var logo in logos){
+    foreach (var logo in logos)
+    {
       logo.se = 2;
     }
     events.LogoUrlEspecial.Invoke(logos);
   }
-   private void UpdateLogosSe(List<Logo> logos)
+  private void UpdateLogosSe(List<Logo> logos)
   {
-    foreach(var logo in logos){
+    foreach (var logo in logos)
+    {
       logo.se = 3;
     }
     events.LogoUrlSuperEspecial.Invoke(logos);

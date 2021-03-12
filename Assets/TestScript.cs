@@ -12,5 +12,6 @@ public class TestScript : MonoBehaviour
     public void Next()
     {
         UnityEngine.SceneManagement.SceneManager.LoadScene(0);
+        Game.loopCount += 1;
     }
 }
