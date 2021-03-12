@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System;
 using System.Linq;
 using Newtonsoft.Json;
+using UnityEngine.Scripting;
 using static System.Globalization.DateTimeStyles;
 
 // ReSharper disable InconsistentNaming
@@ -38,7 +39,8 @@ public class Sorteio
     public readonly List<List<int>> winners;
 
 
-
+    
+    [Preserve]
     [JsonConstructor]
     public Sorteio(
         bool replay,
@@ -112,6 +114,7 @@ public enum kenoType
 [Serializable]
 public struct Player
 {
+    [Preserve]
     [JsonConstructor]
     public Player(int codigo, int posicao, List<int> numeros)
     {

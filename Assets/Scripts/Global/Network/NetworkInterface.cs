@@ -49,8 +49,8 @@ public class NetworkInterface : MonoBehaviour
     {
       if(err != null) Debug.LogError(err);
       
-      Debug.LogWarning("Sorteio Local ");
       var sorteioPath = Application.persistentDataPath + "/sorteio.json";
+      Debug.LogWarning("Sorteio Local: " + sorteioPath );
 
       if (File.Exists(sorteioPath))
       {
