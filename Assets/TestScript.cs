@@ -6,19 +6,26 @@ using System;
 
 public class TestScript : MonoBehaviour
 {
+  public NetworkInterface networkInterface;
   public TextMeshProUGUI counter;
   public float tempo = 300f;
-  private readonly Vector3 rotate = new Vector3(0, 0, -0.1f);
+  private readonly Vector3 rotate = new Vector3(0, 0, -90f);
   private void Start()
   {
     GC.Collect();
     GC.WaitForPendingFinalizers();
-    counter.text += " " + Game.loopCount;
+    counter.text += "\n" + Game.loopCount;
     Invoke(nameof(Next), tempo);
+    // InvokeRepeating(nameof(Load1s), 60, 60);
   }
   private void Update()
   {
-    counter.transform.Rotate(rotate);
+    counter.transform.Rotate(rotate * Time.deltaTime);
+  }
+
+  private void Load1s()
+  {
+    networkInterface.RequestNil();
   }
   public void Next()
   {

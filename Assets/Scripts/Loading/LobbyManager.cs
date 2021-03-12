@@ -137,7 +137,7 @@ public class LobbyManager : MonoBehaviour
     // NetworkInterface.Instance.RequestSorteioEspecial("sala1");
     // NetworkInterface.Instance.RequestSorteioSuperEspecial("sala1");
     // NetworkInterface.Instance.RequestLogos("sala1");
-    NetworkInterface.Instance.RequestLogosSuperEspecial("sala1");
+    // NetworkInterface.Instance.RequestLogosSuperEspecial("sala1");
 
     if (dataAudio is null)
     {
