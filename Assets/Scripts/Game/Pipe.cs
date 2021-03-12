@@ -9,10 +9,9 @@ public class Pipe : MonoBehaviour
     public Transform[] targets = new Transform[5];
 
     public float moveTime;
-
     public Transform ballHolder;
 
-    public void Drop(Transform Ball)
+    public void Drop(BallController controller, NumberBall Ball)
     {
         for (int i = balls.Length - 1; i >= 0; i--)
         {
@@ -20,12 +19,12 @@ public class Pipe : MonoBehaviour
 
             var t = balls[i].transform.DOMove(targets[i + 1].position, moveTime);
             var o = balls[i].gameObject;
-            if (i == 3) t.OnComplete(() => Destroy(o));
+            if (i == 3) t.OnComplete(() => o.SetActive(false)) ;
             else balls[i + 1] = balls[i];
 
             balls[i] = null;
         }
 
-        balls[0] = Ball;
+        balls[0] = Ball.transform;
     }
 }
