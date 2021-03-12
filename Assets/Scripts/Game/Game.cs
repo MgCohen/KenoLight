@@ -26,8 +26,6 @@ public class Game : MonoBehaviour
   [Header("Timer")]
   public float drawTime;
 
-  [Header("Components")]
-  [SerializeField] private WinnerPanel winnerPanel = default;
 
   [Header("Visuals")]
   public ValueSetter values;
