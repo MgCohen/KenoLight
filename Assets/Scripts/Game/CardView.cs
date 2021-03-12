@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-using System.Linq;
 using TMPro;
 
 public class CardView : MonoBehaviour
@@ -13,29 +12,32 @@ public class CardView : MonoBehaviour
 
   public List<CardNumber> numbers = new List<CardNumber>();
 
-  public bool Setup(Card card)
+  public void Setup(Card card, List<int> calledNumbers)
   {
-    if (card.codigo == _id) return false;
+    // if (card.codigo == _id) return false;
+    var set = calledNumbers != null;
     _id = card.codigo;
     cardId.text = _id.ToString();
     cardSource.text = card.estabelecimento;
 
     for (var i = 0; i < numbers.Count; i++)
     {
-      numbers[i].Setup(card.numbers[i]);
+      var num = numbers[i];
+      num.Setup(card.numbers[i]);
+      if (set) num.Set(calledNumbers.Contains(num.number));
     }
-    return true;
+    // return true;
   }
 
-  public void Mark(int i)
-  {
-    var num = numbers.Find(x => x.number == i);
-    if (num) num.Set(true);
-  }
+  // public void Mark(int i)
+  // {
+  //   var num = numbers.Find(x => x.number == i);
+  //   if (num) num.Set(true);
+  // }
 
-  public void CatchUp(List<int> calledNumbers)
-  {
-    foreach (var n in calledNumbers)
-      Mark(n);
-  }
+  // public void CatchUp(List<int> calledNumbers)
+  // {
+  //   foreach (var n in calledNumbers)
+  //     Mark(n);
+  // }
 }

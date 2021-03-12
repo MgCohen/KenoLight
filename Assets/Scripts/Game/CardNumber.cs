@@ -5,30 +5,30 @@ using UnityEngine.UI;
 
 public class CardNumber : MonoBehaviour
 {
-    public Image numberSprite;
-    public GameObject background;
+  public Image numberSprite;
+  public GameObject background;
 
-    public Color markedColor;
-    public Color unmarkedColor;
+  public Color markedColor;
+  public Color unmarkedColor;
 
 
 
-    public int number;
+  public int number;
 
-    public void Setup(int i)
+  public void Setup(int i)
+  {
+    if (i == number)
     {
-        if (i == number)
-        {
-            return;
-        }
-        numberSprite.sprite = NumberSprites.Main.sprites[i - 1];
-        number = i;
-        Set(false);
+      return;
     }
+    numberSprite.sprite = SpriteLoader.Main.sprites[i - 1];
+    number = i;
+    // Set(false);
+  }
 
-    public void Set(bool state)
-    {
-        numberSprite.color = (state) ? markedColor : unmarkedColor;
-        background.SetActive(state);
-    }
+  public void Set(bool state)
+  {
+    numberSprite.color = (state) ? markedColor : unmarkedColor;
+    background.SetActive(state);
+  }
 }

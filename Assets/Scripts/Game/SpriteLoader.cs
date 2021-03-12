@@ -2,14 +2,14 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class NumberSprites : MonoBehaviour
+public class SpriteLoader : MonoBehaviour
 {
 
-    public static NumberSprites Main;
-    private void Awake()
-    {
-        Main = this;
-    }
+  public static SpriteLoader Main;
+  private void Awake()
+  {
+    Main = this;
+  }
 
-    public Sprite[] sprites = new Sprite[90];
+  public Sprite[] sprites = new Sprite[90];
 }

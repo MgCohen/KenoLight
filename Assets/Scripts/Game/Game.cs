@@ -15,7 +15,7 @@ public class Game : MonoBehaviour
 
   //////
 
-  private Sorteio _sorteio;
+  // private Sorteio _sorteio;
 
   public List<int> usedBalls = new List<int>();
 
@@ -36,15 +36,18 @@ public class Game : MonoBehaviour
   public ValueSetter values;
   public TableNumbers table;
 
-  public static byte loopCount;
+  public static short loopCount = 1;
+  public static string sorteioStart;
   public TextMeshProUGUI contador;
 
   private void Start()
   {
+    if (string.IsNullOrEmpty(sorteioStart)) sorteioStart = DateTime.Now.ToString("HH:mm");
     GC.Collect();
     GC.WaitForPendingFinalizers();
+    Screen.SetResolution(1280, 720, true, 30);
     Invoke("Request", 3);
-    contador.text = loopCount.ToString();
+    contador.text = sorteioStart + "  " + loopCount.ToString() + "  " + DateTime.Now.ToString("HH:mm");
   }
 
   public void Request()
@@ -52,25 +55,24 @@ public class Game : MonoBehaviour
     NetworkInterface.Instance.RequestSorteio(sorteioId, offlineMode, Setup);
   }
 
-  private void Setup(Sorteio novoSorteio)
+  private void Setup(Sorteio _sorteio)
   {
-    _sorteio = novoSorteio;
     values.Set(_sorteio);
-    SetCards();
-    SetLines();
-    StartDraw();
+    SetCards(_sorteio);
+    SetLines(_sorteio);
+    StartDraw(_sorteio);
   }
 
-  private void SetCards()
+  private void SetCards(Sorteio _sorteio)
   {
     var carts = _sorteio.cards.Values.Take(cards.Length).ToList();
     for (var i = 0; i < cards.Length; i++)
     {
-      cards[i].Setup(carts[i]);
+      cards[i].Setup(carts[i], null);
     }
   }
 
-  private void SetLines()
+  private void SetLines(Sorteio _sorteio)
   {
     var carts = _sorteio.cards.Values.Take(lines.Length).ToList();
 
@@ -81,24 +83,22 @@ public class Game : MonoBehaviour
     }
   }
 
-  private void StartDraw()
+  private void StartDraw(Sorteio _sorteio)
   {
-    StartCoroutine(Drawing());
+    StartCoroutine(Drawing(_sorteio));
   }
 
-  private IEnumerator Drawing()
+  private IEnumerator Drawing(Sorteio _sorteio)
   {
     globo.Resume();
-    var missingBalls = _sorteio.balls;
+    // var missingBalls = _sorteio.balls;
 
-    while (missingBalls.Count > 0)
+    for (int i = 0; i < _sorteio.balls.Count; i++)
     {
 
       yield return new WaitForSeconds(drawTime);
       //pega bola
-      var number = missingBalls[0];
-      missingBalls.Remove(number);
-
+      var number = _sorteio.balls[i];
       //wait for ball draw
       yield return control.Draw(number);
 
@@ -106,7 +106,7 @@ public class Game : MonoBehaviour
       //Arruma e marca
       usedBalls.Add(number);
       table.SetCount(usedBalls.Count);
-      Sort(usedBalls.Count - 1);
+      Sort(usedBalls.Count - 1, _sorteio);
 
       //Verifica ganhador
       if (!_sorteio.winnerBalls.Contains(number)) continue;
@@ -126,6 +126,8 @@ public class Game : MonoBehaviour
       //yield return winnerPanel.ShowWinners(winners, index + 4);
     }
 
+    GC.Collect();
+    GC.WaitForPendingFinalizers();
     DOTween.KillAll();
     DOTween.ClearCachedTweens();
     SceneManager.LoadScene(1);
@@ -134,7 +136,7 @@ public class Game : MonoBehaviour
   }
 
 
-  private void Sort(int round)
+  private void Sort(int round, Sorteio _sorteio)
   {
     var topPlayers = _sorteio.topPlayers[round];
     var topCards = topPlayers.Select(x => x.id).Distinct().ToArray();
@@ -149,13 +151,14 @@ public class Game : MonoBehaviour
 
       if (i < cards.Length)
       {
-        if (cards[i].Setup(topCard))
-          cards[i].CatchUp(usedBalls);
-        else
-          cards[i].Mark(usedBalls[round]);
+        // if (cards[i].Setup(topCard))
+        cards[i].Setup(topCard, usedBalls);
+        // cards[i].CatchUp(usedBalls);
+        // else
+        // cards[i].Mark(usedBalls[round]);
       }
 
-      i = Mathf.Clamp(i, 0, 14);
+      // i = Mathf.Clamp(i, 0, 14);
       lines[i].Setup(card, topPlayers[i]);
     }
   }

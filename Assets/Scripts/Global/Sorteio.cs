@@ -1,6 +1,4 @@
-﻿using UnityEngine;
-using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System;
 using System.Linq;
 using Newtonsoft.Json;
@@ -94,7 +92,7 @@ public class Sorteio
         ? bolas_sorteadas.Split(',').Select(int.Parse).ToList()
         : new List<int>();
 
-    if (cartelas != null) Debug.Log(cartelas.Count);
+    // if (cartelas != null) Debug.Log(cartelas.Count);
 
     topPlayers = turnos;
     winners = vencedores;

@@ -1,10 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using System.Linq;
 using System;
-using DG.Tweening;
-using DG.Tweening.Core;
 using System.IO;
 using UnityEngine.Networking;
 using UnityEngine.Events;
@@ -14,8 +11,8 @@ public class ImageCacheManager : MonoBehaviour
   public static readonly UnityEvent<List<Logo>> onLogoLoad = new UnityEvent<List<Logo>>();
   public readonly Dictionary<string, Sprite> Sprites = new Dictionary<string, Sprite>();
 
- // public readonly Dictionary<string, List<UniGif.GifTexture>> Gifs =
- //    new Dictionary<string, List<UniGif.GifTexture>>();
+  // public readonly Dictionary<string, List<UniGif.GifTexture>> Gifs =
+  //    new Dictionary<string, List<UniGif.GifTexture>>();
 
   private static ImageCacheManager _instance;
 
@@ -49,7 +46,7 @@ public class ImageCacheManager : MonoBehaviour
     Handler.LogoUrlOngOferecimento.AddListener(StartLoadCoroutine);
     Handler.LogoUrlEspecial.AddListener(StartLoadCoroutine);
     Handler.LogoUrlSuperEspecial.AddListener(StartLoadCoroutine);
-    
+
   }
 
   private void OnDisable()
@@ -78,9 +75,10 @@ public class ImageCacheManager : MonoBehaviour
       yield return LoadInMemory(url);
     }
 
-    foreach(var key in Sprites.Keys){
+    foreach (var key in Sprites.Keys)
+    {
 
-    //Debug.LogAssertion($"Loaded {key}");
+      //Debug.LogAssertion($"Loaded {key}");
     }
 
     Debug.Log("Loaded");
@@ -139,7 +137,7 @@ public class ImageCacheManager : MonoBehaviour
 
 
 
-   
+
   }
 
   private bool IsInCache(string fileName)
@@ -186,7 +184,7 @@ public class ImageCacheManager : MonoBehaviour
   }
 
 
-  
+
 
   #endregion
 }
