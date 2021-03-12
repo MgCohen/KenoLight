@@ -1,6 +1,5 @@
 ﻿using System.Collections.Generic;
 using System;
-using System.Linq;
 using Newtonsoft.Json;
 using UnityEngine.Scripting;
 using static System.Globalization.DateTimeStyles;
@@ -52,7 +51,7 @@ public class Sorteio
       double valor_acumulado,
       double valor_cartela,
       Dictionary<int, Card> cartelas,
-      string bolas_sorteadas,
+      List<int> bolas_sorteadas,
       int numero_bolas_acumulado,
       List<List<int>> vencedores,
       int bola_kuadra,
@@ -88,9 +87,10 @@ public class Sorteio
     // replay       = replay;
 
 
-    balls = !string.IsNullOrEmpty(bolas_sorteadas)
-        ? bolas_sorteadas.Split(',').Select(int.Parse).ToList()
-        : new List<int>();
+    balls = bolas_sorteadas;
+    // !string.IsNullOrEmpty(bolas_sorteadas)
+    //     ? bolas_sorteadas.Split(',').Select(int.Parse).ToList()
+    //     : new List<int>();
 
     // if (cartelas != null) Debug.Log(cartelas.Count);
 

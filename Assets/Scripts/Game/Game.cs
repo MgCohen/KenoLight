@@ -45,7 +45,7 @@ public class Game : MonoBehaviour
     if (string.IsNullOrEmpty(sorteioStart)) sorteioStart = DateTime.Now.ToString("HH:mm");
     GC.Collect();
     GC.WaitForPendingFinalizers();
-    Screen.SetResolution(1280, 720, true, 30);
+    Screen.SetResolution(1920, 1080, true, 30);
     Invoke("Request", 3);
     contador.text = sorteioStart + "  " + loopCount.ToString() + "  " + DateTime.Now.ToString("HH:mm");
   }
