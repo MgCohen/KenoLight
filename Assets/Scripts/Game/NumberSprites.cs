@@ -5,10 +5,10 @@ using UnityEngine;
 public class NumberSprites : MonoBehaviour
 {
 
-    public static NumberSprites main;
+    public static NumberSprites Main;
     private void Awake()
     {
-        main = this;
+        Main = this;
     }
 
     public Sprite[] sprites = new Sprite[90];

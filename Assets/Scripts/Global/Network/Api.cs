@@ -1,4 +1,3 @@
-using System.Diagnostics;
 using Newtonsoft.Json;
 using UnityEngine.Networking;
 using Debug = UnityEngine.Debug;
@@ -18,32 +17,57 @@ public class Api
     _token = token;
   }
 
-  #region GET
-
-  public WebCallback<byte[]>.WebCallbackHandler GetBytes(string path)
+#region Files
+  public WebCallback<string>.WebCallbackHandler GetFile(string path, string filePath)
   {
-
-    var request = UnityWebRequest.Get($"{_endpoint}{path}");
-    var callback = new WebCallback<byte[]>();
+    // using (var request = UnityWebRequest.Get($"{_endpoint}{path}")) 
+    // {
+    var request  = UnityWebRequest.Get($"{_endpoint}{path}");
+    var callback = new WebCallback<string>();
 
     if (!string.IsNullOrWhiteSpace(_token))
       request.SetRequestHeader("authorization", $"Bearer {_token}");
 
+    request.downloadHandler = new DownloadHandlerFile(filePath);
+    
     request.SendWebRequest().completed += (op) =>
     {
-      if (!string.IsNullOrEmpty(request.error))
-      {
-        callback.DispatchError(request.error);
-        return;
-      }
-
-      callback.DispatchComplete(request.downloadHandler.data);
+      if (!string.IsNullOrEmpty(request.error)) callback.DispatchError(request.error);
+      else callback.DispatchComplete(filePath);
+        
+      request.Dispose();
     };
-
+      
     return callback.Handler;
+    // }
+  }
+#endregion
+
+  #region GET
+
+  public WebCallback<byte[]>.WebCallbackHandler GetBytes(string path)
+  {
+    // using (var request = UnityWebRequest.Get($"{_endpoint}{path}")) 
+    // {
+      var request  = UnityWebRequest.Get($"{_endpoint}{path}");
+      var callback = new WebCallback<byte[]>();
+
+      if (!string.IsNullOrWhiteSpace(_token))
+        request.SetRequestHeader("authorization", $"Bearer {_token}");
+
+      request.SendWebRequest().completed += (op) =>
+      {
+        if (!string.IsNullOrEmpty(request.error)) callback.DispatchError(request.error);
+        else callback.DispatchComplete(request.downloadHandler.data);
+        
+        request.Dispose();
+      };
+      
+      return callback.Handler;
+    // }
   }
 
-  public WebCallback<string>.WebCallbackHandler Get(string path)
+  private WebCallback<string>.WebCallbackHandler Get(string path)
   {
     var fullPath = $"{_endpoint}{path}";
     var request  = UnityWebRequest.Get(fullPath);
@@ -56,12 +80,10 @@ public class Api
 
     request.SendWebRequest().completed += (op) =>
     {
-      if (!string.IsNullOrEmpty(request.error))
-      {
-        callback.DispatchError(request.error);
-        return;
-      }
-      callback.DispatchComplete(request.downloadHandler.text);
+      if (!string.IsNullOrEmpty(request.error)) callback.DispatchError(request.error);
+      else callback.DispatchComplete(request.downloadHandler.text);
+      
+      request.Dispose();
     };
 
     return callback.Handler;
@@ -80,7 +102,6 @@ public class Api
     });
 
     request.OnError(callback.DispatchError);
-
     return callback.Handler;
   }
 
@@ -100,15 +121,11 @@ public class Api
 
     request.SendWebRequest().completed += (op) =>
     {
-      if (!string.IsNullOrEmpty(request.error))
-      {
-        callback.DispatchError(request.error);
-        return;
-      }
-
-      callback.DispatchComplete(request.downloadHandler.text);
+      if (!string.IsNullOrEmpty(request.error)) callback.DispatchError(request.error);
+      else callback.DispatchComplete(request.downloadHandler.text);
+      
+      request.Dispose();
     };
-
 
     return callback.Handler;
   }
@@ -149,18 +166,15 @@ public class Api
     request.SetRequestHeader("Content-Type", "application/json");
     request.SetRequestHeader("cache-control", "no-cache");
     if (!string.IsNullOrWhiteSpace(_token)) request.SetRequestHeader("authorization", $"Bearer {_token}");
-
+    
     request.SendWebRequest().completed += (op) =>
     {
-      if (!string.IsNullOrEmpty(request.error))
-      {
-        callback.DispatchError(request.downloadHandler.text);
-        return;
-      }
-
-      callback.DispatchComplete(request.downloadHandler.text);
+      if (!string.IsNullOrEmpty(request.error)) callback.DispatchError(request.error);
+      else callback.DispatchComplete(request.downloadHandler.text);
+      
+      request.Dispose();
     };
-
+    
     return callback.Handler;
   }
 
