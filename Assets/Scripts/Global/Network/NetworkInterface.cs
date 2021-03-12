@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.IO;
 using Newtonsoft.Json;
 using UnityEngine;
 
@@ -38,7 +39,7 @@ public class NetworkInterface : MonoBehaviour
   }
 
 
-  private readonly       Api     _api    = new Api("https://slots.gamesdasorte.com/api/v1");
+  private readonly       Api     _api         = new Api("https://slots.gamesdasorte.com/api/v1");
   [NonSerialized] public Sorteio SorteioAtual = null;
 
 
@@ -49,11 +50,27 @@ public class NetworkInterface : MonoBehaviour
       if(err != null) Debug.LogError(err);
       
       Debug.LogWarning("Sorteio Local ");
-      var sorteioData = Resources.Load<TextAsset>("Sorteio").text;
-      if (sorteioData == null) throw new Exception("Invalid File Path: Sorteio");
-      var sorteio = JsonConvert.DeserializeObject<Sorteio>(sorteioData);
-      callback?.Invoke(sorteio);
-      // UpdateSorteio();
+      var sorteioPath = Application.persistentDataPath + "/sorteio.json";
+
+      if (File.Exists(sorteioPath))
+      {
+        using (var sr = new StreamReader(sorteioPath))
+        using (JsonReader reader = new JsonTextReader(sr))
+        {
+          var    serializer = new JsonSerializer();
+          var sorteio = serializer.Deserialize<Sorteio>(reader);
+          
+          callback?.Invoke(sorteio);
+          return;
+        }
+      }
+      
+      Debug.Log("Salvando sorteio na maquina");
+      
+      var ogPath   = Application.streamingAssetsPath + "/sorteio.json";
+      var getter = new Api("");
+
+      getter.GetFile(ogPath, sorteioPath).OnComplete(OfflineLoad);
     }
 
     if (offline)

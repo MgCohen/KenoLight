@@ -21,7 +21,7 @@ public class CardNumber : MonoBehaviour
         {
             return;
         }
-        numberSprite.sprite = NumberSprites.main.sprites[i - 1];
+        numberSprite.sprite = NumberSprites.Main.sprites[i - 1];
         number = i;
         Set(false);
     }

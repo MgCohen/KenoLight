@@ -602,7 +602,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   start: {x: 210, y: -233}
   offset: {x: 52, y: -31}
-  numberPrefab: {fileID: 1677917125465361761, guid: 48922b550878fc44692745976a043f53, type: 3}
+  numberPrefab: {fileID: 1677917125465361775, guid: 48922b550878fc44692745976a043f53, type: 3}
   tableHolder: {fileID: 349665491}
   color: {r: 0.310328, g: 0.8962264, b: 0.2240566, a: 1}
   counter: {fileID: 269674631}
@@ -818,6 +818,10 @@ PrefabInstance:
       propertyPath: cardPrefab
       value: 
       objectReference: {fileID: 2532504384538137023, guid: 3e485e9d27e32d84f86579b9796b1861, type: 3}
+    - target: {fileID: 8545288662900076284, guid: b118cd5b0d7114340b69027263c80937, type: 3}
+      propertyPath: anims.Array.size
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8545288662900076285, guid: b118cd5b0d7114340b69027263c80937, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5

@@ -12,8 +12,7 @@ public class Game : MonoBehaviour
   public string sorteioId;
   public bool offlineMode = true;
 
-  [NonSerialized]
-  public Sorteio sorteio;
+  private Sorteio _sorteio;
 
   public List<int> usedBalls = new List<int>();
 
@@ -37,57 +36,53 @@ public class Game : MonoBehaviour
 
   private void Start()
   {
-    System.GC.Collect();
-    System.GC.WaitForPendingFinalizers();
-    Invoke("Request", 3);
+    GC.Collect();
+    GC.WaitForPendingFinalizers();
+    Invoke(nameof(Request), 3);
   }
 
   public void Request()
   {
     NetworkInterface.Instance.RequestSorteio(sorteioId, offlineMode, Setup);
-
   }
 
-  public void Setup(Sorteio novoSorteio)
+  private void Setup(Sorteio novoSorteio)
   {
-    sorteio = novoSorteio;
-
-    values.Set(sorteio);
-
+    _sorteio = novoSorteio;
+    values.Set(_sorteio);
     SetCards();
     SetLines();
-
     StartDraw();
   }
 
-  public void SetCards()
+  private void SetCards()
   {
-    for (int i = 0; i < cards.Length; i++)
+    for (var i = 0; i < cards.Length; i++)
     {
-      cards[i].Setup(sorteio.cards[i]);
+      cards[i].Setup(_sorteio.cards[i]);
     }
   }
 
-  public void SetLines()
+  private void SetLines()
   {
-    for (int i = 0; i < lines.Length; i++)
+    for (var i = 0; i < lines.Length; i++)
     {
-      if (i < sorteio.cards.Count)
-        lines[i].Setup(sorteio.cards[i]);
+      if (i < _sorteio.cards.Count)
+        lines[i].Setup(_sorteio.cards[i]);
       else
         lines[i].gameObject.SetActive(false);
     }
   }
 
-  public void StartDraw()
+  private void StartDraw()
   {
     StartCoroutine(Drawing());
   }
 
-  IEnumerator Drawing()
+  private IEnumerator Drawing()
   {
     globo.Resume();
-    List<int> missingBalls = sorteio.balls;
+    var missingBalls = _sorteio.balls;
 
     while (missingBalls.Count > 0)
     {
@@ -107,22 +102,21 @@ public class Game : MonoBehaviour
       Sort(usedBalls.Count - 1);
 
       //Verifica ganhador
-      if (sorteio.winnerBalls.Contains(number))
-      {
-        var index = Array.IndexOf(sorteio.winnerBalls, number);
-        Debug.Log($"{index} cout: {sorteio.winners.Count}");
+      if (!_sorteio.winnerBalls.Contains(number)) continue;
+      
+      var index = Array.IndexOf(_sorteio.winnerBalls, number);
+      Debug.Log($"{index} cout: {_sorteio.winners.Count}");
 
-        var winnersId = sorteio.winners[index];
-        var winners = sorteio.cards.Where(card => winnersId.Exists(x => x == card.codigo)).ToArray();
+      // var winnersId = _sorteio.winners[index];
+      // var winners   = _sorteio.cards.Where(card => winnersId.Exists(x => x == card.codigo)).ToArray();
 
-        Win(index);
-        //if (index == 2 && usedBalls.Count <= sorteio.acumuladoBallCount)
-        //{
-        //    index = 3;
-        //}
+      Win(index);
+      //if (index == 2 && usedBalls.Count <= sorteio.acumuladoBallCount)
+      //{
+      //    index = 3;
+      //}
 
-        //yield return winnerPanel.ShowWinners(winners, index + 4);
-      }
+      //yield return winnerPanel.ShowWinners(winners, index + 4);
     }
 
     DOTween.KillAll();
@@ -133,17 +127,17 @@ public class Game : MonoBehaviour
   }
 
 
-  public void Sort(int round)
+  private void Sort(int round)
   {
-    var topPlayers = sorteio.topPlayers[round];
+    var topPlayers = _sorteio.topPlayers[round];
     var topCards = topPlayers.Select(x => x.id).Distinct().ToArray();
-    for (int i = 0; i < lines.Length; i++)
+    for (var i = 0; i < lines.Length; i++)
     {
       if (!lines[i].gameObject.activeInHierarchy) return;
       // Debug.Log($"{i} top players count: {topPlayers.Count}");
 
-      var card = sorteio.cards.Find(x => x.codigo == topPlayers[i].id);
-      var topCard = sorteio.cards.Find(x => x.codigo == topCards[i]);
+      var card = _sorteio.cards.Find(x => x.codigo == topPlayers[i].id);
+      var topCard = _sorteio.cards.Find(x => x.codigo == topCards[i]);
       if (i < cards.Length)
       {
         if (cards[i].Setup(topCard))
@@ -157,7 +151,7 @@ public class Game : MonoBehaviour
     }
   }
 
-  public void Win(int prizeIndex)
+  private void Win(int prizeIndex)
   {
     values.SetPrize(prizeIndex);
     //get winner

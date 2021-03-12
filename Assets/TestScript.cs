@@ -6,7 +6,7 @@ public class TestScript : MonoBehaviour
 {
     private void Start()
     {
-        Invoke("Next", 5f);
+        Invoke(nameof(Next), 5f);
     }
 
     public void Next()

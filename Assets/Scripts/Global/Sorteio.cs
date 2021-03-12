@@ -29,13 +29,13 @@ public class Sorteio
     public readonly List<int> buyers = new List<int>(); //id de bares participantes
 
     //Draw
-    public readonly List<int> balls;
-    public readonly List<List<Player>> topPlayers = new List<List<Player>>();
-    public readonly List<Card> cards;
+    public readonly List<int>          balls;
+    public readonly List<List<Player>> topPlayers;
+    public readonly List<Card>         cards;
 
     //Winners
     public readonly int[] winnerBalls = new int[3];
-    public readonly List<List<int>> winners = new List<List<int>>();
+    public readonly List<List<int>> winners;
 
 
 
