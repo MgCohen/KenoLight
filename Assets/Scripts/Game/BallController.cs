@@ -36,63 +36,61 @@ public class BallController : MonoBehaviour
     public float waitTime;
     public List<NumberBall> balls = new List<NumberBall>();
     public CustomAnim ballDrawer;
+    public Game game;
 
     private bool _playing = false;
 
-    public IEnumerator Draw(int number, bool end = false)
+    int currentNumber;
+    bool isKeno;
+    NumberBall currentBall;
+
+    public void Draw(int number, bool end = false)
     {
         // if (_entryPath == null) SetPath();
-
+        currentNumber = number;
+        isKeno = end;
         //Trigger Draw Animation
-        Stop();
+
         //SELECT ANIMATION
-        ballDrawer.Play(1, Resume);
+        ballDrawer.Play(1, SpawnBall);
+    }
 
-        //wait for animation
-        while (!_playing) yield return null;
-
-        //spawn
-        //SELECT PREFAB
-        var o = GetBall(spawner);
+    public void SpawnBall()
+    {
+        currentBall = GetBall(spawner);
 
         //moveSound
-        if (!end) SoundManager.EntryNumber();
+        if (!isKeno) SoundManager.EntryNumber();
         else SoundManager.EntryKeno();
 
         //move
-        var path = end ? _kenoPath : _entryPath;
-        var time = end ? kenoMoveTime : moveTime;
+        var path = isKeno ? _kenoPath : _entryPath;
+        var time = isKeno ? kenoMoveTime : moveTime;
 
-        o.transform.DOScale(entryScaleSize, time * 0.9f).SetDelay(moveDelay);
+        currentBall.transform.DOScale(entryScaleSize, time * 0.9f).SetDelay(moveDelay);
 
-        var t = o.transform.DOPath(path, time, PathType.CatmullRom).SetDelay(moveDelay).SetEase(Ease.OutQuad).OnStart(() =>
+        var t = currentBall.transform.DOPath(path, time, PathType.CatmullRom).SetDelay(moveDelay).SetEase(Ease.OutQuad).OnStart(() =>
         {
             ballDrawer.Play(2);
+            CallNumber();
         });
 
         //if keno, set reveal
-        if (end) t.OnComplete(() => ShowNumber(number, o.number));
-        else ShowNumber(number, o.number);
+        var o = currentBall;
+        if (isKeno) t.OnComplete(() => ShowNumber(currentNumber, o.number));
+        else ShowNumber(currentNumber, currentBall.number);
 
-        //wait for tween
-        yield return t.WaitForCompletion();
+    }
 
-        //call
-        SoundManager.PlayNumberVoice(number);
+    public void CallNumber()
+    {
+        SoundManager.PlayNumberVoice(currentNumber);
 
-
-        //wait for screen time
-        yield return new WaitForSeconds(waitTime);
-
-        //exit sound
-        SoundManager.ExitNumber();
-
-        //exit
-        DropPipe(o);
-        o.transform.DOPath(_exitPath, exitTime, PathType.CatmullRom).SetEase(Ease.OutQuad).OnComplete(() => o.transform.SetParent(pipe.ballHolder));
-        o.transform.DOScale(exitScaleSize, exitTime * 0.85f);
-
-        //return control
+        var o = currentBall;
+        currentBall.transform.DOPath(_exitPath, exitTime, PathType.CatmullRom).SetDelay(waitTime).SetEase(Ease.OutQuad)
+            .OnStart(() => { SoundManager.ExitNumber(); DropPipe(o); game.SetTable(); })
+            .OnComplete(() => o.transform.SetParent(pipe.ballHolder));
+        currentBall.transform.DOScale(exitScaleSize, exitTime * 0.85f).SetDelay(waitTime);
     }
 
     private void DropPipe(NumberBall o)
@@ -131,7 +129,7 @@ public class BallController : MonoBehaviour
         target.transform.SetParent(parent);
         target.transform.localPosition = Vector3.zero;
         target.gameObject.SetActive(true);
-        target.transform.localScale = new Vector3(2.1f, 2.1f,1);
+        target.transform.localScale = new Vector3(2.1f, 2.1f, 1);
         return (target);
     }
 

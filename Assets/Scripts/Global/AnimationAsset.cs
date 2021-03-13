@@ -2,8 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-[CreateAssetMenu(menuName = "Data/Animation")]
-public class AnimationAsset : ScriptableObject
+public class AnimationAsset : MonoBehaviour
 {
     public string animationName;
     public List<Sprite> frames;
