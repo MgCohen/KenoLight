@@ -37,7 +37,6 @@ public class CustomAnim : MonoBehaviour
   public void Play(int index, Action OnComplete = null)
   {
     //Get Anim by nane
-    
     var anim = anims[index]; //anims.Find(x => x.animationName == animationName);
     if (anim)
     {
