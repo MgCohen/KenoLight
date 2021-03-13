@@ -186,26 +186,30 @@ public class LobbyManager : MonoBehaviour
     switch (SE)
     {
       case 1:
-        var fileOng = $"{logo[1].id}.png";
+        Debug.Log("Entrei guardar Logo Ong e Oferecimento");
+        var fileOng = $"{logo[0].id}.png";
         imgOng.sprite = dict[fileOng];
 
-        var fileOferecimento = $"{logo[2].id}.png";
+        var fileOferecimento = $"{logo[1].id}.png";
         imgOferecimento.sprite = dict[fileOferecimento];
         break;
 
       case 2:
+
+      Debug.Log("Entrei guardar especial participantes");
         for (int i = 0; i < imgPartList.Count; i++)
         {
-          var fileName = $"{logo[i].id}.png";
-          imgPartList[i].sprite = dict[fileName];
+          var fileEspecial = $"{logo[i].id}.png";
+          imgPartList[i].sprite = dict[fileEspecial];
         }
         break;
 
       case 3:
         for (int i = 0; i < imgSuperPartList.Count; i++)
         {
-          var fileName = $"{logo[i].id}.png";
-          imgSuperPartList[i].sprite = dict[fileName];
+          Debug.Log("Entrei guardar super especial participantes");
+          var fileSuperEspecial = $"{logo[i].id}.png";
+          imgSuperPartList[i].sprite = dict[fileSuperEspecial];
 
         }
         break;

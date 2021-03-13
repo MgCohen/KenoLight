@@ -63,12 +63,12 @@ public class ImageCacheManager : MonoBehaviour
   {
 
     StartCoroutine(LoadImages(logo));
-    Debug.Log("Entrei guardar imagem logo");
+
   }
 
   private IEnumerator LoadImages(List<Logo> logo)
   {
-    Debug.Log("Carreguei imagens");
+
     foreach (var url in logo)
     {
       //Debug.Log($"loading {url.id}.png");

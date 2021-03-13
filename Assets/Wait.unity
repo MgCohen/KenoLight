@@ -595,6 +595,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   counter: {fileID: 271053858}
+<<<<<<< Updated upstream
   tempo: 5
 --- !u!1 &2084537795
 GameObject:
@@ -678,3 +679,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+=======
+  tempo: 300
+>>>>>>> Stashed changes

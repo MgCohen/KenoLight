@@ -7,7 +7,11 @@ using UnityEngine;
 
 public class NetworkInterface : MonoBehaviour
 {
+<<<<<<< Updated upstream
   public EventHandler events;
+=======
+   public EventHandler events;
+>>>>>>> Stashed changes
   private static NetworkInterface _instance;
 
   public static NetworkInterface Instance
@@ -42,7 +46,11 @@ public class NetworkInterface : MonoBehaviour
 
   private readonly Api _api = new Api("https://slots.gamesdasorte.com");
   [NonSerialized] public Sorteio SorteioAtual = null;
-
+  private void Update() {
+    if(Input.GetKeyDown(KeyCode.A))   RequestLogoOngOferecimento("Sala1");
+    if(Input.GetKeyDown(KeyCode.S))   RequestLogoEspecial("Sala1");
+    if(Input.GetKeyDown(KeyCode.D))   RequestLogoSuperEspecial("Sala1");
+  }
   private void OfflineLoad(string sorteioPath = "", Action<Sorteio> callback = null)
   {
 
@@ -150,5 +158,70 @@ public class NetworkInterface : MonoBehaviour
     }
     events.LogoUrlSuperEspecial.Invoke(logos);
   }
+<<<<<<< Updated upstream
+=======
+  public void RequestLogoOngOferecimento(string sala)
+  {
+    _api.Get<List<Logo>>($"/logosongoferecimento/{sala}")
+       .OnComplete(UpdateRequestLogoOngOferecimento)
+       .OnError((err) =>
+        {
+          // Debug.Log("Logos Offline");
+          var data = Resources.Load<TextAsset>("LogosOngOferecimento").text;
+          if (data == null) throw new Exception("Invalid File Path: LogoOngOferecimento");
+          UpdateRequestLogoOngOferecimento(JsonConvert.DeserializeObject<List<Logo>>(data));
+        });
+  }
+  public void RequestLogoEspecial(string sala)
+  {
+    _api.Get<List<Logo>>($"/logosespecial/{sala}")
+       .OnComplete(UpdateLogosE)
+       .OnError((err) =>
+        {
+          // Debug.Log("Logos Offline");
+          var data = Resources.Load<TextAsset>("LogosEspecial").text;
+          if (data == null) throw new Exception("Invalid File Path: Logos");
+          UpdateLogosE(JsonConvert.DeserializeObject<List<Logo>>(data));
+        });
+  }
+  public void RequestLogoSuperEspecial(string sala)
+  {
+    _api.Get<List<Logo>>($"/logosse/{sala}")
+       .OnComplete(UpdateLogosSe)
+       .OnError((err) =>
+        {
+          // Debug.Log("Logos Offline");
+          var data = Resources.Load<TextAsset>("LogosSuperEspecial").text;
+          if (data == null) throw new Exception("Invalid File Path: LogosSuperEspecial");
+          UpdateLogosSe(JsonConvert.DeserializeObject<List<Logo>>(data));
+
+        });
+  }
+  private void UpdateRequestLogoOngOferecimento(List<Logo> logos)
+  {
+    foreach (var logo in logos)
+    {
+      logo.se = 1;
+    }
+    events.LogoUrlOngOferecimento.Invoke(logos);
+    Debug.Log("Entrei request");
+  }
+  private void UpdateLogosE(List<Logo> logos)
+  {
+    foreach (var logo in logos)
+    {
+      logo.se = 2;
+    }
+    events.LogoUrlEspecial.Invoke(logos);
+  }
+  private void UpdateLogosSe(List<Logo> logos)
+  {
+    foreach (var logo in logos)
+    {
+      logo.se = 3;
+    }
+    events.LogoUrlSuperEspecial.Invoke(logos);
+  }
+>>>>>>> Stashed changes
 
 }
