@@ -16,11 +16,11 @@ public class TestScript : MonoBehaviour
     GC.Collect();
     GC.WaitForPendingFinalizers();
     counter.text += "\n" + Game.LoopCount;
-    Invoke(nameof(Next), tempo);
-    _api.Get("").OnComplete((data) =>
-    {
-      Debug.Log(System.Text.Encoding.UTF8.GetString(data.ToArray()));
-    });
+   
+    // _api.Get("").OnComplete((data) =>
+    // {
+    //   Debug.Log(System.Text.Encoding.UTF8.GetString(data.ToArray()));
+    // });
   }
   
   private void Update()
@@ -38,7 +38,7 @@ public class TestScript : MonoBehaviour
   }
 
 
-  public void Next()
+  private static void Next()
   {
     DOTween.Clear(true);
     Game.LoopCount += 1;
