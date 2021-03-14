@@ -2,7 +2,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using System.Linq;
 using UnityEngine.SceneManagement;
 using DG.Tweening;
 using TMPro;
@@ -16,8 +15,9 @@ public class Game : MonoBehaviour
   //////
 
   // [SerializeField] private Sorteio sorteio;
-
-  public List<int> usedBalls = new List<int>();
+  private int       _prizeCount;
+  // public  List<int> usedBalls = new List<int>();
+  private  int _usedBallsCount = 0;
 
   [Header("Views")]
   public CardView[] cards = new CardView[4];
@@ -28,7 +28,8 @@ public class Game : MonoBehaviour
 
   [Header("Timer")]
   public float drawTime;
-
+  private WaitForSeconds _drawTimer;
+  
   [Header("Components")]
   // [SerializeField] private WinnerPanel winnerPanel = default;
 
@@ -36,95 +37,94 @@ public class Game : MonoBehaviour
   public ValueSetter values;
   public TableNumbers table;
 
-  public static short loopCount = 1;
-  public static string sorteioStart;
-  public TextMeshProUGUI contador;
-
+  public static  short           LoopCount = 1;
+  private static string          _sorteioStart;
+  public         TextMeshProUGUI contador;
+  
   private void Start()
   {
-    if (string.IsNullOrEmpty(sorteioStart)) sorteioStart = DateTime.Now.ToString("HH:mm");
+    _drawTimer = new WaitForSeconds(drawTime);
+    
+    if (string.IsNullOrEmpty(_sorteioStart)) _sorteioStart = DateTime.Now.ToString("HH:mm");
     GC.Collect();
     GC.WaitForPendingFinalizers();
-    Screen.SetResolution(1920, 1080, true, 30);
-    Invoke("Request", 3);
-    contador.text = sorteioStart + "  " + loopCount.ToString() + "  " + DateTime.Now.ToString("HH:mm");
+    // Screen.SetResolution(1920, 1080, true, 30);
+    contador.text = _sorteioStart + "  " + LoopCount.ToString() + "  " + DateTime.Now.ToString("HH:mm");
+    // Invoke("Request", 3);
+    Request();
   }
 
-  public void Request()
+
+  private void Request()
   {
     NetworkInterface.Instance.RequestSorteio(sorteioId, offlineMode, Setup);
   }
 
-  private void Setup(Sorteio _sorteio)
+  private void Setup(Sorteio sorteio)
   {
-    // sorteio = _sorteio;
-    values.Set(_sorteio);
-    SetCards(_sorteio);
-    SetLines(_sorteio);
-    StartDraw(_sorteio);
+    values.Set(sorteio);
+    SetCards(sorteio);
+    SetLines(sorteio);
+    StartDraw(sorteio);
   }
 
-  private void SetCards(Sorteio _sorteio)
+  private void SetCards(Sorteio sorteio)
   {
-    var carts = _sorteio.cards.Values.Take(cards.Length).ToList();
-    for (var i = 0; i < cards.Length; i++)
+    var carts = sorteio.cards.Values;
+    var i     = 0;
+    foreach (var cart in carts)
     {
-      cards[i].Setup(carts[i], null);
+      cards[i].Setup(cart, null);
+      ++i;
+      if (i >= cards.Length) break;
     }
   }
 
-  private void SetLines(Sorteio _sorteio)
+  private void SetLines(Sorteio sorteio)
   {
-    var carts = _sorteio.cards.Values.Take(lines.Length).ToList();
 
-    for (var i = 0; i < lines.Length; i++)
+    var carts = sorteio.cards.Values;
+    var i     = 0;
+    foreach (var cart in carts)
     {
-      if (i < _sorteio.cards.Count) lines[i].Setup(carts[i]);
-      else lines[i].gameObject.SetActive(false);
+      lines[i].Setup(cart);
+      ++i;
+      if (i >= lines.Length) break;
     }
   }
 
-  private void StartDraw(Sorteio _sorteio)
+  private void StartDraw(Sorteio sorteio)
   {
-    StartCoroutine(Drawing(_sorteio));
+    StartCoroutine(Drawing(sorteio));
   }
 
-  private IEnumerator Drawing(Sorteio _sorteio)
+  private IEnumerator Drawing(Sorteio sorteio)
   {
     globo.Resume();
-    // var missingBalls = _sorteio.balls;
+    // var missingBalls = sorteio.balls;
 
-    for (var i = 0; i < _sorteio.balls.Length; i++)
+    for (var i = 0; i < sorteio.balls.Length; i++)
     {
 
-      yield return new WaitForSeconds(drawTime);
+      yield return _drawTimer;
       //pega bola
-      var number = _sorteio.balls[i];
+      var number = sorteio.balls[i];
       //wait for ball draw
       yield return control.Draw(number);
 
       table.SetNumber(number);
       //Arruma e marca
-      usedBalls.Add(number);
-      table.SetCount(usedBalls.Count);
-      Sort(usedBalls.Count - 1, _sorteio);
+      // usedBalls.Add(number);
+      ++_usedBallsCount;
+      
+      table.SetCount(_usedBallsCount);
+      Sort(_usedBallsCount - 1, sorteio);
 
       //Verifica ganhador
-      if (!_sorteio.winnerBalls.Contains(number)) continue;
+      if (sorteio.winnerBalls[_prizeCount] != number) continue;
 
-      var index = Array.IndexOf(_sorteio.winnerBalls, number);
-      // Debug.Log($"{index} cout: {_sorteio.winners.Count}");
-
-      // var winnersId = _sorteio.winners[index];
-      // var winners   = _sorteio.cards.Where(card => winnersId.Exists(x => x == card.codigo)).ToArray();
-
-      Win(index);
-      //if (index == 2 && usedBalls.Count <= sorteio.acumuladoBallCount)
-      //{
-      //    index = 3;
-      //}
-
-      //yield return winnerPanel.ShowWinners(winners, index + 4);
+      ++_prizeCount;
+      Win(_prizeCount);
     }
 
     GC.Collect();
@@ -132,34 +132,34 @@ public class Game : MonoBehaviour
     DOTween.KillAll();
     DOTween.ClearCachedTweens();
     SceneManager.LoadScene(1);
-    _sorteio = null;
+    sorteio = null;
     //espera
   }
 
 
-  private void Sort(int round, Sorteio _sorteio)
+  private void Sort(int round, Sorteio sorteio)
   {
-    var topPlayers = _sorteio.topPlayers[round];
-    var topCards = topPlayers.Select(x => x.id).Distinct().ToArray();
-
+    if(round > 0) sorteio.topPlayers[round - 1] = null;
+    
+    var topPlayers = sorteio.topPlayers[round];
+    var lastId     = 0;
+    var cardIndex  = 0;
+    
     for (var i = 0; i < lines.Length; i++)
     {
       if (!lines[i].gameObject.activeInHierarchy) return;
-      // Debug.Log($"{i} top players count: {topPlayers.Count}");
 
-      var card = _sorteio.cards[topPlayers[i].id];
-      var topCard = _sorteio.cards[topCards[i]];
-
-      if (i < cards.Length)
+      var id      = topPlayers[i].id;
+      var card = sorteio.cards[id];
+      
+      //Só aplicar nas 4 primeiras cartelas, caso não sejam repetidas
+      if (cardIndex < cards.Length && id != lastId)
       {
-        // if (cards[i].Setup(topCard))
-        cards[i].Setup(topCard, usedBalls);
-        // cards[i].CatchUp(usedBalls);
-        // else
-        // cards[i].Mark(usedBalls[round]);
+        cards[cardIndex].Setup(card,sorteio.balls, _usedBallsCount - 1);
+        lastId = id;
+        ++cardIndex;
       }
 
-      // i = Mathf.Clamp(i, 0, 14);
       lines[i].Setup(card, topPlayers[i]);
     }
   }

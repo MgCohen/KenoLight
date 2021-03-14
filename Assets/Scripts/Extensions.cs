@@ -6,6 +6,14 @@ using UnityEngine.Networking;
 
 public static class Extensions
 {
+   public static int IndexOf(this int[] self,int target ,int maxValue)
+   {
+      for (var i = 0; i < maxValue + 1; ++i)
+      {
+         if (self[i] == target) return i;
+      }
+      return -1;
+   }
     public static IEnumerator DownloadImage(string MediaUrl, Action<Sprite> callback, Action<String> Error = null)
    {
       var manager = ImageCacheManager.Instance;

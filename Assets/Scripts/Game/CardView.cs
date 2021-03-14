@@ -16,6 +16,7 @@ public class CardView : MonoBehaviour
   {
     // if (card.codigo == _id) return false;
     var set = calledNumbers != null;
+    
     _id = card.codigo;
     cardId.text = _id.ToString();
     cardSource.text = card.estabelecimento;
@@ -28,16 +29,20 @@ public class CardView : MonoBehaviour
     }
     // return true;
   }
+  
+  public void Setup(Card card, int[] calledBalls, int maxIndex)
+  {
+    
+    _id             = card.codigo;
+    cardId.text     = _id.ToString();
+    cardSource.text = card.estabelecimento;
 
-  // public void Mark(int i)
-  // {
-  //   var num = numbers.Find(x => x.number == i);
-  //   if (num) num.Set(true);
-  // }
-
-  // public void CatchUp(List<int> calledNumbers)
-  // {
-  //   foreach (var n in calledNumbers)
-  //     Mark(n);
-  // }
+    for (var i = 0; i < numbers.Count; i++)
+    {
+      var num = numbers[i];
+      num.Setup(card.numbers[i]);
+      num.Set(calledBalls.IndexOf(num.number,maxIndex) >= 0);
+    }
+    // return true;
+  }
 }

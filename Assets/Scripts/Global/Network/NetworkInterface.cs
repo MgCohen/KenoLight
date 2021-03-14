@@ -69,7 +69,7 @@ public class NetworkInterface : MonoBehaviour
       //   .OnComplete(() => OfflineLoad(sorteioPath, callback));
       var sorteioData = Resources.Load<TextAsset>("Sorteio").text;
       if (sorteioData == null) throw new Exception("Invalid File Path: Sorteio");
-      Debug.Log(sorteioData);
+      // Debug.Log(sorteioData);
       var sorteio = JsonSerializer.Deserialize<Sorteio>(sorteioData);
       callback?.Invoke(sorteio);
       return;
