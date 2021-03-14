@@ -1,5 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -23,7 +22,6 @@ public class CardNumber : MonoBehaviour
     }
     numberSprite.sprite = SpriteLoader.Main.sprites[i - 1];
     number = i;
-    // Set(false);
   }
 
   public void Set(bool state)

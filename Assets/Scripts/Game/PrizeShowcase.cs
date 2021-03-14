@@ -1,5 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿
 using UnityEngine;
 using UnityEngine.UI;
 using DG.Tweening;
@@ -14,7 +13,7 @@ public class PrizeShowcase : MonoBehaviour
     private void OnEnable()
     {
         if (fadeOnStart)
-        layer.DOFade(0.9f, 2f);
+            layer.DOFade(0.9f, 2f);
     }
 
     public void Set(bool state)

@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using DG.Tweening;
@@ -62,6 +61,7 @@ public class Game : MonoBehaviour
 
   private void Setup(Sorteio sorteio)
   {
+    Debug.Log("start Sorteio");
     values.Set(sorteio);
     SetCards(sorteio);
     SetLines(sorteio);
@@ -74,7 +74,7 @@ public class Game : MonoBehaviour
     var i     = 0;
     foreach (var cart in carts)
     {
-      cards[i].Setup(cart, null);
+      cards[i].Setup(cart);
       ++i;
       if (i >= cards.Length) break;
     }
@@ -111,7 +111,7 @@ public class Game : MonoBehaviour
       var number = sorteio.balls[i];
       //wait for ball draw
       yield return control.Draw(number);
-
+      
       table.SetNumber(number);
       //Arruma e marca
       // usedBalls.Add(number);

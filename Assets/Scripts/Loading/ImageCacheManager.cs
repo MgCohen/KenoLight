@@ -8,7 +8,7 @@ using UnityEngine.Events;
 
 public class ImageCacheManager : MonoBehaviour
 {
-  public static readonly UnityEvent<List<Logo>> onLogoLoad = new UnityEvent<List<Logo>>();
+  public static readonly UnityEvent<List<Logo>> ONLogoLoad = new UnityEvent<List<Logo>>();
   public readonly Dictionary<string, Sprite> Sprites = new Dictionary<string, Sprite>();
 
   // public readonly Dictionary<string, List<UniGif.GifTexture>> Gifs =
@@ -74,15 +74,10 @@ public class ImageCacheManager : MonoBehaviour
       //Debug.Log($"loading {url.id}.png");
       yield return LoadInMemory(url);
     }
-
-    foreach (var key in Sprites.Keys)
-    {
-
-      //Debug.LogAssertion($"Loaded {key}");
-    }
+    
 
     Debug.Log("Loaded");
-    onLogoLoad.Invoke(logo);
+    ONLogoLoad.Invoke(logo);
     //Handler.OnAdLoad.Invoke();
     //evento
   }
@@ -145,14 +140,14 @@ public class ImageCacheManager : MonoBehaviour
     var filePath = Path.Combine(Application.persistentDataPath, "cache", fileName);
     return File.Exists(filePath);
   }
-  private IEnumerator GetFromCache(string fileName, Action<Sprite> callback, Action Err = null)
+  private IEnumerator GetFromCache(string fileName, Action<Sprite> callback, Action err = null)
   {
     var filePath = Path.Combine(Application.persistentDataPath, "cache", fileName);
 
     if (!IsInCache(filePath))
     {
       Debug.Log("Errr");
-      Err?.Invoke();
+      err?.Invoke();
       yield break;
     }
 
@@ -178,8 +173,8 @@ public class ImageCacheManager : MonoBehaviour
     var filePath = Path.Combine(Application.persistentDataPath, "cache", fileName);
 
     if (File.Exists(filePath)) return;
-    System.IO.FileInfo file = new System.IO.FileInfo(filePath);
-    file.Directory.Create();
+    var file = new FileInfo(filePath);
+    file.Directory?.Create();
     File.WriteAllBytes(filePath, bytes);
   }
 

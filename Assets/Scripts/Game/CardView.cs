@@ -1,7 +1,5 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 using TMPro;
 
 public class CardView : MonoBehaviour
@@ -12,11 +10,8 @@ public class CardView : MonoBehaviour
 
   public List<CardNumber> numbers = new List<CardNumber>();
 
-  public void Setup(Card card, List<int> calledNumbers)
+  public void Setup(Card card)
   {
-    // if (card.codigo == _id) return false;
-    var set = calledNumbers != null;
-    
     _id = card.codigo;
     cardId.text = _id.ToString();
     cardSource.text = card.estabelecimento;
@@ -25,7 +20,6 @@ public class CardView : MonoBehaviour
     {
       var num = numbers[i];
       num.Setup(card.numbers[i]);
-      if (set) num.Set(calledNumbers.Contains(num.number));
     }
     // return true;
   }

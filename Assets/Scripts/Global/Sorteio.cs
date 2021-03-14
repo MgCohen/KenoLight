@@ -2,19 +2,13 @@
 using System;
 using System.Runtime.Serialization;
 using UnityEngine;
-using UnityEngine.Scripting;
 using Utf8Json;
-using static System.Globalization.DateTimeStyles;
-
 // ReSharper disable InconsistentNaming
 
 [Serializable]
 public class Sorteio
 {
   //BASE INFO
-  
-  
-  
   // [IgnoreDataMember]            public DateTime sorteioTime;
   [DataMember(Name = "codigo")]       public int sorteioId;
   [DataMember(Name = "data_partida")] public DateTime sorteioTime;

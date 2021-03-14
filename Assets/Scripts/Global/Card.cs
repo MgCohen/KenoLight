@@ -1,8 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using System.Runtime.Serialization;
-using UnityEngine;
-using UnityEngine.Scripting;
+﻿using System.Runtime.Serialization;
 // ReSharper disable InconsistentNaming
 
 // [Preserve]

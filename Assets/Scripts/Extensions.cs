@@ -1,8 +1,6 @@
 ﻿using System;
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.Networking;
 
 public static class Extensions
 {
@@ -14,13 +12,13 @@ public static class Extensions
       }
       return -1;
    }
-    public static IEnumerator DownloadImage(string MediaUrl, Action<Sprite> callback, Action<String> Error = null)
+    public static IEnumerator DownloadImage(string mediaUrl, Action<Sprite> callback, Action<string> error = null)
    {
       var manager = ImageCacheManager.Instance;
 
-      if (manager.Sprites.ContainsKey(MediaUrl))
+      if (manager.Sprites.ContainsKey(mediaUrl))
       {
-         callback(manager.Sprites[MediaUrl]);
+         callback(manager.Sprites[mediaUrl]);
          yield break;
       }
 

@@ -155,7 +155,7 @@ public class LobbyManager : MonoBehaviour
     // handler.SorteioEspecial.AddListener(UpdateEspecial);
     // handler.SorteioSuperEspecial.AddListener(UpdateSuperEspecial);
 
-    ImageCacheManager.onLogoLoad.AddListener(UpdateImageSE);
+    ImageCacheManager.ONLogoLoad.AddListener(UpdateImageSE);
 
   }
 
@@ -165,7 +165,7 @@ public class LobbyManager : MonoBehaviour
     // handler.ProximoSorteio.RemoveListener(UpdateProximo);
     // handler.ProximosSorteios.RemoveListener(UpdateProximos);
     // handler.SorteioEspecial.RemoveListener(UpdateEspecial);
-    ImageCacheManager.onLogoLoad.RemoveListener(UpdateImageSE);
+    ImageCacheManager.ONLogoLoad.RemoveListener(UpdateImageSE);
 
     // handler.ProximosSorteios.RemoveListener(UpdateProximo);
   }

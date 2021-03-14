@@ -47,7 +47,6 @@ public class BallController : MonoBehaviour
     Stop();
     //SELECT ANIMATION
     ballDrawer.Play(1, Resume);
-
     //wait for animation
     while (!_playing) yield return null;
 
@@ -95,7 +94,7 @@ public class BallController : MonoBehaviour
     //return control
   }
 
-  private void DropPipe(MonoBehaviour o)
+  private void DropPipe(Component o)
   {
     pipe.Drop(o.transform);
   }

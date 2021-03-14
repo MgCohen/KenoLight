@@ -37,15 +37,11 @@ public class NetworkInterface : MonoBehaviour
 
   private static void OfflineLoad<T>(string sorteioPath = "", Action<T> callback = null)
   {
-
-    using (var sourceStream = File.Open(sorteioPath, FileMode.Open))
-    {
-      var data = JsonSerializer.Deserialize<T>(sourceStream);
+    using var sourceStream = File.Open(sorteioPath, FileMode.Open);
+    var       data         = JsonSerializer.Deserialize<T>(sourceStream);
       
-      callback?.Invoke(data);
-      GC.Collect();
-    }
-
+    callback?.Invoke(data);
+    GC.Collect();
   }
 
   public void RequestSorteio(string id, bool offline = false, Action<Sorteio> callback = null)
@@ -53,27 +49,30 @@ public class NetworkInterface : MonoBehaviour
     
     if (offline)
     {
-      // var sorteioPath = Application.persistentDataPath + "/sorteio.json";
-      // Debug.LogWarning("Sorteio Local: " + sorteioPath);
-      //
-      // // if (File.Exists(sorteioPath))
-      // // {
-      // //   OfflineLoad(sorteioPath, callback);
-      // //   return;
-      // // }
-      //
-      // Debug.Log("Salvando sorteio na maquina");
-      // var ogPath = Application.streamingAssetsPath + "/sorteio.json";
-      //
-      // new Api("").GetFile(ogPath, sorteioPath)
-      //   .OnComplete(() => OfflineLoad(sorteioPath, callback));
-      var sorteioData = Resources.Load<TextAsset>("Sorteio").text;
-      if (sorteioData == null) throw new Exception("Invalid File Path: Sorteio");
-      // Debug.Log(sorteioData);
-      var sorteio = JsonSerializer.Deserialize<Sorteio>(sorteioData);
-      callback?.Invoke(sorteio);
+      var sorteioPath = Application.persistentDataPath + "/sorteio.json";
+      Debug.LogWarning("Sorteio Local: " + sorteioPath);
+      
+      // if (File.Exists(sorteioPath))
+      // {
+      //   OfflineLoad(sorteioPath, callback);
+      //   return;
+      // }
+      
+      Debug.Log("Salvando sorteio na maquina");
+      var ogPath = Application.streamingAssetsPath + "/sorteio.json";
+      
+      new Api("").GetFile(ogPath, sorteioPath)
+      .OnComplete(() => OfflineLoad(sorteioPath, callback));
+
       return;
     }
+    
+    // var sorteioData = Resources.Load<TextAsset>("Sorteio").text;
+    // if (sorteioData == null) throw new Exception("Invalid File Path: Sorteio");
+    // // Debug.Log(sorteioData);
+    // var sorteio = JsonSerializer.Deserialize<Sorteio>(sorteioData);
+    // callback?.Invoke(sorteio);
+    // return;
 
     Debug.Log($"Getting Sorteio Nº{id}");
     _api.Get<Sorteio>("/static/temp/sorteio.json")

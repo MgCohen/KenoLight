@@ -10,7 +10,7 @@ public class TestScript : MonoBehaviour
   public           float           tempo        = 300f;
   private readonly Vector3         _rotate      = new Vector3(0, 0, -90f);
   private          float           _timeCounter = 0;
-  private          Api             _api         = new Api("https://postman-echo.com/get");
+  private readonly Api             _api         = new Api("https://postman-echo.com/get");
   private void Start()
   {
     GC.Collect();
@@ -42,7 +42,6 @@ public class TestScript : MonoBehaviour
   {
     DOTween.Clear(true);
     Game.LoopCount += 1;
-    Debug.Log("next");
     UnityEngine.SceneManagement.SceneManager.LoadScene(0);
   }
 }
