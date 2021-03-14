@@ -32,7 +32,7 @@ public class WebCallback<T>
 
    public class WebCallbackHandler
    {
-      private WebCallback<T> _parent;
+      private readonly WebCallback<T> _parent;
 
       internal WebCallbackHandler(WebCallback<T> parent)
       {

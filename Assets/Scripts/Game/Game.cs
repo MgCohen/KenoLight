@@ -15,7 +15,7 @@ public class Game : MonoBehaviour
 
   //////
 
-  // private Sorteio _sorteio;
+  // [SerializeField] private Sorteio sorteio;
 
   public List<int> usedBalls = new List<int>();
 
@@ -57,6 +57,7 @@ public class Game : MonoBehaviour
 
   private void Setup(Sorteio _sorteio)
   {
+    // sorteio = _sorteio;
     values.Set(_sorteio);
     SetCards(_sorteio);
     SetLines(_sorteio);
@@ -93,7 +94,7 @@ public class Game : MonoBehaviour
     globo.Resume();
     // var missingBalls = _sorteio.balls;
 
-    for (int i = 0; i < _sorteio.balls.Count; i++)
+    for (var i = 0; i < _sorteio.balls.Length; i++)
     {
 
       yield return new WaitForSeconds(drawTime);

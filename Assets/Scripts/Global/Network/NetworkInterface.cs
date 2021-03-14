@@ -1,9 +1,7 @@
 ﻿using System;
-using System.Collections;
-using System.Collections.Generic;
 using System.IO;
-using Newtonsoft.Json;
 using UnityEngine;
+using Utf8Json;
 
 public class NetworkInterface : MonoBehaviour
 {
@@ -36,46 +34,44 @@ public class NetworkInterface : MonoBehaviour
   }
 
   private readonly Api _api = new Api("https://slots.gamesdasorte.com");
-  [NonSerialized] public Sorteio SorteioAtual = null;
 
-  private void OfflineLoad(string sorteioPath = "", Action<Sorteio> callback = null)
+  private static void OfflineLoad<T>(string sorteioPath = "", Action<T> callback = null)
   {
 
-
-
-    using (var sr = new StreamReader(sorteioPath))
-    using (JsonReader reader = new JsonTextReader(sr))
+    using (var sourceStream = File.Open(sorteioPath, FileMode.Open))
     {
-      var serializer = new JsonSerializer();
-      var sorteio = serializer.Deserialize<Sorteio>(reader);
-
-      callback?.Invoke(sorteio);
-      return;
+      var data = JsonSerializer.Deserialize<T>(sourceStream);
+      
+      callback?.Invoke(data);
+      GC.Collect();
     }
-
 
   }
 
   public void RequestSorteio(string id, bool offline = false, Action<Sorteio> callback = null)
   {
-
-
-
+    
     if (offline)
     {
-      var sorteioPath = Application.persistentDataPath + "/sorteio.json";
-      Debug.LogWarning("Sorteio Local: " + sorteioPath);
-
-      // if (File.Exists(sorteioPath))
-      // {
-      //   OfflineLoad(sorteioPath, callback);
-      //   return;
-      // }
-
-      Debug.Log("Salvando sorteio na maquina");
-      var ogPath = Application.streamingAssetsPath + "/sorteio.json";
-      new Api("").GetFile(ogPath, sorteioPath)
-        .OnComplete(() => OfflineLoad(sorteioPath, callback));
+      // var sorteioPath = Application.persistentDataPath + "/sorteio.json";
+      // Debug.LogWarning("Sorteio Local: " + sorteioPath);
+      //
+      // // if (File.Exists(sorteioPath))
+      // // {
+      // //   OfflineLoad(sorteioPath, callback);
+      // //   return;
+      // // }
+      //
+      // Debug.Log("Salvando sorteio na maquina");
+      // var ogPath = Application.streamingAssetsPath + "/sorteio.json";
+      //
+      // new Api("").GetFile(ogPath, sorteioPath)
+      //   .OnComplete(() => OfflineLoad(sorteioPath, callback));
+      var sorteioData = Resources.Load<TextAsset>("Sorteio").text;
+      if (sorteioData == null) throw new Exception("Invalid File Path: Sorteio");
+      Debug.Log(sorteioData);
+      var sorteio = JsonSerializer.Deserialize<Sorteio>(sorteioData);
+      callback?.Invoke(sorteio);
       return;
     }
 
@@ -90,67 +86,6 @@ public class NetworkInterface : MonoBehaviour
     .OnComplete(Debug.Log)
     .OnError(Debug.Log);
   }
-  // public void RequestLogoOngOferecimento(string sala)
-  // {
-  //   _api.Get<List<Logo>>($"/logosongoferecimento/{sala}")
-  //      .OnComplete(UpdateRequestLogoOngOferecimento)
-  //      .OnError((err) =>
-  //       {
-  //         // Debug.Log("Logos Offline");
-  //         var data = Resources.Load<TextAsset>("LogoOngOferecimento").text;
-  //         if (data == null) throw new Exception("Invalid File Path: LogoOngOferecimento");
-  //         UpdateRequestLogoOngOferecimento(JsonConvert.DeserializeObject<List<Logo>>(data));
-  //       });
-  // }
-  // public void RequestLogoEspecial(string sala)
-  // {
-  //   _api.Get<List<Logo>>($"/logosespecial/{sala}")
-  //      .OnComplete(UpdateLogosE)
-  //      .OnError((err) =>
-  //       {
-  //         // Debug.Log("Logos Offline");
-  //         var data = Resources.Load<TextAsset>("LogosEspecial").text;
-  //         if (data == null) throw new Exception("Invalid File Path: Logos");
-  //         UpdateLogosE(JsonConvert.DeserializeObject<List<Logo>>(data));
-  //       });
-  // }
-  // public void RequestLogosSuperEspecial(string sala)
-  // {
-  //   _api.Get<List<Logo>>($"/logosse/{sala}")
-  //      .OnComplete(UpdateLogosSe)
-  //      .OnError((err) =>
-  //       {
-  //         // Debug.Log("Logos Offline");
-  //         var data = Resources.Load<TextAsset>("LogosSuperEspecial").text;
-  //         if (data == null) throw new Exception("Invalid File Path: LogosSuperEspecial");
-  //         UpdateLogosSe(JsonConvert.DeserializeObject<List<Logo>>(data));
 
-  //       });
-  // }
-  // private void UpdateRequestLogoOngOferecimento(List<Logo> logos)
-  // {
-  //   foreach (var logo in logos)
-  //   {
-  //     logo.se = 1;
-  //   }
-  //   events.LogoUrlOngOferecimento.Invoke(logos);
-  //   Debug.Log("Entrei request");
-  // }
-  // private void UpdateLogosE(List<Logo> logos)
-  // {
-  //   foreach (var logo in logos)
-  //   {
-  //     logo.se = 2;
-  //   }
-  //   events.LogoUrlEspecial.Invoke(logos);
-  // }
-  // private void UpdateLogosSe(List<Logo> logos)
-  // {
-  //   foreach (var logo in logos)
-  //   {
-  //     logo.se = 3;
-  //   }
-  //   events.LogoUrlSuperEspecial.Invoke(logos);
-  // }
 
 }

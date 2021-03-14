@@ -1,40 +1,55 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Runtime.Serialization;
 using UnityEngine;
 using UnityEngine.Scripting;
+// ReSharper disable InconsistentNaming
 
-[Preserve]
+// [Preserve]
 [System.Serializable]
 public class Card
 {
-    public int codigo;
-    public string estabelecimento;
+   [DataMember(Name = "codigo")]public int codigo;
+   [DataMember(Name = "estabelecimento")]public string estabelecimento;
+   
+   [DataMember(Name = "linha1_lista")]public int[] linha1;
+   [DataMember(Name = "linha2_lista")]public int[] linha2;
+   [DataMember(Name = "linha3_lista")]public int[] linha3;
 
-    public List<int> linha1_lista;
-    public List<int> linha2_lista;
-    public List<int> linha3_lista;
+   [IgnoreDataMember]public int[] numbers = new int[15];
 
-    public int[] numbers = new int[15];
-
-    public void Set()
+    public Card(
+         int codigo,
+         string estabelecimento,
+         int[] linha1_lista,
+         int[] linha2_lista,
+         int[] linha3_lista
+       )
     {
-        numbers[0] = linha1_lista[0];
-        numbers[1] = linha1_lista[1];
-        numbers[2] = linha1_lista[2];
-        numbers[3] = linha1_lista[3];
-        numbers[4] = linha1_lista[4];
-
-        numbers[5] = linha2_lista[0];
-        numbers[6] = linha2_lista[1];
-        numbers[7] = linha2_lista[2];
-        numbers[8] = linha2_lista[3];
-        numbers[9] = linha2_lista[4];
-
-        numbers[10] = linha3_lista[0];
-        numbers[11] = linha3_lista[1];
-        numbers[12] = linha3_lista[2];
-        numbers[13] = linha3_lista[3];
-        numbers[14] = linha3_lista[4];
+      
+      linha1               = linha1_lista; 
+      linha2               = linha2_lista;
+      linha3               = linha3_lista;
+      this.codigo          = codigo;
+      this.estabelecimento = estabelecimento;
+      
+      numbers[0] = linha1[0];
+      numbers[1] = linha1[1];
+      numbers[2] = linha1[2];
+      numbers[3] = linha1[3];
+      numbers[4] = linha1[4];
+      
+      numbers[5] = linha2[0];
+      numbers[6] = linha2[1];
+      numbers[7] = linha2[2];
+      numbers[8] = linha2[3];
+      numbers[9] = linha2[4];
+    
+      numbers[10] = linha3[0];
+      numbers[11] = linha3[1];
+      numbers[12] = linha3[2];
+      numbers[13] = linha3[3];
+      numbers[14] = linha3[4];
     }
 
 }

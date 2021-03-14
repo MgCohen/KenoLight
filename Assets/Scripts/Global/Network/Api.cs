@@ -1,5 +1,5 @@
-using Newtonsoft.Json;
 using UnityEngine.Networking;
+using Utf8Json;
 using Debug = UnityEngine.Debug;
 
 public class Api
@@ -97,7 +97,7 @@ public class Api
     {
       //dados em json recebidos
       // Debug.Log(json);
-      var data = JsonConvert.DeserializeObject<T>(json);
+      var data = JsonSerializer.Deserialize<T>(json);
       callback.DispatchComplete(data);
     });
 
@@ -139,7 +139,7 @@ public class Api
 
     request.OnComplete((json) =>
     {
-      var data = JsonConvert.DeserializeObject<T>(json);
+      var data = JsonSerializer.Deserialize<T>(json);
       callback.DispatchComplete(data);
     });
 
@@ -191,7 +191,7 @@ public class Api
   public WebCallback<TReturn>.WebCallbackHandler Post<TReturn>(string path, object payload)
   {
     var callback = new WebCallback<TReturn>();
-    var jsonData = payload is string sPayload ? sPayload : JsonConvert.SerializeObject(payload);
+    var jsonData = payload is string sPayload ? sPayload : JsonSerializer.ToJsonString(payload);
     if (!(payload is string))
       Debug.Log(jsonData);
 
@@ -199,7 +199,7 @@ public class Api
 
     request.OnComplete((json) =>
     {
-      var data = JsonConvert.DeserializeObject<TReturn>(json);
+      var data = JsonSerializer.Deserialize<TReturn>(json);
       callback.DispatchComplete(data);
     });
 
@@ -210,8 +210,8 @@ public class Api
 
   public WebCallback<string>.WebCallbackHandler Post<TPayload>(string path, TPayload payload)
   {
-    string jsonData = JsonConvert.SerializeObject(payload);
-    var request = Post(path, jsonData);
+    var jsonData = JsonSerializer.ToJsonString(payload);
+    var    request  = Post(path, jsonData);
 
     return request;
   }
@@ -221,7 +221,7 @@ public class Api
 
   #region PUT
 
-  public WebCallback<string>.WebCallbackHandler Put(string path, string payload)
+    private WebCallback<string>.WebCallbackHandler Put(string path, string payload)
   {
     return BasePayload(UnityWebRequest.kHttpVerbPUT, path, payload);
   }
@@ -230,12 +230,12 @@ public class Api
      where TPayload : class
   {
     var callback = new WebCallback<TReturn>();
-    var jsonData = JsonConvert.SerializeObject(payload);
-    var request = Put(path, jsonData);
+    var jsonData = JsonSerializer.ToJsonString(payload);
+    var request  = Put(path, jsonData);
 
     request.OnComplete((json) =>
     {
-      var data = JsonConvert.DeserializeObject<TReturn>(json);
+      var data = JsonSerializer.Deserialize<TReturn>(json);
       callback.DispatchComplete(data);
     });
 
@@ -246,7 +246,7 @@ public class Api
 
   public WebCallback<string>.WebCallbackHandler Put<TPayload>(string path, TPayload payload)
   {
-    var jsonData = JsonConvert.SerializeObject(payload);
+    var jsonData = JsonSerializer.ToJsonString(payload);
     Debug.Log(jsonData);
     var request = Put(path, jsonData);
 

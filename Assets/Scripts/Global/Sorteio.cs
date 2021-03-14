@@ -1,7 +1,9 @@
 ﻿using System.Collections.Generic;
 using System;
-using Newtonsoft.Json;
+using System.Runtime.Serialization;
+using UnityEngine;
 using UnityEngine.Scripting;
+using Utf8Json;
 using static System.Globalization.DateTimeStyles;
 
 // ReSharper disable InconsistentNaming
@@ -10,92 +12,76 @@ using static System.Globalization.DateTimeStyles;
 public class Sorteio
 {
   //BASE INFO
-  public int sorteioId;
-  public DateTime sorteioTime;
+  
+  
+  
+  // [IgnoreDataMember]            public DateTime sorteioTime;
+  [DataMember(Name = "codigo")]       public int sorteioId;
+  [DataMember(Name = "data_partida")] public DateTime sorteioTime;
 
   //PRIZES
-  public readonly double kuadraPrize;
-  public readonly double kinaPrize;
-  public readonly double kenoPrize;
-  public readonly double acumuladoPrize;
-  public readonly double[] prizes = new double[4];
+  [DataMember(Name = "valor_kuadra")]    public double   kuadraPrize;
+  [DataMember(Name = "valor_kina")]      public double   kinaPrize;
+  [DataMember(Name = "valor_keno")]      public double   kenoPrize;
+  [DataMember(Name = "valor_acumulado")] public double   acumuladoPrize;
+  [IgnoreDataMember]                     public double[] prizes = new double[4];
 
   //settings
-  public readonly int acumuladoBallCount; //numero de bolas para bater acumulado
-  public readonly double donationValue;
-  public readonly kenoType type;                     //tipo de sorteio
-  public readonly List<int> buyers = new List<int>(); //id de bares participantes
+  [DataMember(Name = "numero_bolas_acumulado")] 
+    public int acumuladoBallCount; //numero de bolas para bater acumulado
+  [DataMember(Name = "valor_cartela")] 
+    public double donationValue;
+  [IgnoreDataMember] public kenoType  type;                     //tipo de sorteio
+  [IgnoreDataMember] public List<int> buyers = new List<int>(); //id de bares participantes
 
   //Draw
-  public readonly List<int> balls;
-  public readonly List<List<Player>> topPlayers;
-  public readonly Dictionary<int, Card> cards;
+  [DataMember(Name = "bolas_sorteadas")]  public int[] balls;
+  [DataMember(Name = "turnos")]  public Player[][] topPlayers;
+  [DataMember(Name = "cartelas")]  public Dictionary<int, Card> cards;
 
   //Winners
-  public readonly int[] winnerBalls = new int[3];
-  public readonly List<List<int>> winners;
+  [DataMember(Name = "bolas_vencedoras")] public int[]   winnerBalls;
+  [DataMember(Name = "vencedores")]       public int[][] winners;
 
 
-
-  [Preserve]
-  [JsonConstructor]
+  // public Sorteio()
+  // {
+  //   
+  // }
+  //
+  // [Preserve]
+  [SerializationConstructor]
   public Sorteio(
-      bool replay,
-      bool especial,
-      bool superEspecial,
-      int codigo,
-      string data_partida,
-      double valor_kuadra,
-      double valor_kina,
-      double valor_keno,
-      double valor_acumulado,
-      double valor_cartela,
-      Dictionary<int, Card> cartelas,
-      List<int> bolas_sorteadas,
-      int numero_bolas_acumulado,
-      List<List<int>> vencedores,
-      int bola_kuadra,
-      int bola_kina,
-      int bola_keno,
-      List<List<Player>> turnos
+    int                   codigo,
+    DateTime                 data_partida,
+    double                valor_kuadra,
+    double                valor_kina,
+    double                valor_keno,
+    double                valor_acumulado,
+    double                valor_cartela,
+    int                   numero_bolas_acumulado,
+    int[]             bolas_sorteadas,
+    Player[][]    turnos,
+    Dictionary<int, Card> cartelas,
+    int[]                 bolas_vencedoras,
+    int[][]       vencedores
   )
   {
-    sorteioId = codigo;
-    sorteioTime = data_partida != null
-                      ? DateTime.Parse(data_partida, null, RoundtripKind).ToLocalTime()
-                      : DateTime.Now.AddSeconds(30);
-
-
-    cards = cartelas;
-
-    //TEST
-    foreach (var card in cards.Values) card.Set();
-    //REMOVE
-
+    Debug.Log("create sorteio");
+    sorteioId   = codigo;
+    sorteioTime = data_partida;
+    cards       = cartelas;
+    acumuladoBallCount = numero_bolas_acumulado;
+    donationValue      = valor_cartela;
+    balls              = bolas_sorteadas;
+    winnerBalls        = bolas_vencedoras;
+    topPlayers         = turnos;
+    winners            = vencedores;
+    
     prizes[0] = kuadraPrize = valor_kuadra;
     prizes[1] = kinaPrize = valor_kina;
     prizes[2] = kenoPrize = valor_keno;
     prizes[3] = acumuladoPrize = valor_acumulado;
-
-    winnerBalls[0] = bola_kuadra;
-    winnerBalls[1] = bola_kina;
-    winnerBalls[2] = bola_keno;
-
-    acumuladoBallCount = numero_bolas_acumulado;
-    //numeroBolasAcumulado = 90;
-    donationValue = valor_cartela;
-    // replay       = replay;
-
-
-    balls = bolas_sorteadas;
-    // !string.IsNullOrEmpty(bolas_sorteadas)
-    //     ? bolas_sorteadas.Split(',').Select(int.Parse).ToList()
-    //     : new List<int>();
-
-    // if (cartelas != null) Debug.Log(cartelas.Count);
-
-    topPlayers = turnos;
-    winners = vencedores;
   }
 
 
@@ -109,19 +95,8 @@ public enum kenoType
 }
 
 [Serializable]
-public struct Player
-{
-  [Preserve]
-  [JsonConstructor]
-  public Player(int codigo, int posicao, List<int> numeros)
-  {
-    id = codigo;
-    rowIndex = posicao;
-    missingNumbers = numeros;
-  }
-
-
-  public int id;
-  public int rowIndex; //0 - baixo, 1 - meio, 2 - topo, 3 - tudo/keno
-  public List<int> missingNumbers;
+public class Player{
+  [DataMember(Name = "codigo")] public int id;
+  [DataMember(Name = "posicao")] public int rowIndex; //0 - baixo, 1 - meio, 2 - topo, 3 - tudo/keno
+  [DataMember(Name = "numeros")] public List<int> missingNumbers;
 }

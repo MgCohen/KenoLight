@@ -1,12 +1,11 @@
 {
-  "bola_kuadra": 6,
-  "bola_kina": 14,
-  "bola_keno": 56,
+  "codigo": 23,
   "data_partida": "2021-03-10T14:24:41.133646-03:00",
   "valor_kuadra": 20,
   "valor_kina": 20,
   "valor_keno": 100,
   "valor_acumulado": 0,
+  "numero_bolas_acumulado": 40,
   "valor_cartela": 1,
   "bolas_sorteadas": [
     2,
