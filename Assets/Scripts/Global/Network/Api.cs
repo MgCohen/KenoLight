@@ -1,3 +1,4 @@
+using Unity.Collections;
 using UnityEngine.Networking;
 using Utf8Json;
 using Debug = UnityEngine.Debug;
@@ -67,12 +68,12 @@ public class Api
     // }
   }
 
-  private WebCallback<string>.WebCallbackHandler Get(string path)
+  public WebCallback<NativeArray<byte>.ReadOnly>.WebCallbackHandler Get(string path)
   {
     var fullPath = $"{_endpoint}{path}";
     var request  = UnityWebRequest.Get(fullPath);
     // Debug.Log(fullPath);
-    var callback = new WebCallback<string>();
+    var callback = new WebCallback<NativeArray<byte>.ReadOnly>();
 
     if (!string.IsNullOrWhiteSpace(_token))
       request.SetRequestHeader("authorization", $"Bearer {_token}");
@@ -81,7 +82,7 @@ public class Api
     request.SendWebRequest().completed += (op) =>
     {
       if (!string.IsNullOrEmpty(request.error)) callback.DispatchError(request.error);
-      else callback.DispatchComplete(request.downloadHandler.text);
+      else callback.DispatchComplete(request.downloadHandler.nativeData);
       
       request.Dispose();
     };
@@ -97,7 +98,7 @@ public class Api
     {
       //dados em json recebidos
       // Debug.Log(json);
-      var data = JsonSerializer.Deserialize<T>(json);
+      var data = JsonSerializer.Deserialize<T>(json.ToArray());
       callback.DispatchComplete(data);
     });
 
@@ -247,7 +248,6 @@ public class Api
   public WebCallback<string>.WebCallbackHandler Put<TPayload>(string path, TPayload payload)
   {
     var jsonData = JsonSerializer.ToJsonString(payload);
-    Debug.Log(jsonData);
     var request = Put(path, jsonData);
 
     return request;

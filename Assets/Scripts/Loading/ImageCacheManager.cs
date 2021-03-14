@@ -114,7 +114,7 @@ public class ImageCacheManager : MonoBehaviour
       UnityWebRequest request = UnityWebRequestTexture.GetTexture(logo.url);
       yield return request.SendWebRequest();
 
-      if (!request.isNetworkError && !request.isHttpError)
+      if (request.result != UnityWebRequest.Result.ConnectionError)
       {
         SaveOnCache(request.downloadHandler.data, fileName);
         var tex = ((DownloadHandlerTexture)request.downloadHandler).texture;

@@ -24,15 +24,15 @@ public static class Extensions
          yield break;
       }
 
-      UnityWebRequest request = UnityWebRequestTexture.GetTexture(MediaUrl);
-      yield return request.SendWebRequest();
-      if (request.isNetworkError || request.isHttpError)
-         Error?.Invoke(request.error);
-      else
-      {
-         var tex    = ((DownloadHandlerTexture)request.downloadHandler).texture;
-         var sprite = Sprite.Create(tex, new Rect(0, 0, tex.width, tex.height), new Vector2(0.5f, 0.5f), 100f);
-         callback(sprite);
-      }
+      // UnityWebRequest request = UnityWebRequestTexture.GetTexture(MediaUrl);
+      // yield return request.SendWebRequest();
+      // if (request.isNetworkError || request.isHttpError)
+      //    Error?.Invoke(request.error);
+      // else
+      // {
+      //    var tex    = ((DownloadHandlerTexture)request.downloadHandler).texture;
+      //    var sprite = Sprite.Create(tex, new Rect(0, 0, tex.width, tex.height), new Vector2(0.5f, 0.5f), 100f);
+      //    callback(sprite);
+      // }
    }
 }

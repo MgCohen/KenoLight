@@ -3899,6 +3899,7 @@ MonoBehaviour:
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
+  m_PresetInfoIsWorld: 0
 --- !u!223 &1502949577
 Canvas:
   m_ObjectHideFlags: 0
@@ -5800,7 +5801,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sorteioId: 
-  offlineMode: 1
+  offlineMode: 0
   cards:
   - {fileID: 1638732694}
   - {fileID: 680236988}
