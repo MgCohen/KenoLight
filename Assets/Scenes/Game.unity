@@ -8845,9 +8845,9 @@ MonoBehaviour:
   frameDelay: 0.025
   defaultAnim: {fileID: 1338532128}
   anims:
-  - {fileID: 11400000, guid: eeed9644b29d445468081f21e2362fd6, type: 2}
-  - {fileID: 11400000, guid: f9f8486e3ddd86e40a5b2fb3b7ba4b88, type: 2}
-  - {fileID: 11400000, guid: a246fc43d012aee4abc73e8aaa86bfbf, type: 2}
+  - {fileID: 1338532128}
+  - {fileID: 1338532127}
+  - {fileID: 1338532126}
 --- !u!114 &1338532124
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10790,6 +10790,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 769101476}
     m_Modifications:
+    - target: {fileID: 2175313702360889149, guid: d6f74a6f054f44149839268899bc91cb, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 387
+      objectReference: {fileID: 0}
+    - target: {fileID: 2175313702360889149, guid: d6f74a6f054f44149839268899bc91cb, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 692
+      objectReference: {fileID: 0}
     - target: {fileID: 3018383284329745503, guid: d6f74a6f054f44149839268899bc91cb, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0

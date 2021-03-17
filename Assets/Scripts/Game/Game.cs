@@ -125,6 +125,10 @@ public class Game : MonoBehaviour
 
     public void Clear()
     {
+        for (int i = currentSorteio.cards.Count - 1; i >= 0; i--)
+        {
+            currentSorteio.cards[i] = null;
+        }
         currentSorteio = null;
         Resources.UnloadUnusedAssets();
         DOTween.KillAll();

@@ -2,10 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
+
 
 public class CardNumber : MonoBehaviour
 {
-  public Image numberSprite;
+  public TextMeshProUGUI numberSprite;
   public GameObject background;
 
   public Color markedColor;
@@ -21,7 +23,8 @@ public class CardNumber : MonoBehaviour
     {
       return;
     }
-    numberSprite.sprite = SpriteLoader.Main.sprites[i - 1];
+        //numberSprite.sprite = SpriteLoader.Main.sprites[i - 1];
+        numberSprite.text = i.ToString();
     number = i;
     // Set(false);
   }
